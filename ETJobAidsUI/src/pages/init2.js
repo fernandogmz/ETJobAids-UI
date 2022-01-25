@@ -13,8 +13,10 @@ const Init2 = () => {
         navigate("/Init1");
     }
 
-    let op_lngs ={
-        lngs: ['English', 'Spanish', 'Portuguese', 'French', 'opt_lngs']
+    let op_lngs = {
+        name: 'languages',
+        clss: 'lang_select',
+        lngs: ['English', 'Spanish', 'Portuguese', 'French']
     }
 
     let Data = {
@@ -33,7 +35,7 @@ const Init2 = () => {
                 </div>
                 <div className="grd_right_top">
                     <div className="select_lang slide_in_blurred_right" tabindex="1">
-                    <SelectOp ops={op_lngs.lngs} />
+                        <SelectOp ops={op_lngs.lngs} name={op_lngs.name} clss={op_lngs.clss} />
                     </div>
                 </div>
             </div>

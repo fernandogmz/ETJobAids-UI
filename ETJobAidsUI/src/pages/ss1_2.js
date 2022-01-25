@@ -15,8 +15,10 @@ const Ss1_2 = () => {
         navigate("/Init1");
     }
 
-    let op_lngs ={
-        lngs: ['English', 'Spanish', 'Portuguese', 'French', 'opt_lngs']
+    let op_lngs = {
+        name: 'languages',
+        clss: 'lang_select',
+        lngs: ['English', 'Spanish', 'Portuguese', 'French']
     }
 
     let Data = {
@@ -34,7 +36,7 @@ const Ss1_2 = () => {
                 </div>
                 <div className="grd_right_top">
                     <div className="select_lang slide_in_blurred_right" tabindex="1">
-                    <SelectOp ops={op_lngs.lngs} />
+                        <SelectOp ops={op_lngs.lngs} name={op_lngs.name} clss={op_lngs.clss} />
                     </div>
                 </div>
             </div>
@@ -62,7 +64,7 @@ const Ss1_2 = () => {
                             </div>
                             <div>
                                 <div className="slide_in_blurred_right">
-                                    <MaleHide/>
+                                    <MaleHide />
                                 </div>
                             </div>
                         </div>
@@ -75,7 +77,7 @@ const Ss1_2 = () => {
                         <BtnNavBack text_btn={Data.btns[0]} />
                     </div>
                     <div className="grd_btm_center">
-                    <div id="audio" className="audioplayer"></div>
+                        <div id="audio" className="audioplayer"></div>
                     </div>
                     <div className="grd_btm_right">
                         <BtnNavNext text_btn={Data.btns[1]} />

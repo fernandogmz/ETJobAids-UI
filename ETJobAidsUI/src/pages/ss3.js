@@ -5,7 +5,7 @@ import BtnNavBack from '../components/btns/BtnNavBack'
 import BtnNavNext from '../components/btns/BtnNavNext'
 import TextField from '../components/textField'
 import NumField from '../components/numField'
-import { ReactComponent as Lady01 } from '../assets/images/hero/female/lady_01.svg'
+import { ReactComponent as Tra } from '../assets/images/goals/tractor.svg'
 import { useNavigate } from "react-router-dom"
 
 const Ss1_1 = () => {
@@ -15,17 +15,23 @@ const Ss1_1 = () => {
     }
 
     let op_lngs ={
-        lngs: ['English', 'Spanish', 'Portuguese', 'French', 'opt_lngs']
+        name: 'languages',
+        clss:'lang_select',
+        lngs: ['English', 'Spanish', 'Portuguese', 'French']
+    }
+
+    let op_drtn = {
+        name: 'languages',
+        clss:'lang_select',
+        lngs: ['6 months', '1 Year', '2 Years', '3 Years', '4 Years', '5 Years']
     }
 
     let Data = {
         title: "Tractor | Cost:",
         cost: "12,000",
-
-        
-        btns: ['back', 'next'],
-        flds_lbls: ['Name', 'Age', 'Your answer'],
-        flds_holder: ['Income', 'Your age', 'Write your answer'],
+        btns: ['back', 'next', 'Calculate'],
+        flds_lbls: ['Income', 'Expense', 'Savings', 'Select duration'],
+        flds_holder: ['Income', 'Expense', 'Savings', 'Select duration'],
         q: "Who referred you?"
     }
 
@@ -37,7 +43,7 @@ const Ss1_1 = () => {
                 </div>
                 <div className="grd_right_top">
                     <div className="select_lang slide_in_blurred_right" tabindex="1">
-                    <SelectOp ops={op_lngs.lngs} />
+                        <SelectOp ops={op_lngs.lngs} name={op_lngs.name} clss={op_lngs.clss} />
                     </div>
                 </div>
             </div>
@@ -45,21 +51,23 @@ const Ss1_1 = () => {
                 <div class="ss3">
                     <div class="grd_left">
                         <div className="slide_in_blurred_left">
-                            <Lady01 />
+                            <Tra />
                         </div>
                     </div>
                     <div class="grd_right">
                         <div className="cont">
                             <h1 className="slide_in_blurred_top">{Data.title + Data.cost}</h1>
                             <div className="flds">
-                                <TextField flds_lbls={Data.flds_lbls[0]} flds_holder={Data.flds_holder[0]} />
+                                <NumField flds_lbls={Data.flds_lbls[0]} flds_holder={Data.flds_holder[0]} />
                             </div>
                             <div className="flds">
                                 <NumField flds_lbls={Data.flds_lbls[1]} flds_holder={Data.flds_holder[1]} />
                             </div>
-                            <div className="qsts">
-                                <h3>{Data.q}</h3>
-                                <TextField flds_holder={Data.flds_holder[2]} />
+                            <div className="flds">
+                                <NumField flds_lbls={Data.flds_lbls[2]} flds_holder={Data.flds_holder[2]} />
+                            </div>
+                            <div className="flds">
+                                <SelectOp ops={op_drtn.lngs} name={op_lngs.name} clss={op_lngs.clss} />
                             </div>
                         </div>
                     </div>

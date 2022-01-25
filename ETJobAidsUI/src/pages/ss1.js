@@ -14,8 +14,10 @@ const Ss1 = () => {
         navigate("/Init1");
     }
 
-    let op_lngs ={
-        lngs: ['English', 'Spanish', 'Portuguese', 'French', 'opt_lngs']
+    let op_lngs = {
+        name: 'languages',
+        clss: 'lang_select',
+        lngs: ['English', 'Spanish', 'Portuguese', 'French']
     }
 
     let Data = {
@@ -34,7 +36,7 @@ const Ss1 = () => {
                 </div>
                 <div className="grd_right_top">
                     <div className="select_lang slide_in_blurred_right" tabindex="1">
-                    <SelectOp ops={op_lngs.lngs} />
+                        <SelectOp ops={op_lngs.lngs} name={op_lngs.name} clss={op_lngs.clss} />
                     </div>
                 </div>
             </div>
@@ -44,7 +46,7 @@ const Ss1 = () => {
                         <h1 className="slide_in_blurred_top">{Data.title}</h1>
                     </div>
                     <div className="grd_line2">
-                    <h2 className="tracking_in_expand">{Data.subtitle}</h2>
+                        <h2 className="tracking_in_expand">{Data.subtitle}</h2>
                     </div>
                     <div className="grd_line3">
                         <div>
@@ -73,7 +75,7 @@ const Ss1 = () => {
                         <BtnNavBack text_btn={Data.btns[0]} />
                     </div>
                     <div className="grd_btm_center">
-                    <div id="audio" className="audioplayer"></div>
+                        <div id="audio" className="audioplayer"></div>
                     </div>
                     <div className="grd_btm_right">
                         <BtnNavNext text_btn={Data.btns[1]} />

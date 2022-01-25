@@ -13,19 +13,32 @@ const Ss1_5 = () => {
         navigate("/Init1");
     }
 
-    let op_lngs ={
-        lngs: ['English', 'Spanish', 'Portuguese', 'French', 'opt_lngs']
+    let op_lngs = {
+        name: 'languages',
+        clss: 'lang_select',
+        lngs: ['English', 'Spanish', 'Portuguese', 'French']
     }
-    let op_rgns ={
-        rgns: ['Region', 'Region', 'Region', 'Region..', 'opt_rgns']
+
+    let op_rgns = {
+        name: 'op_rgns',
+        clss: 'lang_select',
+        rgns: ['Region', 'Region', 'Region', 'Region..']
     }
-    let op_zns ={
+
+    
+    let op_zns = {
+        name: 'op_rgns',
+        clss: 'lang_select',
         zone: ['zone', 'zone', 'zone', 'zone..', 'opt_zns']
     }
-    let op_dts ={
+    let op_dts = {
+        name: 'op_rgns',
+        clss: 'lang_select',
         dstr: ['District', 'District', 'District', 'District..', 'op_dts']
     }
-    let op_kbl ={
+    let op_kbl = {
+        name: 'op_rgns',
+        clss: 'lang_select',
         kbl: ['kebele', 'kebele', 'kebele', 'kebele..', 'op_kbl']
     }
 
@@ -42,7 +55,7 @@ const Ss1_5 = () => {
                 </div>
                 <div className="grd_right_top">
                     <div className="select_lang slide_in_blurred_right" tabindex="1">
-                        <SelectOp ops={op_lngs.lngs} />
+                        <SelectOp ops={op_lngs.lngs} name={op_lngs.name} clss={op_lngs.clss} />
                     </div>
                 </div>
             </div>
@@ -52,11 +65,11 @@ const Ss1_5 = () => {
                         <h1 className="slide_in_blurred_top">We would like to know your region</h1>
                     </div>
                     <div className="grd_line2">
-                        <div><SelectOp ops={op_rgns.rgns}/></div>
-                        <div><SelectOp ops={op_zns.zone}/></div>
-                        <div><SelectOp ops={op_dts.dstr}/></div>
-                        <div><SelectOp ops={op_kbl.kbl}/></div>
-¡                    </div>
+                        <div><SelectOp ops={op_rgns.rgns} name={op_lngs.name} clss={op_lngs.clss}  /></div>
+                        <div><SelectOp ops={op_zns.zone} name={op_lngs.name} clss={op_lngs.clss}  /></div>
+                        <div><SelectOp ops={op_dts.dstr} name={op_lngs.name} clss={op_lngs.clss}  /></div>
+                        <div><SelectOp ops={op_kbl.kbl} name={op_lngs.name} clss={op_lngs.clss}  /></div>
+                    </div>
                     <div className="grd_line3">
                         <h2 className="tracking_in_expand">Select your session type</h2>
                     </div>
