@@ -20,12 +20,15 @@ const Ss1 = () => {
         lngs: ['English', 'Spanish', 'Portuguese', 'French']
     }
 
-    let Data = {
+    let Str = {
         title: "Let's start by learning a litle bit more about you!",
         subtitle: 'Select an avatar the describes your personality',
         cta1: 'New user',
-        cta2: 'Returning user',
-        btns: ['back', 'next']
+        cta2: 'Returning user'
+    }
+
+    let btns = {
+        lbl: ['back', 'next']
     }
 
     return (
@@ -43,10 +46,10 @@ const Ss1 = () => {
             <div className="grd_cont">
                 <div className="ss1">
                     <div className="grd_line1 ">
-                        <h1 className="slide_in_blurred_top">{Data.title}</h1>
+                        <h1 className="slide_in_blurred_top">{Str.title}</h1>
                     </div>
                     <div className="grd_line2">
-                        <h2 className="tracking_in_expand">{Data.subtitle}</h2>
+                        <h2 className="tracking_in_expand">{Str.subtitle}</h2>
                     </div>
                     <div className="grd_line3">
                         <div>
@@ -72,13 +75,13 @@ const Ss1 = () => {
             <div className="grd_bottom_nav">
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
-                        <BtnNavBack text_btn={Data.btns[0]} />
+                        <BtnNavBack text_btn={btns.lbl[0]} />
                     </div>
                     <div className="grd_btm_center">
                         <div id="audio" className="audioplayer"></div>
                     </div>
                     <div className="grd_btm_right">
-                        <BtnNavNext text_btn={Data.btns[1]} />
+                        <BtnNavNext text_btn={btns.lbl[1]} />
                     </div>
                 </div>
             </div>

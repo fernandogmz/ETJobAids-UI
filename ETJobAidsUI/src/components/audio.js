@@ -3,7 +3,7 @@ import React from "react"
 const Ss1 = () => {
     let song = new Audio(my_song);
 
-    let Data = {
+    let Str = {
         title: "Let's start by learning a litle bit more about you!",
         subtitle: 'Select an avatar the describes your personality',
         cta1: 'New user',

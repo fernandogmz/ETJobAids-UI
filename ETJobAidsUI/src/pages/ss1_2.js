@@ -21,7 +21,7 @@ const Ss1_2 = () => {
         lngs: ['English', 'Spanish', 'Portuguese', 'French']
     }
 
-    let Data = {
+    let Str = {
         title: "What about your husband?",
         cta1: 'New user',
         cta2: 'Returning user',
@@ -43,7 +43,7 @@ const Ss1_2 = () => {
             <div className="grd_cont">
                 <div className="ss1_2">
                     <div className="grd_line1 ">
-                        <h1 className="slide_in_blurred_top">{Data.title}</h1>
+                        <h1 className="slide_in_blurred_top">{Str.title}</h1>
                     </div>
                     <div className="grd_line2">
                         <div>
@@ -74,13 +74,13 @@ const Ss1_2 = () => {
             <div className="grd_bottom_nav">
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
-                        <BtnNavBack text_btn={Data.btns[0]} />
+                        <BtnNavBack text_btn={Str.btns[0]} />
                     </div>
                     <div className="grd_btm_center">
                         <div id="audio" className="audioplayer"></div>
                     </div>
                     <div className="grd_btm_right">
-                        <BtnNavNext text_btn={Data.btns[1]} />
+                        <BtnNavNext text_btn={Str.btns[1]} />
                     </div>
                 </div>
             </div>

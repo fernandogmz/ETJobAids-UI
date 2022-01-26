@@ -1,6 +1,7 @@
 import React from "react"
 import SelectOp from '../components/selectOp'
 import LogOut from '../components/btns/log_out'
+import Btn from '../components/btns/btns'
 import BtnNavBack from '../components/btns/BtnNavBack'
 import BtnNavNext from '../components/btns/BtnNavNext'
 import { ReactComponent as NewUser } from '../assets/images/new_user.svg'
@@ -42,9 +43,12 @@ const Ss1_5 = () => {
         kbl: ['kebele', 'kebele', 'kebele', 'kebele..', 'op_kbl']
     }
 
-    let Data = {
-        title: 'Kindly let us know if you are a new user or a returning user',
-        btns: ['back', 'next']
+    let Str = {
+        title: 'Kindly let us know if you are a new user or a returning user'
+    }
+
+    let btns = {
+        lbl: ['back', 'next', 'Calculate']
     }
 
     return (
@@ -82,11 +86,11 @@ const Ss1_5 = () => {
             <div className="grd_bottom_nav">
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
-                        <BtnNavBack text_btn={Data.btns[0]} />
+                        <BtnNavBack text_btn={btns.lbl[0]} />
                     </div>
                     <div className="grd_btm_center"></div>
                     <div className="grd_btm_right">
-                        <BtnNavNext text_btn={Data.btns[1]} />
+                        <BtnNavNext text_btn={btns.lbl[1]} />
                     </div>
                 </div>
             </div>

@@ -20,14 +20,17 @@ const Ss1_1 = () => {
         lngs: ['English', 'Spanish', 'Portuguese', 'French']
     }
 
-    let Data = {
+    let Str = {
         title: "Tell us a little bit more about you",
         cta1: 'New user',
         cta2: 'Returning user',
-        btns: ['back', 'next'],
         flds_lbls: ['Name', 'Age', 'Your answer'],
         flds_holder: ['Your full names', 'Your age', 'Write your answer'],
         q: "Who referred you?"
+    }
+
+    let btns = {
+        lbl: ['back', 'next']
     }
 
     return (
@@ -51,16 +54,16 @@ const Ss1_1 = () => {
                     </div>
                     <div class="grd_right">
                         <div className="cont">
-                            <h1 className="slide_in_blurred_top">{Data.title}</h1>
+                            <h1 className="slide_in_blurred_top">{Str.title}</h1>
                             <div className="flds">
-                                <TextField flds_lbls={Data.flds_lbls[0]} flds_holder={Data.flds_holder[0]} />
+                                <TextField flds_lbls={Str.flds_lbls[0]} flds_holder={Str.flds_holder[0]} />
                             </div>
                             <div className="flds">
-                                <NumField flds_lbls={Data.flds_lbls[1]} flds_holder={Data.flds_holder[1]} />
+                                <NumField flds_lbls={Str.flds_lbls[1]} flds_holder={Str.flds_holder[1]} />
                             </div>
                             <div className="qsts">
-                                <h3>{Data.q}</h3>
-                                <TextField flds_holder={Data.flds_holder[2]} />
+                                <h3>{Str.q}</h3>
+                                <TextField flds_holder={Str.flds_holder[2]} />
                             </div>
                         </div>
                     </div>
@@ -69,13 +72,13 @@ const Ss1_1 = () => {
             <div className="grd_bottom_nav">
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
-                        <BtnNavBack text_btn={Data.btns[0]} />
+                        <BtnNavBack text_btn={btns.lbl[0]} />
                     </div>
                     <div className="grd_btm_center">
                         <div id="audio" className="audioplayer"></div>
                     </div>
                     <div className="grd_btm_right">
-                        <BtnNavNext text_btn={Data.btns[1]} />
+                        <BtnNavNext text_btn={btns.lbl[1]} />
                     </div>
                 </div>
             </div>

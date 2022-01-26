@@ -19,12 +19,15 @@ const Init2 = () => {
         lngs: ['English', 'Spanish', 'Portuguese', 'French']
     }
 
-    let Data = {
+    let Str = {
         title: 'Are you here by yourself?',
         subtitle: '',
         cta1: 'By myself',
-        cta2: 'With my husband',
-        btns: ['back', 'next']
+        cta2: 'With my husband'
+    }
+
+    let btns = {
+        lbl: ['back', 'next']
     }
 
     return (
@@ -42,10 +45,10 @@ const Init2 = () => {
             <div className="grd_cont">
                 <div className="int2">
                     <div className="grd_line1 ">
-                        <h1 className="slide_in_blurred_top">{Data.title}</h1>
+                        <h1 className="slide_in_blurred_top">{Str.title}</h1>
                     </div>
                     <div className="grd_line2">
-                        <h2 className="tracking_in_expand">{Data.subtitle}</h2>
+                        <h2 className="tracking_in_expand">{Str.subtitle}</h2>
                     </div>
                     <div className="grd_line3">
                         <div>
@@ -54,7 +57,7 @@ const Init2 = () => {
                                     <ByMySelft />
                                 </div>
                                 <div className="tracking_in_expand">
-                                    <h2>{Data.cta1}</h2>
+                                    <h2>{Str.cta1}</h2>
                                 </div>
                             </div>
                             <div>
@@ -62,7 +65,7 @@ const Init2 = () => {
                                     <WithMyHusband />
                                 </div>
                                 <div className="tracking_in_expand">
-                                    <h2>{Data.cta2}</h2>
+                                    <h2>{Str.cta2}</h2>
                                 </div>
                             </div>
                         </div>
@@ -72,11 +75,11 @@ const Init2 = () => {
             <div className="grd_bottom_nav">
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
-                        <BtnNavBack text_btn={Data.btns[0]} />
+                        <BtnNavBack text_btn={btns.lbl[0]} />
                     </div>
                     <div className="grd_btm_center"></div>
                     <div className="grd_btm_right">
-                        <BtnNavNext text_btn={Data.btns[1]} />
+                        <BtnNavNext text_btn={btns.lbl[1]} />
                     </div>
                 </div>
             </div>

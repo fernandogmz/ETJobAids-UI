@@ -1,6 +1,7 @@
 import React from "react"
 import SelectOp from '../components/selectOp'
 import LogOut from '../components/btns/log_out'
+import Btn from '../components/btns/btns'
 import BtnNavBack from '../components/btns/BtnNavBack'
 import BtnNavNext from '../components/btns/BtnNavNext'
 import TextField from '../components/textField'
@@ -26,13 +27,16 @@ const Ss1_1 = () => {
         lngs: ['6 months', '1 Year', '2 Years', '3 Years', '4 Years', '5 Years']
     }
 
-    let Data = {
+    let Str = {
         title: "Tractor | Cost:",
         cost: "12,000",
-        btns: ['back', 'next', 'Calculate'],
         flds_lbls: ['Income', 'Expense', 'Savings', 'Select duration'],
         flds_holder: ['Income', 'Expense', 'Savings', 'Select duration'],
         q: "Who referred you?"
+    }
+
+    let btns = {
+        lbl: ['back', 'next', 'Calculate']
     }
 
     return (
@@ -56,15 +60,15 @@ const Ss1_1 = () => {
                     </div>
                     <div class="grd_right">
                         <div className="cont">
-                            <h1 className="slide_in_blurred_top">{Data.title + Data.cost}</h1>
+                            <h1 className="slide_in_blurred_top">{Str.title + Str.cost}</h1>
                             <div className="flds">
-                                <NumField flds_lbls={Data.flds_lbls[0]} flds_holder={Data.flds_holder[0]} />
+                                <NumField flds_lbls={Str.flds_lbls[0]} flds_holder={Str.flds_holder[0]} />
                             </div>
                             <div className="flds">
-                                <NumField flds_lbls={Data.flds_lbls[1]} flds_holder={Data.flds_holder[1]} />
+                                <NumField flds_lbls={Str.flds_lbls[1]} flds_holder={Str.flds_holder[1]} />
                             </div>
                             <div className="flds">
-                                <NumField flds_lbls={Data.flds_lbls[2]} flds_holder={Data.flds_holder[2]} />
+                                <NumField flds_lbls={Str.flds_lbls[2]} flds_holder={Str.flds_holder[2]} />
                             </div>
                             <div className="flds">
                                 <SelectOp ops={op_drtn.lngs} name={op_lngs.name} clss={op_drtn.clss} />
@@ -76,13 +80,13 @@ const Ss1_1 = () => {
             <div className="grd_bottom_nav">
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
-                        <BtnNavBack text_btn={Data.btns[0]} />
+                        <BtnNavBack text_btn={btns.lbl[0]} />
                     </div>
                     <div className="grd_btm_center">
                         <div id="audio" className="audioplayer"></div>
                     </div>
                     <div className="grd_btm_right">
-                        <BtnNavNext text_btn={Data.btns[1]} />
+                        <BtnNavNext text_btn={btns.lbl[1]} />
                     </div>
                 </div>
             </div>

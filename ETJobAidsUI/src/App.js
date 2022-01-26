@@ -12,6 +12,7 @@ import Ss1_5 from "./pages/ss1_5"
 import Ss1_6 from "./pages/ss1_6"
 import Ss2 from "./pages/ss2"
 import Ss3 from "./pages/ss3"
+import Ss4 from "./pages/ss4"
 const name = 'John'
 const element = <p>Hello {name}</p>
 
@@ -35,6 +36,7 @@ const App = () => {
         <Route path="Ss1_6" element={<Ss1_6 />} />
         <Route path="Ss2" element={<Ss2 />} />
         <Route path="Ss3" element={<Ss3 />} />
+        <Route path="Ss4" element={<Ss4 />} />
       </Routes>
     </div>
   )

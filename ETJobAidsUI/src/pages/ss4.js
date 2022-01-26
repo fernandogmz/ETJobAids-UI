@@ -7,19 +7,15 @@ import { Link } from "react-router-dom"
 
 
 
-const Init1 = () => {
+const Ss4 = () => {
     let op_lngs ={
         name: 'languages',
         clss:'lang_select',
         lngs: ['English', 'Spanish', 'Portuguese', 'French']
     }
 
-    let Str = {
-        title: 'Welcome'
-    }
-
     let btns = {
-        lbl: 'next'
+        lbl: ['back', 'next']
     }
 
     return (
@@ -35,12 +31,9 @@ const Init1 = () => {
                 </div>
             </div>
             <div className="grd_cont">
-                <div className="int1">
+                <div className="ss4">
                     <div className="grd_line1 ">
-                        <h1 className="slide_in_blurred_top">{Str.title}</h1>
-                    </div>
-                    <div className="grd_line2">
-                        <div className="content_video slide_in_blurred_bottom">
+                    <div className="content_video slide_in_blurred_bottom">
                             <iframe id="c_video"
                                 src="https://www.youtube.com/embed/tgbNymZ7vqY?wmode=transparent&amp;autoplay=0&amp;autohide=0"
                                 frameborder="0"></iframe>
@@ -51,17 +44,15 @@ const Init1 = () => {
             <div className="grd_bottom_nav">
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
-
+                        <BtnNavBack text_btn={btns.lbl[0]} />
                     </div>
                     <div className="grd_btm_center"></div>
                     <div className="grd_btm_right">
-                        <Link to="Init_2">
-                            <BtnNavNext text_btn={btns.lbl} />
-                        </Link>
+                        <BtnNavNext text_btn={btns.lbl[1]} />
                     </div>
                 </div>
             </div>
         </div>
     )
 }
-export default Init1;
+export default Ss4;
