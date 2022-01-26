@@ -22,7 +22,7 @@ const Ss1_1 = () => {
 
     let op_drtn = {
         name: 'languages',
-        clss:'lang_select',
+        clss:'custom_select',
         lngs: ['6 months', '1 Year', '2 Years', '3 Years', '4 Years', '5 Years']
     }
 
@@ -67,7 +67,7 @@ const Ss1_1 = () => {
                                 <NumField flds_lbls={Data.flds_lbls[2]} flds_holder={Data.flds_holder[2]} />
                             </div>
                             <div className="flds">
-                                <SelectOp ops={op_drtn.lngs} name={op_lngs.name} clss={op_lngs.clss} />
+                                <SelectOp ops={op_drtn.lngs} name={op_lngs.name} clss={op_drtn.clss} />
                             </div>
                         </div>
                     </div>
