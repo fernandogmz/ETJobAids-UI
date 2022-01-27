@@ -2,9 +2,8 @@ import React, { Component } from "react"
 
 export default function Btn(props) {
     return (
-        <div className="btn_back slide_in_blurred_left">
+        <div className="btn slide_in_blurred_left">
             {props.text_btn}
-            <i className="fa fa-arrow-left"></i>
         </div>
     )
 }

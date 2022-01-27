@@ -1,8 +1,8 @@
 import React from "react"
 import SelectOp from '../components/selectOp'
-import LogOut from '../components/btns/log_out'
-import BtnNavBack from '../components/btns/BtnNavBack'
-import BtnNavNext from '../components/btns/BtnNavNext'
+import LogOut from '../components/btns/logOut'
+import BtnNavBack from '../components/btns/btnNavBack'
+import BtnNavNext from '../components/btns/btnNavNext'
 import { ReactComponent as Lady_01 } from '../assets/images/hero/female/lady_01.svg'
 import { ReactComponent as Lady_02 } from '../assets/images/hero/female/lady_02.svg'
 import { ReactComponent as Lady_03 } from '../assets/images/hero/female/lady_03.svg'

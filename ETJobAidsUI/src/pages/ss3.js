@@ -1,9 +1,9 @@
 import React from "react"
 import SelectOp from '../components/selectOp'
-import LogOut from '../components/btns/log_out'
+import LogOut from '../components/btns/logOut'
 import Btn from '../components/btns/btns'
-import BtnNavBack from '../components/btns/BtnNavBack'
-import BtnNavNext from '../components/btns/BtnNavNext'
+import BtnNavBack from '../components/btns/btnNavBack'
+import BtnNavNext from '../components/btns/btnNavNext'
 import TextField from '../components/textField'
 import NumField from '../components/numField'
 import { ReactComponent as Tra } from '../assets/images/goals/tractor.svg'

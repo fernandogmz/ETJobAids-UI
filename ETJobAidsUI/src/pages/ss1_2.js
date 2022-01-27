@@ -1,19 +1,15 @@
 import React from "react"
 import SelectOp from '../components/selectOp'
-import LogOut from '../components/btns/log_out'
-import BtnNavBack from '../components/btns/BtnNavBack'
-import BtnNavNext from '../components/btns/BtnNavNext'
+import LogOut from '../components/btns/logOut'
+import BtnNavBack from '../components/btns/btnNavBack'
+import BtnNavNext from '../components/btns/btnNavNext'
 import { ReactComponent as Male01 } from '../assets/images/hero/male/male_01.svg'
 import { ReactComponent as Male02 } from '../assets/images/hero/male/male_02.svg'
 import { ReactComponent as Male03 } from '../assets/images/hero/male/male_03.svg'
 import { ReactComponent as MaleHide } from '../assets/images/hero/male/male_hide.svg'
-import { useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 const Ss1_2 = () => {
-    const navigate = useNavigate();
-    const handleClickBack = () => {
-        navigate("/Init1");
-    }
 
     let op_lngs = {
         name: 'languages',
@@ -49,7 +45,9 @@ const Ss1_2 = () => {
                         <div>
                             <div>
                                 <div className="slide_in_blurred_left">
-                                    <Male01 />
+                                    <Link to={"/Ss1_3"}>
+                                        <Male01 />
+                                    </Link>
                                 </div>
                             </div>
                             <div>
@@ -74,14 +72,14 @@ const Ss1_2 = () => {
             <div className="grd_bottom_nav">
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
-                        <BtnNavBack text_btn={Str.btns[0]} />
+                        <Link to={"/Ss1_1"}>
+                            <BtnNavBack text_btn={Str.btns[0]} />
+                        </Link>
                     </div>
                     <div className="grd_btm_center">
                         <div id="audio" className="audioplayer"></div>
                     </div>
-                    <div className="grd_btm_right">
-                        <BtnNavNext text_btn={Str.btns[1]} />
-                    </div>
+                    <div className="grd_btm_right"></div>
                 </div>
             </div>
         </div>

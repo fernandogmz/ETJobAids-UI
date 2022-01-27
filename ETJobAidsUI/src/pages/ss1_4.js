@@ -1,20 +1,16 @@
 import React from "react"
 import SelectOp from '../components/selectOp'
-import LogOut from '../components/btns/log_out'
-import BtnNavBack from '../components/btns/BtnNavBack'
-import BtnNavNext from '../components/btns/BtnNavNext'
-import Quantity from '../components/btns/quantity'
+import LogOut from '../components/btns/logOut'
+import BtnNavBack from '../components/btns/btnNavBack'
+import BtnNavNext from '../components/btns/btnNavNext'
+import Quantity from '../components/btns/Quantity'
 import { ReactComponent as Kid01 } from '../assets/images/hero/kids/kid_01.svg'
 import { ReactComponent as Kid02 } from '../assets/images/hero/kids/kid_02.svg'
 import { ReactComponent as Kid03 } from '../assets/images/hero/kids/kid_04.svg'
 import { ReactComponent as Kid04 } from '../assets/images/hero/kids/kid_hide.svg'
-import { useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 const Ss1_4 = () => {
-    const navigate = useNavigate();
-    const handleClickBack = () => {
-        navigate("/Init1");
-    }
 
     let op_lngs = {
         name: 'languages',
@@ -67,12 +63,6 @@ const Ss1_4 = () => {
                                 </div>
                                 <Quantity />
                             </div>
-                            <div>
-                                <div className="slide_in_blurred_right">
-                                    <Kid04 />
-                                </div>
-                                <Quantity />
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -80,13 +70,17 @@ const Ss1_4 = () => {
             <div className="grd_bottom_nav">
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
-                        <BtnNavBack text_btn={btns.lbl[0]} />
+                        <Link to={"/Ss1_3"}>
+                            <BtnNavBack text_btn={btns.lbl[0]} />
+                        </Link>
                     </div>
                     <div className="grd_btm_center">
                         <div id="audio" className="audioplayer"></div>
                     </div>
                     <div className="grd_btm_right">
-                        <BtnNavNext text_btn={btns.lbl[1]} />
+                        <Link to={"/Ss1_5"}>
+                            <BtnNavNext text_btn={btns.lbl[1]} />
+                        </Link>
                     </div>
                 </div>
             </div>

@@ -1,13 +1,12 @@
 import React from "react"
 import SelectOp from '../components/selectOp'
-import LogOut from '../components/btns/log_out'
-import BtnNavBack from '../components/btns/BtnNavBack'
-import BtnNavNext from '../components/btns/BtnNavNext'
+import LogOut from '../components/btns/logOut'
+import BtnNavBack from '../components/btns/btnNavBack'
+import BtnNavNext from '../components/btns/btnNavNext'
 import { Link } from "react-router-dom"
 
-
-
 const Ss4 = () => {
+    
     let op_lngs ={
         name: 'languages',
         clss:'lang_select',

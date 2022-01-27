@@ -1,18 +1,14 @@
 import React from "react"
 import SelectOp from '../components/selectOp'
-import LogOut from '../components/btns/log_out'
-import BtnNavBack from '../components/btns/BtnNavBack'
-import BtnNavNext from '../components/btns/BtnNavNext'
+import LogOut from '../components/btns/logOut'
+import BtnNavBack from '../components/btns/btnNavBack'
+import BtnNavNext from '../components/btns/btnNavNext'
 import TextField from '../components/textField'
 import NumField from '../components/numField'
 import { ReactComponent as Lady01 } from '../assets/images/hero/female/lady_01.svg'
-import { useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 const Ss1_1 = () => {
-    const navigate = useNavigate();
-    const handleClickBack = () => {
-        navigate("/Init1");
-    }
 
     let op_lngs = {
         name: 'languages',
@@ -72,13 +68,17 @@ const Ss1_1 = () => {
             <div className="grd_bottom_nav">
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
-                        <BtnNavBack text_btn={btns.lbl[0]} />
+                        <Link to={"/Ss1"}>
+                            <BtnNavBack text_btn={btns.lbl[0]} />
+                        </Link>
                     </div>
                     <div className="grd_btm_center">
                         <div id="audio" className="audioplayer"></div>
                     </div>
                     <div className="grd_btm_right">
-                        <BtnNavNext text_btn={btns.lbl[1]} />
+                        <Link to={"/Ss1_2"}>
+                            <BtnNavNext text_btn={btns.lbl[1]} />
+                        </Link>
                     </div>
                 </div>
             </div>

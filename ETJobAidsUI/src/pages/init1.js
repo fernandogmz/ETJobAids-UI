@@ -1,8 +1,8 @@
 import React from "react"
 import SelectOp from '../components/selectOp'
-import LogOut from '../components/btns/log_out'
-import BtnNavBack from '../components/btns/BtnNavBack'
-import BtnNavNext from '../components/btns/BtnNavNext'
+import LogOut from '../components/btns/logOut'
+import BtnNavBack from '../components/btns/btnNavBack'
+import BtnNavNext from '../components/btns/btnNavNext'
 import { Link } from "react-router-dom"
 
 
@@ -55,7 +55,7 @@ const Init1 = () => {
                     </div>
                     <div className="grd_btm_center"></div>
                     <div className="grd_btm_right">
-                        <Link to="Init_2">
+                        <Link to={"/Init_2"}>
                             <BtnNavNext text_btn={btns.lbl} />
                         </Link>
                     </div>

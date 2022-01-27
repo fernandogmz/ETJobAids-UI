@@ -706,7 +706,7 @@
         .ss1_5 {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 150px 1fr 50px 1fr;
+            grid-template-rows: 150px auto 50px 1fr;
             grid-auto-columns: 1fr;
             grid-auto-rows: 1fr;
             gap: 0px 0px;
@@ -782,7 +782,17 @@
                 padding-top: 32px;
                 grid-area: grd_line4;
 
-                .btn_go {
+                div {
+                    float: left;
+
+                    &:nth-child(1n) {
+                        margin-right: 4px;
+                    }
+
+                    &:nth-child(2n) {
+                        margin-left: 4px;
+                    }
+
 
                     @media screen and (max-width: $small) {
                         width: 12rem;

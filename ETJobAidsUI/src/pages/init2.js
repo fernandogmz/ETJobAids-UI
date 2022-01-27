@@ -1,17 +1,13 @@
 import React from "react"
 import SelectOp from '../components/selectOp'
-import LogOut from '../components/btns/log_out'
-import BtnNavBack from '../components/btns/BtnNavBack'
-import BtnNavNext from '../components/btns/BtnNavNext'
+import LogOut from '../components/btns/logOut'
+import BtnNavBack from '../components/btns/btnNavBack'
+import BtnNavNext from '../components/btns/btnNavNext'
 import { ReactComponent as ByMySelft } from '../assets/images/By_myself.svg'
 import { ReactComponent as WithMyHusband } from '../assets/images/with_my_husband.svg'
-import { useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 const Init2 = () => {
-    const navigate = useNavigate();
-    const handleClickBack = () => {
-        navigate("/Init1");
-    }
 
     let op_lngs = {
         name: 'languages',
@@ -75,11 +71,15 @@ const Init2 = () => {
             <div className="grd_bottom_nav">
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
-                        <BtnNavBack text_btn={btns.lbl[0]} />
+                        <Link to={"/"}>
+                            <BtnNavBack text_btn={btns.lbl[0]} />
+                        </Link>
                     </div>
                     <div className="grd_btm_center"></div>
                     <div className="grd_btm_right">
-                        <BtnNavNext text_btn={btns.lbl[1]} />
+                        <Link to={"/Init_3"}>
+                            <BtnNavNext text_btn={btns.lbl[1]} />
+                        </Link>
                     </div>
                 </div>
             </div>

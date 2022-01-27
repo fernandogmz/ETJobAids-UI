@@ -1,21 +1,17 @@
 import React from "react"
 import SelectOp from '../components/selectOp'
-import LogOut from '../components/btns/log_out'
-import BtnNavBack from '../components/btns/BtnNavBack'
-import BtnNavNext from '../components/btns/BtnNavNext'
+import LogOut from '../components/btns/logOut'
+import BtnNavBack from '../components/btns/btnNavBack'
+import BtnNavNext from '../components/btns/btnNavNext'
 import { ReactComponent as NewUser } from '../assets/images/new_user.svg'
 import { ReactComponent as ReturningUser } from '../assets/images/returning_user.svg'
-import { useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 const Init2 = () => {
-    const navigate = useNavigate();
-    const handleClickBack = () => {
-        navigate("/Init1");
-    }
 
-    let op_lngs ={
+    let op_lngs = {
         name: 'languages',
-        clss:'lang_select',
+        clss: 'lang_select',
         lngs: ['English', 'Spanish', 'Portuguese', 'French']
     }
 
@@ -50,7 +46,9 @@ const Init2 = () => {
                         <div>
                             <div>
                                 <div className="slide_in_blurred_left">
-                                    <NewUser />
+                                    <Link to={"/Ss1"}>
+                                        <NewUser />
+                                    </Link>
                                 </div>
                                 <div className="tracking_in_expand">
                                     <h2>{Str.cta1}</h2>
@@ -71,12 +69,12 @@ const Init2 = () => {
             <div className="grd_bottom_nav">
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
-                        <BtnNavBack text_btn={btns.lbl[0]} />
+                        <Link to={"/Init_2"}>
+                            <BtnNavBack text_btn={btns.lbl[0]} />
+                        </Link>
                     </div>
                     <div className="grd_btm_center"></div>
-                    <div className="grd_btm_right">
-                        <BtnNavNext text_btn={btns.lbl[1]} />
-                    </div>
+                    <div className="grd_btm_right"></div>
                 </div>
             </div>
         </div>

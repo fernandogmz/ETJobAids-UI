@@ -1,12 +1,13 @@
 import React from "react"
 import SelectOp from '../components/selectOp'
-import LogOut from '../components/btns/log_out'
-import BtnNavBack from '../components/btns/BtnNavBack'
-import BtnNavNext from '../components/btns/BtnNavNext'
+import LogOut from '../components/btns/logOut'
+import BtnNavBack from '../components/btns/btnNavBack'
+import BtnNavNext from '../components/btns/btnNavNext'
 import { ReactComponent as Lady01 } from '../assets/images/hero/female/lady_01.svg'
 import { ReactComponent as Lady02 } from '../assets/images/hero/female/lady_02.svg'
 import { ReactComponent as Lady03 } from '../assets/images/hero/female/lady_03.svg'
 import { useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 const Ss1 = () => {
     const navigate = useNavigate();
@@ -65,7 +66,9 @@ const Ss1 = () => {
                             </div>
                             <div>
                                 <div className="slide_in_blurred_right">
+                                <Link to={"/Ss1_1"}>
                                     <Lady03 />
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -75,14 +78,14 @@ const Ss1 = () => {
             <div className="grd_bottom_nav">
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
-                        <BtnNavBack text_btn={btns.lbl[0]} />
+                        <Link to={"/Init_3"}>
+                            <BtnNavBack text_btn={btns.lbl[0]} />
+                        </Link>
                     </div>
                     <div className="grd_btm_center">
                         <div id="audio" className="audioplayer"></div>
                     </div>
-                    <div className="grd_btm_right">
-                        <BtnNavNext text_btn={btns.lbl[1]} />
-                    </div>
+                    <div className="grd_btm_right"></div>
                 </div>
             </div>
         </div>

@@ -9,7 +9,8 @@
 'components/buttons.scss',
 'components/btn_logout.scss',
 'components/text_field.scss',
-'components/quantity.scss';
+'components/quantity.scss',
+'components/radio_button.scss';
 
 @import 'layouts/home_screen.scss',
 'layouts/lyts.scss';
@@ -34,6 +35,10 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 html,
