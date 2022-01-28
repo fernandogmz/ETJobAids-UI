@@ -1,6 +1,7 @@
 import React from "react"
 import SelectOp from '../components/selectOp'
 import LogOut from '../components/btns/logOut'
+import BtnNavBack from '../components/btns/btnNavBack'
 import { ReactComponent as Done } from '../assets/images/icons/done.svg'
 import { ReactComponent as Clear } from '../assets/images/icons/clear.svg'
 import { ReactComponent as Lady_01 } from '../assets/images/hero/female/lady_01.svg'
@@ -13,11 +14,10 @@ import { ReactComponent as Kid_01 } from '../assets/images/hero/kids/kid_01.svg'
 import { ReactComponent as Kid_02 } from '../assets/images/hero/kids/kid_02.svg'
 import { ReactComponent as Kid_02my } from '../assets/images/hero/kids/kid_02my.svg'
 import { ReactComponent as Kid_04 } from '../assets/images/hero/kids/kid_04.svg'
-import { ReactComponent as Mp3 } from '../assets/images/mp3.svg'
 import { Link } from "react-router-dom"
 
 
-const Ss8_1 = () => {
+const Ss8_1_2 = () => {
 
     let op_lngs = {
         name: 'languages',
@@ -26,7 +26,7 @@ const Ss8_1 = () => {
     }
 
     let Str = {
-        title: "Are you currently using a family planning method?",
+        title: "Are you satisfied with your method? ",
         sbttl: ""
     }
 
@@ -47,17 +47,17 @@ const Ss8_1 = () => {
                 </div>
             </div>
             <div className="grd_cont">
-                <div className="ss8_2">
+                <div className="ss8_1_2">
                     <div className="grd_left">
                         <div className="cont">
                         <h1 className="slide_in_blurred_left">{Str.title}</h1>
                             <div className="circle">
-                                <Link to={"/Ss8_2_1"}>
+                                <Link to={"/Ss8_1_3"}>
                                     <Done />
                                 </Link>
                             </div>
                             <div className="circle">
-                                <Link to={"/Ss8_2_3"}>
+                                <Link to={"/Ss8_1_4"}>
                                     <Clear />
                                 </Link>
                             </div>
@@ -88,9 +88,7 @@ const Ss8_1 = () => {
                     <div className="grd_btm_left">
                     </div>
                     <div className="grd_btm_center">
-                        <div id="audio" className="audioplayer">
-                            <Mp3/>
-                        </div>
+                        <div id="audio" className="audioplayer"></div>
                     </div>
                     <div className="grd_btm_right"></div>
                 </div>
@@ -98,4 +96,4 @@ const Ss8_1 = () => {
         </div>
     )
 }
-export default Ss8_1;
+export default Ss8_1_2;

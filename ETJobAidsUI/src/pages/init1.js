@@ -1,7 +1,6 @@
 import React from "react"
 import SelectOp from '../components/selectOp'
 import LogOut from '../components/btns/logOut'
-import BtnNavBack from '../components/btns/btnNavBack'
 import BtnNavNext from '../components/btns/btnNavNext'
 import { Link } from "react-router-dom"
 

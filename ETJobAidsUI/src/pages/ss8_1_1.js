@@ -11,7 +11,7 @@ import { ReactComponent as Method_3 } from '../assets/images/family_planning_met
 import { Link } from "react-router-dom"
 
 
-const Ss8_2_1 = () => {
+const Ss8_1_1 = () => {
 
     let op_lngs = {
         name: 'languages',
@@ -40,41 +40,41 @@ const Ss8_2_1 = () => {
                 </div>
             </div>
             <div className="grd_cont">
-                <div className="ss8_2_1">
+                <div className="ss8_1_1">
                     <div className="grd_line1">
                         <h1>{Str.title}</h1>
                     </div>
                     <div className="grd_line2">
                         <div class="grd_top">
                             <div className="slide_in_blurred_left">
-                                <Link to={"/Ss8_2_2"}>
+                                <Link to={"/Ss8_1_2"}>
                                     <Method_5 />
                                 </Link>
                             </div>
                             <div className="slide_in_blurred_right">
-                                <Link to={"/Ss8_2_2"}>
+                                <Link to={"/Ss8_1_2"}>
                                     <Method_1 />
                                 </Link>
                             </div>
                             <div className="slide_in_blurred_right">
-                                <Link to={"/Ss8_2_2"}>
+                                <Link to={"/Ss8_1_2"}>
                                     <Method_4 />
                                 </Link>
                             </div>
                         </div>
                         <div class="grd_bttm">
                             <div className="slide_in_blurred_left">
-                                <Link to={"/Ss8_2_2"}>
+                                <Link to={"/Ss8_1_2"}>
                                     <Method_6 />
                                 </Link>
                             </div>
                             <div className="slide_in_blurred_right">
-                                <Link to={"/Ss8_2_2"}>
+                                <Link to={"/Ss8_1_2"}>
                                     <Method_2 />
                                 </Link>
                             </div>
                             <div className="slide_in_blurred_right">
-                                <Link to={"/Ss8_2_2"}>
+                                <Link to={"/Ss8_1_2"}>
                                     <Method_3 />
                                 </Link>
                             </div>
@@ -85,7 +85,7 @@ const Ss8_2_1 = () => {
             <div className="grd_bottom_nav">
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
-                        <Link to={"/Ss8_2"}>
+                        <Link to={"/Ss8_1"}>
                             <BtnNavBack text_btn={btns.lbl[0]} />
                         </Link>
                     </div>
@@ -99,4 +99,4 @@ const Ss8_2_1 = () => {
         </div>
     )
 }
-export default Ss8_2_1;
+export default Ss8_1_1;

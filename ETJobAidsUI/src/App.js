@@ -18,13 +18,16 @@ import Ss6 from "./pages/ss6"
 import Ss7 from "./pages/ss7"
 import Ss8 from "./pages/ss8"
 import Ss8_1 from "./pages/ss8_1"
+import Ss8_1_1 from "./pages/ss8_1_1"
+import Ss8_1_2 from "./pages/ss8_1_2"
+import Ss8_1_3 from "./pages/ss8_1_3"
+import Ss8_1_4 from "./pages/ss8_1_4"
+import Ss8_1_5 from "./pages/ss8_1_5"
 import Ss8_2 from "./pages/ss8_2"
 import Ss8_2_1 from "./pages/ss8_2_1"
+import Ss8_2_2 from "./pages/ss8_2_2"
 import Ss8_2_3 from "./pages/ss8_2_3"
-const name = 'John'
-const element = <p>Hello {name}</p>
-
-
+import Fp1 from "./pages/fp1"
 
 const App = () => {
 
@@ -49,9 +52,16 @@ const App = () => {
         <Route path="Ss7" element={<Ss7 />} />
         <Route path="Ss8" element={<Ss8 />} />
         <Route path="Ss8_1" element={<Ss8_1 />} />
+        <Route path="Ss8_1_1" element={<Ss8_1_1 />} />
+        <Route path="Ss8_1_2" element={<Ss8_1_2 />} />
+        <Route path="Ss8_1_3" element={<Ss8_1_3 />} />
+        <Route path="Ss8_1_4" element={<Ss8_1_4 />} />
+        <Route path="Ss8_1_5" element={<Ss8_1_5 />} />
         <Route path="Ss8_2" element={<Ss8_2 />} />
         <Route path="Ss8_2_1" element={<Ss8_2_1 />} />
+        <Route path="Ss8_2_2" element={<Ss8_2_2 />} />
         <Route path="Ss8_2_3" element={<Ss8_2_3 />} />
+        <Route path="Fp1" element={<Fp1/>} />
       </Routes>
     </div>
   )

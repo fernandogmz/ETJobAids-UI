@@ -14,6 +14,7 @@ import { ReactComponent as Kid_01 } from '../assets/images/hero/kids/kid_01.svg'
 import { ReactComponent as Kid_02 } from '../assets/images/hero/kids/kid_02.svg'
 import { ReactComponent as Kid_02my } from '../assets/images/hero/kids/kid_02my.svg'
 import { ReactComponent as Kid_04 } from '../assets/images/hero/kids/kid_04.svg'
+import { ReactComponent as Mp3 } from '../assets/images/mp3.svg'
 import { Link } from "react-router-dom"
 
 
@@ -90,7 +91,9 @@ const Ss8 = () => {
                         </Link>
                     </div>
                     <div className="grd_btm_center">
-                        <div id="audio" className="audioplayer"></div>
+                        <div id="audio" className="audioplayer">
+                            <Mp3/>
+                        </div>
                     </div>
                     <div className="grd_btm_right"></div>
                 </div>

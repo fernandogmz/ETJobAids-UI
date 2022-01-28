@@ -3,6 +3,7 @@ import SelectOp from '../components/selectOp'
 import LogOut from '../components/btns/logOut'
 import BtnNavBack from '../components/btns/btnNavBack'
 import BtnNavNext from '../components/btns/btnNavNext'
+import { ReactComponent as Mp3 } from '../assets/images/mp3.svg'
 import { Link } from "react-router-dom"
 
 const Ss5 = () => {
@@ -43,7 +44,9 @@ const Ss5 = () => {
                             <BtnNavBack text_btn={btns.lbl[0]} />
                         </Link>
                     </div>
-                    <div className="grd_btm_center"></div>
+                    <div className="grd_btm_center">
+                        <Mp3/>
+                    </div>
                     <div className="grd_btm_right">
                         <Link to={"/Ss6"}>
                             <BtnNavNext text_btn={btns.lbl[1]} />

@@ -2,6 +2,7 @@ import React from "react"
 import SelectOp from '../components/selectOp'
 import LogOut from '../components/btns/logOut'
 import Btn from '../components/btns/btn'
+import { ReactComponent as Mp3 } from '../assets/images/mp3.svg'
 import { Link } from "react-router-dom"
 
 const Ss8_2_3 = () => {
@@ -69,7 +70,9 @@ const Ss8_2_3 = () => {
                     <div className="grd_btm_left">
 
                     </div>
-                    <div className="grd_btm_center"></div>
+                    <div className="grd_btm_center">
+                        <Mp3/>
+                    </div>
                     <div className="grd_btm_right">
                         <Link to={"/"}>
                             <Btn text_btn={btns.lbl} />

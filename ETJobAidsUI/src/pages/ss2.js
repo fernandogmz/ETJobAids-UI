@@ -3,6 +3,7 @@ import SelectOp from '../components/selectOp'
 import LogOut from '../components/btns/logOut'
 import BtnNavBack from '../components/btns/btnNavBack'
 import BtnNavNext from '../components/btns/btnNavNext'
+import { ReactComponent as Mp3 } from '../assets/images/mp3.svg'
 import { Link } from "react-router-dom"
 
 
@@ -45,7 +46,9 @@ const Ss2 = () => {
                         </Link>
                     </div>
                     <div className="grd_btm_center">
-                        <div id="audio" className="audioplayer"></div>
+                        <div id="audio" className="audioplayer">
+                            <Mp3/>
+                        </div>
                     </div>
                     <div className="grd_btm_right">
                         <Link to={"/Ss3"}>

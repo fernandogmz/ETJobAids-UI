@@ -7,6 +7,7 @@ import { ReactComponent as Male01 } from '../assets/images/hero/male/male_01.svg
 import { ReactComponent as Male02 } from '../assets/images/hero/male/male_02.svg'
 import { ReactComponent as Male03 } from '../assets/images/hero/male/male_03.svg'
 import { ReactComponent as MaleHide } from '../assets/images/hero/male/male_hide.svg'
+import { ReactComponent as Mp3 } from '../assets/images/mp3.svg'
 import { Link } from "react-router-dom"
 
 const Ss1_2 = () => {
@@ -77,7 +78,9 @@ const Ss1_2 = () => {
                         </Link>
                     </div>
                     <div className="grd_btm_center">
-                        <div id="audio" className="audioplayer"></div>
+                        <div id="audio" className="audioplayer">
+                            <Mp3 />
+                        </div>
                     </div>
                     <div className="grd_btm_right"></div>
                 </div>
