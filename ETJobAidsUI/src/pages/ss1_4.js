@@ -3,7 +3,7 @@ import SelectOp from '../components/selectOp'
 import LogOut from '../components/btns/logOut'
 import BtnNavBack from '../components/btns/btnNavBack'
 import BtnNavNext from '../components/btns/btnNavNext'
-import Quantity from '../components/btns/Quantity'
+import Quantity from '../components/btns/quantity'
 import { ReactComponent as Kid01 } from '../assets/images/hero/kids/kid_01.svg'
 import { ReactComponent as Kid02 } from '../assets/images/hero/kids/kid_02.svg'
 import { ReactComponent as Kid03 } from '../assets/images/hero/kids/kid_04.svg'
@@ -14,7 +14,7 @@ const Ss1_4 = () => {
 
     let op_lngs = {
         name: 'languages',
-        clss: 'lang_select',
+        clss: 'custom_select',
         lngs: ['English', 'Spanish', 'Portuguese', 'French']
     }
 

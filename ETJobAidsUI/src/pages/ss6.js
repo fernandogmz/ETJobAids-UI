@@ -3,23 +3,14 @@ import SelectOp from '../components/selectOp'
 import LogOut from '../components/btns/logOut'
 import BtnNavBack from '../components/btns/btnNavBack'
 import BtnNavNext from '../components/btns/btnNavNext'
-import { ReactComponent as ByMySelft } from '../assets/images/By_myself.svg'
-import { ReactComponent as WithMyHusband } from '../assets/images/with_my_husband.svg'
 import { Link } from "react-router-dom"
 
-const Init2 = () => {
+const Ss6 = () => {
 
     let op_lngs = {
         name: 'languages',
         clss: 'custom_select',
         lngs: ['English', 'Spanish', 'Portuguese', 'French']
-    }
-
-    let Str = {
-        title: 'Are you here by yourself?',
-        subtitle: '',
-        cta1: 'By myself',
-        cta2: 'With my husband'
     }
 
     let btns = {
@@ -39,28 +30,12 @@ const Init2 = () => {
                 </div>
             </div>
             <div className="grd_cont">
-                <div className="int2">
+                <div className="ss4">
                     <div className="grd_line1 ">
-                        <h1 className="slide_in_blurred_top">{Str.title}</h1>
-                    </div>
-                    <div className="grd_line2">
-                        <div>
-                            <div>
-                                <div className="slide_in_blurred_left">
-                                    <ByMySelft />
-                                </div>
-                                <div className="tracking_in_expand">
-                                    <h2>{Str.cta1}</h2>
-                                </div>
-                            </div>
-                            <div>
-                                <div className="slide_in_blurred_right">
-                                    <WithMyHusband />
-                                </div>
-                                <div className="tracking_in_expand">
-                                    <h2>{Str.cta2}</h2>
-                                </div>
-                            </div>
+                        <div className="content_video slide_in_blurred_bottom">
+                            <iframe id="c_video"
+                                src="https://www.youtube.com/embed/tgbNymZ7vqY?wmode=transparent&amp;autoplay=0&amp;autohide=0"
+                                frameborder="0"></iframe>
                         </div>
                     </div>
                 </div>
@@ -68,13 +43,13 @@ const Init2 = () => {
             <div className="grd_bottom_nav">
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
-                        <Link to={"/"}>
+                        <Link to={"/Ss5"}>
                             <BtnNavBack text_btn={btns.lbl[0]} />
                         </Link>
                     </div>
                     <div className="grd_btm_center"></div>
                     <div className="grd_btm_right">
-                        <Link to={"/Init_3"}>
+                        <Link to={"/Ss7"}>
                             <BtnNavNext text_btn={btns.lbl[1]} />
                         </Link>
                     </div>
@@ -83,4 +58,4 @@ const Init2 = () => {
         </div>
     )
 }
-export default Init2;
+export default Ss6;

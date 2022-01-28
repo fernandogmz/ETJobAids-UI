@@ -3,28 +3,19 @@ import SelectOp from '../components/selectOp'
 import LogOut from '../components/btns/logOut'
 import BtnNavBack from '../components/btns/btnNavBack'
 import BtnNavNext from '../components/btns/btnNavNext'
-import { ReactComponent as Lady01 } from '../assets/images/hero/female/lady_01.svg'
-import { ReactComponent as Lady02 } from '../assets/images/hero/female/lady_02.svg'
-import { ReactComponent as Lady03 } from '../assets/images/hero/female/lady_03.svg'
-import { useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom"
 
-const Ss1 = () => {
-    const navigate = useNavigate();
-    const handleClickBack = () => {
-        navigate("/Init1");
-    }
+
+const Ss2 = () => {
 
     let op_lngs = {
         name: 'languages',
-        clss: 'lang_select',
+        clss: 'custom_select',
         lngs: ['English', 'Spanish', 'Portuguese', 'French']
     }
 
     let Str = {
-        title: "Let's start by learning a litle bit more about you!",
-        subtitle: 'Select an avatar the describes your personality',
-        cta1: 'New user',
-        cta2: 'Returning user'
+        title: "SS2 - Selectyour goals"
     }
 
     let btns = {
@@ -44,24 +35,26 @@ const Ss1 = () => {
                 </div>
             </div>
             <div className="grd_cont">
-                <div className="ss2">
-
-                </div>
+                <div className="ss2">{Str.title}</div>
             </div>
             <div className="grd_bottom_nav">
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
-                        <BtnNavBack text_btn={Str.btns[0]} />
+                        <Link to={"/Ss1_6"}>
+                            <BtnNavBack text_btn={btns.lbl[0]} />
+                        </Link>
                     </div>
                     <div className="grd_btm_center">
                         <div id="audio" className="audioplayer"></div>
                     </div>
                     <div className="grd_btm_right">
-                        <BtnNavNext text_btn={btns.lbl[1]} />
+                        <Link to={"/Ss3"}>
+                            <BtnNavNext text_btn={btns.lbl[1]} />
+                        </Link>
                     </div>
                 </div>
             </div>
         </div>
     )
 }
-export default Ss1;
+export default Ss2;

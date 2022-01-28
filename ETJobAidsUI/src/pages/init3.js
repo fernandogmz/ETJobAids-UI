@@ -11,7 +11,7 @@ const Init2 = () => {
 
     let op_lngs = {
         name: 'languages',
-        clss: 'lang_select',
+        clss: 'custom_select',
         lngs: ['English', 'Spanish', 'Portuguese', 'French']
     }
 

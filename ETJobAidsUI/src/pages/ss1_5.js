@@ -1,7 +1,7 @@
 import React from "react"
 import SelectOp from '../components/selectOp'
 import LogOut from '../components/btns/logOut'
-import RadioBtn from '../components/btns/radioButton'
+import Btn from '../components/btns/btn'
 import BtnNavBack from '../components/btns/btnNavBack'
 import BtnNavNext from '../components/btns/btnNavNext'
 import { Link } from "react-router-dom"
@@ -10,30 +10,30 @@ const Ss1_5 = () => {
 
     let op_lngs = {
         name: 'languages',
-        clss: 'lang_select',
+        clss: 'custom_select',
         lngs: ['English', 'Spanish', 'Portuguese', 'French']
     }
 
     let op_rgns = {
         name: 'op_rgns',
-        clss: 'lang_select',
+        clss: 'custom_select',
         rgns: ['Region', 'Region', 'Region', 'Region..']
     }
 
 
     let op_zns = {
         name: 'op_rgns',
-        clss: 'lang_select',
+        clss: 'custom_select',
         zone: ['zone', 'zone', 'zone', 'zone..', 'opt_zns']
     }
     let op_dts = {
         name: 'op_rgns',
-        clss: 'lang_select',
+        clss: 'custom_select',
         dstr: ['District', 'District', 'District', 'District..', 'op_dts']
     }
     let op_kbl = {
         name: 'op_rgns',
-        clss: 'lang_select',
+        clss: 'custom_select',
         kbl: ['kebele', 'kebele', 'kebele', 'kebele..', 'op_kbl']
     }
 
@@ -67,20 +67,20 @@ const Ss1_5 = () => {
                         <h1 className="slide_in_blurred_top">{Str.title}</h1>
                     </div>
                     <div className="grd_line2">
-                        <div><SelectOp ops={op_rgns.rgns} name={op_lngs.name} clss={op_lngs.clss} /></div>
-                        <div><SelectOp ops={op_zns.zone} name={op_lngs.name} clss={op_lngs.clss} /></div>
-                        <div><SelectOp ops={op_dts.dstr} name={op_lngs.name} clss={op_lngs.clss} /></div>
-                        <div><SelectOp ops={op_kbl.kbl} name={op_lngs.name} clss={op_lngs.clss} /></div>
+                        <div className="slide_in_blurred_left"><SelectOp ops={op_rgns.rgns} name={op_lngs.name} clss={op_lngs.clss} /></div>
+                        <div className="slide_in_blurred_left"><SelectOp ops={op_zns.zone} name={op_lngs.name} clss={op_lngs.clss} /></div>
+                        <div className="slide_in_blurred_right"><SelectOp ops={op_dts.dstr} name={op_lngs.name} clss={op_lngs.clss} /></div>
+                        <div className="slide_in_blurred_right"><SelectOp ops={op_kbl.kbl} name={op_lngs.name} clss={op_lngs.clss} /></div>
                     </div>
                     <div className="grd_line3">
                         <h2 className="tracking_in_expand">Select your session type</h2>
                     </div>
                     <div className="grd_line4">
                         <div className="slide_in_blurred_left">
-                            <RadioBtn name={radio_btn.name[0]} />
+                            <Btn text_btn={btns.lbl[2]} />
                         </div>
                         <div className="slide_in_blurred_right">
-                            <RadioBtn name={radio_btn.name[1]} />
+                            <Btn text_btn={btns.lbl[3]} />
                         </div>
                     </div>
                 </div>

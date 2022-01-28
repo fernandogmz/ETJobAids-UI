@@ -12,7 +12,7 @@ const Ss1_1 = () => {
 
     let op_lngs = {
         name: 'languages',
-        clss: 'lang_select',
+        clss: 'custom_select',
         lngs: ['English', 'Spanish', 'Portuguese', 'French']
     }
 
@@ -51,14 +51,14 @@ const Ss1_1 = () => {
                     <div class="grd_right">
                         <div className="cont">
                             <h1 className="slide_in_blurred_top">{Str.title}</h1>
-                            <div className="flds">
+                            <div className="flds slide_in_blurred_right">
                                 <TextField flds_lbls={Str.flds_lbls[0]} flds_holder={Str.flds_holder[0]} />
                             </div>
-                            <div className="flds">
+                            <div className="flds slide_in_blurred_right">
                                 <NumField flds_lbls={Str.flds_lbls[1]} flds_holder={Str.flds_holder[1]} />
                             </div>
-                            <div className="qsts">
-                                <h3>{Str.q}</h3>
+                            <div className="qsts slide_in_blurred_right">
+                                <h3 className="tracking_in_expand">{Str.q}</h3>
                                 <TextField flds_holder={Str.flds_holder[2]} />
                             </div>
                         </div>

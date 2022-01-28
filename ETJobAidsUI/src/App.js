@@ -13,13 +13,20 @@ import Ss1_6 from "./pages/ss1_6"
 import Ss2 from "./pages/ss2"
 import Ss3 from "./pages/ss3"
 import Ss4 from "./pages/ss4"
+import Ss5 from "./pages/ss5"
+import Ss6 from "./pages/ss6"
+import Ss7 from "./pages/ss7"
+import Ss8 from "./pages/ss8"
+import Ss8_1 from "./pages/ss8_1"
+import Ss8_2 from "./pages/ss8_2"
+import Ss8_2_1 from "./pages/ss8_2_1"
+import Ss8_2_3 from "./pages/ss8_2_3"
 const name = 'John'
 const element = <p>Hello {name}</p>
 
 
 
 const App = () => {
-  const navigate = useNavigate();
 
   return (
     <div className="App">
@@ -37,6 +44,14 @@ const App = () => {
         <Route path="Ss2" element={<Ss2 />} />
         <Route path="Ss3" element={<Ss3 />} />
         <Route path="Ss4" element={<Ss4 />} />
+        <Route path="Ss5" element={<Ss5 />} />
+        <Route path="Ss6" element={<Ss6 />} />
+        <Route path="Ss7" element={<Ss7 />} />
+        <Route path="Ss8" element={<Ss8 />} />
+        <Route path="Ss8_1" element={<Ss8_1 />} />
+        <Route path="Ss8_2" element={<Ss8_2 />} />
+        <Route path="Ss8_2_1" element={<Ss8_2_1 />} />
+        <Route path="Ss8_2_3" element={<Ss8_2_3 />} />
       </Routes>
     </div>
   )

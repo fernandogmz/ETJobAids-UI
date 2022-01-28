@@ -2,18 +2,13 @@ import React from "react"
 import SelectOp from '../components/selectOp'
 import LogOut from '../components/btns/logOut'
 import BtnNavBack from '../components/btns/btnNavBack'
-import BtnNavNext from '../components/btns/btnNavNext'
-import { ReactComponent as Lady01 } from '../assets/images/hero/female/lady_01.svg'
-import { ReactComponent as Lady02 } from '../assets/images/hero/female/lady_02.svg'
-import { ReactComponent as Lady03 } from '../assets/images/hero/female/lady_03.svg'
-import { useNavigate } from "react-router-dom"
+import { ReactComponent as Method_5 } from '../assets/images/family_planning_methods/effective.svg'
+import { ReactComponent as Method_1 } from '../assets/images/family_planning_methods/quicker.svg'
+import { ReactComponent as Method_4 } from '../assets/images/family_planning_methods/side_effects.svg'
 import { Link } from "react-router-dom"
 
-const Ss1 = () => {
-    const navigate = useNavigate();
-    const handleClickBack = () => {
-        navigate("/Init1");
-    }
+
+const Ss8_2_1 = () => {
 
     let op_lngs = {
         name: 'languages',
@@ -22,10 +17,7 @@ const Ss1 = () => {
     }
 
     let Str = {
-        title: "Let's start by learning a litle bit more about you!",
-        subtitle: 'Select an avatar the describes your personality',
-        cta1: 'New user',
-        cta2: 'Returning user'
+        title: "Which method are you currently using?"
     }
 
     let btns = {
@@ -45,32 +37,39 @@ const Ss1 = () => {
                 </div>
             </div>
             <div className="grd_cont">
-                <div className="ss1">
-                    <div className="grd_line1 ">
-                        <h1 className="slide_in_blurred_top">{Str.title}</h1>
+                <div className="ss8_2_1">
+                    <div className="grd_line1">
+                        <h1>{Str.title}</h1>
                     </div>
                     <div className="grd_line2">
-                        <h2 className="tracking_in_expand">{Str.subtitle}</h2>
-                    </div>
-                    <div className="grd_line3">
-                        <div>
-                            <div>
-                                <div className="slide_in_blurred_left">
-                                    <Lady01 />
-                                </div>
+                        <div className="left">
+                            <div className="slide_in_blurred_left">
+                                <Method_5 />
                             </div>
-                            <div>
-                                <div className="slide_in_blurred_bottom">
-                                    <Lady02 />
-                                </div>
+
+                            <div className="slide_in_blurred_right">
+                                <Method_1 />
                             </div>
-                            <div>
-                                <div className="slide_in_blurred_right">
-                                <Link to={"/Ss1_1"}>
-                                    <Lady03 />
-                                    </Link>
-                                </div>
+
+                            <div className="slide_in_blurred_right">
+                                <Method_4 />
                             </div>
+
+                        </div>
+                        <div className="right">
+
+                            <div className="slide_in_blurred_right">
+                                <Method_5 />
+                            </div>
+
+                            <div className="slide_in_blurred_right">
+                                <Method_5 />
+                            </div>
+
+                            <div className="slide_in_blurred_right">
+                                <Method_5 />
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -78,7 +77,7 @@ const Ss1 = () => {
             <div className="grd_bottom_nav">
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
-                        <Link to={"/Init_3"}>
+                        <Link to={"/Ss7"}>
                             <BtnNavBack text_btn={btns.lbl[0]} />
                         </Link>
                     </div>
@@ -91,4 +90,4 @@ const Ss1 = () => {
         </div>
     )
 }
-export default Ss1;
+export default Ss8_2_1;

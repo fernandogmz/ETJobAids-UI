@@ -1,25 +1,30 @@
 import React from "react"
 import SelectOp from '../components/selectOp'
 import LogOut from '../components/btns/logOut'
-import BtnNavBack from '../components/btns/btnNavBack'
-import BtnNavNext from '../components/btns/btnNavNext'
+import Btn from '../components/btns/btn'
 import { Link } from "react-router-dom"
 
-
-
-const Init1 = () => {
-    let op_lngs ={
+const Ss8_2_3 = () => {
+    let op_lngs = {
         name: 'languages',
-        clss:'custom_select',
+        clss: 'custom_select',
         lngs: ['English', 'Spanish', 'Portuguese', 'French']
     }
 
     let Str = {
-        title: 'Welcome'
+        title: "Thank you for learning about Smart Start! Remember you can always reach out to your provider if you have any questions in the future. Before you go, maybe you'd like to take a look at some of our resources:",
+        sbttl1: "Remember you can always reach out to your provider if you have any questions in the future. Before you go, please take a look at some of our resources",
+        sbttl2: "Your method summary"
+    }
+
+    let op_am = {
+        name: 'amethod',
+        clss: 'custom_select',
+        lngs: ['UID', 'Implant', 'Condoms', 'Injectable', 'pills', 'EC']
     }
 
     let btns = {
-        lbl: 'next'
+        lbl: 'Done'
     }
 
     return (
@@ -30,16 +35,27 @@ const Init1 = () => {
                 </div>
                 <div className="grd_right_top">
                     <div className="select_lang slide_in_blurred_right" tabindex="1">
-                        <SelectOp ops={op_lngs.lngs} name={op_lngs.name} clss={op_lngs.clss}/>
+                        <SelectOp ops={op_lngs.lngs} name={op_lngs.name} clss={op_lngs.clss} />
                     </div>
                 </div>
             </div>
             <div className="grd_cont">
-                <div className="int1">
+                <div className="ss8_2_3">
                     <div className="grd_line1 ">
-                        <h1 className="slide_in_blurred_top">{Str.title}</h1>
+                        <h3 className="slide_in_blurred_top">{Str.title}</h3>
                     </div>
                     <div className="grd_line2">
+                        <p className="tracking_in_expand">{Str.sbttl1}</p>
+                        <div>
+                            <div>
+                                <p className="slide_in_blurred_left">{Str.sbttl2}</p>
+                            </div>
+                            <div className="slide_in_blurred_right">
+                                <SelectOp ops={op_am.lngs} name={op_am.name} clss={op_am.clss} />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="grd_line3">
                         <div className="content_video slide_in_blurred_bottom">
                             <iframe id="c_video"
                                 src="https://www.youtube.com/embed/tgbNymZ7vqY?wmode=transparent&amp;autoplay=0&amp;autohide=0"
@@ -55,8 +71,8 @@ const Init1 = () => {
                     </div>
                     <div className="grd_btm_center"></div>
                     <div className="grd_btm_right">
-                        <Link to={"/Init_2"}>
-                            <BtnNavNext text_btn={btns.lbl} />
+                        <Link to={"/"}>
+                            <Btn text_btn={btns.lbl} />
                         </Link>
                     </div>
                 </div>
@@ -64,4 +80,4 @@ const Init1 = () => {
         </div>
     )
 }
-export default Init1;
+export default Ss8_2_3;
