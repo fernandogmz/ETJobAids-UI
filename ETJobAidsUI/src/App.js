@@ -28,6 +28,7 @@ import Ss8_2_1 from "./pages/ss8_2_1"
 import Ss8_2_2 from "./pages/ss8_2_2"
 import Ss8_2_3 from "./pages/ss8_2_3"
 import Fp1 from "./pages/fp1"
+import Fp2 from "./pages/fp2"
 
 const App = () => {
 
@@ -62,6 +63,7 @@ const App = () => {
         <Route path="Ss8_2_2" element={<Ss8_2_2 />} />
         <Route path="Ss8_2_3" element={<Ss8_2_3 />} />
         <Route path="Fp1" element={<Fp1/>} />
+        <Route path="Fp2" element={<Fp2/>} />
       </Routes>
     </div>
   )

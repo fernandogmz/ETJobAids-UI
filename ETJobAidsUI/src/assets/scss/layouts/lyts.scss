@@ -2370,6 +2370,28 @@
         }
 
         //[END] LYT FP1
+
+        //LYT FP1
+        .fp2 {
+            div {
+                float: left;
+                width: 50%;
+                padding: calc(1vw + var(--paddingXxlH1));
+
+                div {
+                    width: 50%;
+                    height: auto;
+                    padding: 0;
+                    float: left;
+
+                    &:nth-child(1n) {}
+
+                    &:nth-child(2n) {}
+                }
+            }
+        }
+
+        //[END] LYT FP1
     }
 
     .grd_bottom_nav {

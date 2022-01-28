@@ -4,6 +4,8 @@ import LogOut from '../components/btns/logOut'
 import BtnNavBack from '../components/btns/btnNavBack'
 import BtnNavNext from '../components/btns/btnNavNext'
 import { ReactComponent as Mp3 } from '../assets/images/mp3.svg'
+import { ReactComponent as True_i } from '../assets/images/true.svg'
+import { ReactComponent as False_i } from '../assets/images/false.svg'
 import { Link } from "react-router-dom"
 
 
@@ -16,8 +18,8 @@ const Fp1 = () => {
     }
 
     let Str = {
-        title: "We’re going to start off by playing a game to help us answer some of the most common questions we receive about contraceptive methods.",
-        sbttl: "We’re going to hear some statements, and I want you to tell me if you think it’s true or false. Don’t be shy! We’ll talk about the correct answers, too! Let’s get started! (text and audio)"
+        title: "True or False: It can take some extra months for your periods and fertility to return after stopping the injectable.",
+        sbttl: ""
     }
 
     let btns = {
@@ -37,18 +39,23 @@ const Fp1 = () => {
                 </div>
             </div>
             <div className="grd_cont">
-                <div className="fp1">
+                <div className="fp2">
                     <div>Image</div>
                     <div>
                         <h2 className="tracking_in_expand">{Str.title}</h2>
-                        <h4 className="tracking_in_expand">{Str.sbttl}</h4>
+                        <div>
+                            <True_i/>
+                        </div>
+                        <div>
+                            <False_i/>
+                        </div>
                     </div>
                 </div>
             </div>
             <div className="grd_bottom_nav">
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
-                        <Link to={"/Ss8_1_3"}>
+                        <Link to={"/Fp1"}>
                             <BtnNavBack text_btn={btns.lbl[0]} />
                         </Link>
                     </div>
@@ -58,7 +65,7 @@ const Fp1 = () => {
                         </div>
                     </div>
                     <div className="grd_btm_right">
-                        <Link to={"/Fp2"}>
+                        <Link to={"/Fp3"}>
                             <BtnNavNext text_btn={btns.lbl[1]} />
                         </Link>
                     </div>
