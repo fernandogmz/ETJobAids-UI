@@ -40,11 +40,7 @@ const Ss3 = () => {
                 <div className="grd_left_top">
                     <LogOut />
                 </div>
-                <div className="grd_right_top">
-                    <div className="select_lang slide_in_blurred_right" tabindex="1">
-                        <SelectOp ops={op_lngs.lngs} name={op_lngs.name} clss={op_lngs.clss} />
-                    </div>
-                </div>
+                <div className="grd_right_top"></div>
             </div>
             <div className="grd_cont">
                 <div class="ss3">

@@ -1,5 +1,4 @@
 import React from "react"
-import SelectOp from '../components/selectOp'
 import LogOut from '../components/btns/logOut'
 import BtnNavBack from '../components/btns/btnNavBack'
 import BtnNavNext from '../components/btns/btnNavNext'
@@ -18,12 +17,6 @@ import { Link } from "react-router-dom"
 
 const Ss1_6 = () => {
 
-    let op_lngs = {
-        name: 'languages',
-        clss: 'custom_select',
-        lngs: ['English', 'Spanish', 'Portuguese', 'French']
-    }
-
     let Str = {
         title: "What a lovely family! Let's see how you and your family can achieve your goals"
     }
@@ -38,11 +31,7 @@ const Ss1_6 = () => {
                 <div className="grd_left_top">
                     <LogOut />
                 </div>
-                <div className="grd_right_top">
-                    <div className="select_lang slide_in_blurred_right" tabindex="1">
-                        <SelectOp ops={op_lngs.lngs} name={op_lngs.name} clss={op_lngs.clss} />
-                    </div>
-                </div>
+                <div className="grd_right_top"></div>
             </div>
             <div className="grd_cont">
                 <div className="ss1_6">

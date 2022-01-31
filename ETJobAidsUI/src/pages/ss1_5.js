@@ -8,12 +8,6 @@ import { Link } from "react-router-dom"
 
 const Ss1_5 = () => {
 
-    let op_lngs = {
-        name: 'languages',
-        clss: 'custom_select',
-        lngs: ['English', 'Spanish', 'Portuguese', 'French']
-    }
-
     let op_rgns = {
         name: 'op_rgns',
         clss: 'custom_select',
@@ -55,11 +49,7 @@ const Ss1_5 = () => {
                 <div className="grd_left_top">
                     <LogOut />
                 </div>
-                <div className="grd_right_top">
-                    <div className="select_lang slide_in_blurred_right" tabindex="1">
-                        <SelectOp ops={op_lngs.lngs} name={op_lngs.name} clss={op_lngs.clss} />
-                    </div>
-                </div>
+                <div className="grd_right_top"></div>
             </div>
             <div className="grd_cont">
                 <div className="ss1_5">
@@ -67,10 +57,10 @@ const Ss1_5 = () => {
                         <h1 className="slide_in_blurred_top">{Str.title}</h1>
                     </div>
                     <div className="grd_line2">
-                        <div className="slide_in_blurred_left"><SelectOp ops={op_rgns.rgns} name={op_lngs.name} clss={op_lngs.clss} /></div>
-                        <div className="slide_in_blurred_left"><SelectOp ops={op_zns.zone} name={op_lngs.name} clss={op_lngs.clss} /></div>
-                        <div className="slide_in_blurred_right"><SelectOp ops={op_dts.dstr} name={op_lngs.name} clss={op_lngs.clss} /></div>
-                        <div className="slide_in_blurred_right"><SelectOp ops={op_kbl.kbl} name={op_lngs.name} clss={op_lngs.clss} /></div>
+                        <div className="slide_in_blurred_left"><SelectOp ops={op_rgns.rgns} name={op_rgns.name} clss={op_rgns.clss} /></div>
+                        <div className="slide_in_blurred_left"><SelectOp ops={op_zns.zone} name={op_zns.name} clss={op_zns.clss} /></div>
+                        <div className="slide_in_blurred_right"><SelectOp ops={op_dts.dstr} name={op_dts.name} clss={op_dts.clss} /></div>
+                        <div className="slide_in_blurred_right"><SelectOp ops={op_kbl.kbl} name={op_kbl.name} clss={op_kbl.clss} /></div>
                     </div>
                     <div className="grd_line3">
                         <h2 className="tracking_in_expand">Select your session type</h2>

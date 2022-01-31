@@ -1,19 +1,11 @@
 import React from "react"
-import SelectOp from '../components/selectOp'
 import LogOut from '../components/btns/logOut'
 import BtnNavBack from '../components/btns/btnNavBack'
-import BtnNavNext from '../components/btns/btnNavNext'
 import { ReactComponent as NewUser } from '../assets/images/new_user.svg'
 import { ReactComponent as ReturningUser } from '../assets/images/returning_user.svg'
 import { Link } from "react-router-dom"
 
-const Init2 = () => {
-
-    let op_lngs = {
-        name: 'languages',
-        clss: 'custom_select',
-        lngs: ['English', 'Spanish', 'Portuguese', 'French']
-    }
+const Init3 = () => {
 
     let Str = {
         title: 'Kindly let us know if you are a new user or a returning user',
@@ -31,11 +23,7 @@ const Init2 = () => {
                 <div className="grd_left_top">
                     <LogOut />
                 </div>
-                <div className="grd_right_top">
-                    <div className="select_lang slide_in_blurred_right" tabindex="1">
-                        <SelectOp ops={op_lngs.lngs} name={op_lngs.name} clss={op_lngs.clss} />
-                    </div>
-                </div>
+                <div className="grd_right_top"></div>
             </div>
             <div className="grd_cont">
                 <div className="int3">
@@ -80,4 +68,4 @@ const Init2 = () => {
         </div>
     )
 }
-export default Init2;
+export default Init3;
