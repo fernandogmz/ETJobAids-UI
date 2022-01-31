@@ -44,7 +44,7 @@ const Fp3 = () => {
                     </div>
                     <div className="grd_btm_center"></div>
                     <div className="grd_btm_right">
-                        <Link to={"/Fp11"}>
+                        <Link to={"/Fp11_1"}>
                             <BtnNavNext text_btn={btns.lbl[1]} />
                         </Link>
                     </div>
