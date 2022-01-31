@@ -14,7 +14,6 @@ const Ss1_5 = () => {
         rgns: ['Region', 'Region', 'Region', 'Region..']
     }
 
-
     let op_zns = {
         name: 'op_rgns',
         clss: 'custom_select',

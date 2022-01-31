@@ -1,6 +1,7 @@
 import React from "react"
 import LogOut from '../components/btns/logOut'
 import BtnNavBack from '../components/btns/btnNavBack'
+import RadioButtons from '../components/btns/radioButton'
 import { Link } from "react-router-dom"
 
 const Fp29 = () => {
@@ -8,6 +9,11 @@ const Fp29 = () => {
     let Str = {
         title: 'Great, thanks for telling me more about you!',
         sbttl: "Now I'm ready to recommend some methods that might fit your needs. According to the preferences you have selected, we suggest these methods. You can click on them to learn more."
+    }
+
+    let Rbttns = {
+        name: 'radio',
+        lbls: ["I'm ready to Select a Method", "Not Ready to Select a Method Today", "I want to see more Methods to make my decision"]
     }
 
     let btns = {
@@ -31,7 +37,9 @@ const Fp29 = () => {
                     <div class="grd_results">
                         <div class="grd_left">Left</div>
                         <div class="grd_right">Right</div>
-                        <div class="grd_cta">CTA</div>
+                        <div class="grd_cta r_bttons">
+                            <RadioButtons name={Rbttns.name} lbl={Rbttns.lbls}/>
+                        </div>
                     </div>
                 </div>
             </div>

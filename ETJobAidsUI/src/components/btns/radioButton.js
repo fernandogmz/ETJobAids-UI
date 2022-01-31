@@ -1,36 +1,14 @@
-import PropTypes from "prop-types";
-import React, { Component } from "react";
-import "./radio.css";
+import React, { Component } from "react"
 
-export class Radio extends Component {
-  state = {};
-
-  render() {
-    const { selected, onChange, text, value } = this.props;
+const RadioButton = (props) => {
+  const myArray = props.lbl
     return (
-      <div
-        className="modern-radio-container"
-        onClick={() => {
-          onChange(value);
-        }}
-      >
-        <div
-          className={`radio-outer-circle ${value !== selected && "unselected"}`}
-        >
-          <div
-            className={`radio-inner-circle ${value !== selected &&
-              "unselected-circle"}`}
-          />
-        </div>
-        <div className="helper-text">{text}</div>
-      </div>
-    );
-  }
+        <label name={props.name}>
+          <input type="radio" name="radio" />
+            {myArray.map((value, index) => {
+                return <span key={index}>{value}</span>
+            })}
+        </label>
+    )
 }
-
-Radio.propTypes = {
-  text: PropTypes.node.isRequired,
-  onChange: PropTypes.func.isRequired,
-  selected: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired
-};
+export default RadioButton;
