@@ -38,7 +38,9 @@ const Fp29 = () => {
                         <div class="grd_left">Left</div>
                         <div class="grd_right">Right</div>
                         <div class="grd_cta r_bttons">
-                            <RadioButtons name={Rbttns.name} lbl={Rbttns.lbls}/>
+                            <RadioButtons name={Rbttns.name} lbl={Rbttns.lbls[0]}/>
+                            <RadioButtons name={Rbttns.name} lbl={Rbttns.lbls[1]}/>
+                            <RadioButtons name={Rbttns.name} lbl={Rbttns.lbls[2]}/>
                         </div>
                     </div>
                 </div>
