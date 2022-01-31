@@ -3095,12 +3095,13 @@
   grid-area: grd_right;
 }
 .lyts .grd_cont .fp29 .grd_results .grd_cta {
-  padding: 1vh calc(1vw + var(--paddingXxlH1));
   grid-area: grd_cta;
 }
 .lyts .grd_cont .fp29 .grd_results .grd_cta div {
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px;
   width: auto;
-  max-width: 33.3333333333%;
   float: left;
 }
 .lyts .grd_bottom_nav {

@@ -2802,12 +2802,13 @@
                 }
 
                 .grd_cta {
-                    padding: 1vh calc(1vw + var(--paddingXxlH1));
                     grid-area: grd_cta;
 
                     div {
+                        width: 100%;
+                        margin: 0 auto;
+                        padding: 16px;
                         width: auto;
-                        max-width: calc(100% / 3);
                         float: left;
                     }
                 }

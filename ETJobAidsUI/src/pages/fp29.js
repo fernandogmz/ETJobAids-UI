@@ -39,13 +39,15 @@ const Fp29 = () => {
                         <div class="grd_right">Right</div>
                         <div class="grd_cta r_bttons">
                             <div>
-                                <RadioButtons name={Rbttns.name} lbl={Rbttns.lbls[0]} />
-                            </div>
-                            <div>
-                                <RadioButtons name={Rbttns.name} lbl={Rbttns.lbls[1]} />
-                            </div>
-                            <div>
-                                <RadioButtons name={Rbttns.name} lbl={Rbttns.lbls[2]} />
+                                <div>
+                                    <RadioButtons name={Rbttns.name} lbl={Rbttns.lbls[0]} />
+                                </div>
+                                <div>
+                                    <RadioButtons name={Rbttns.name} lbl={Rbttns.lbls[1]} />
+                                </div>
+                                <div>
+                                    <RadioButtons name={Rbttns.name} lbl={Rbttns.lbls[2]} />
+                                </div>
                             </div>
                         </div>
                     </div>
