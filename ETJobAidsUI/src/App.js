@@ -29,6 +29,12 @@ import Ss8_2_2 from "./pages/ss8_2_2"
 import Ss8_2_3 from "./pages/ss8_2_3"
 import Fp1 from "./pages/fp1"
 import Fp2 from "./pages/fp2"
+import Fp3 from "./pages/fp3"
+import Fp11_1 from "./pages/fp11_1"
+import Fp20 from "./pages/fp20"
+import Fp21 from "./pages/fp21"
+import Fp22 from "./pages/fp22"
+import Fp23 from "./pages/fp23"
 
 const App = () => {
 
@@ -64,6 +70,12 @@ const App = () => {
         <Route path="Ss8_2_3" element={<Ss8_2_3 />} />
         <Route path="Fp1" element={<Fp1/>} />
         <Route path="Fp2" element={<Fp2/>} />
+        <Route path="Fp3" element={<Fp3/>} />
+        <Route path="Fp11_1" element={<Fp11_1/>} />
+        <Route path="Fp20" element={<Fp20/>} />
+        <Route path="Fp21" element={<Fp21/>} />
+        <Route path="Fp22" element={<Fp22/>} />
+        <Route path="Fp23" element={<Fp23/>} />
       </Routes>
     </div>
   )
