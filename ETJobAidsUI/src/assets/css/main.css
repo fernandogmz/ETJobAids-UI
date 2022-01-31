@@ -883,7 +883,7 @@
   /* Remove comment to use */
   /*
       &:focus-within {
-              outline: .125em solid $primary-color;
+              outline: .125em solid $cc7;
       }
   */
 }
@@ -892,10 +892,10 @@
   left: -9999px;
 }
 .r_bttons label input:checked + span {
-  background-color: #d6d6e5;
+  background-color: #e8dbdc;
 }
 .r_bttons label input:checked + span:before {
-  box-shadow: inset 0 0 0 0.4375em #00005c;
+  box-shadow: inset 0 0 0 0.4375em #722022;
 }
 .r_bttons label span {
   display: flex;
@@ -905,7 +905,7 @@
   transition: 0.25s ease;
 }
 .r_bttons label span:hover {
-  background-color: #d6d6e5;
+  background-color: #e8dbdc;
 }
 .r_bttons label span:before {
   display: flex;
@@ -917,7 +917,7 @@
   border-radius: 50%;
   margin-right: 0.375em;
   transition: 0.25s ease;
-  box-shadow: inset 0 0 0 0.125em #00005c;
+  box-shadow: inset 0 0 0 0.125em #722022;
 }
 
 .h_screen {
@@ -3080,7 +3080,7 @@
 .lyts .grd_cont .fp29 .grd_results {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 4em;
+  grid-template-rows: 1fr auto;
   gap: 0px 0px;
   grid-template-areas: "grd_left grd_right" "grd_cta grd_cta";
   grid-area: grd_results;
@@ -3095,8 +3095,13 @@
   grid-area: grd_right;
 }
 .lyts .grd_cont .fp29 .grd_results .grd_cta {
-  background-color: chocolate;
+  padding: 1vh calc(1vw + var(--paddingXxlH1));
   grid-area: grd_cta;
+}
+.lyts .grd_cont .fp29 .grd_results .grd_cta div {
+  width: auto;
+  max-width: 33.3333333333%;
+  float: left;
 }
 .lyts .grd_bottom_nav {
   grid-area: grd_bottom_nav;

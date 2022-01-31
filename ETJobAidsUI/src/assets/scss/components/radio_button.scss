@@ -1,5 +1,4 @@
-$primary-color: #00005c; // Change color here. C'mon, try it! 
-$text-color: mix(#000, $primary-color, 64%);
+$text-color: mix(#000, $cc7, 64%);
 
 .r_bttons {
 	display: flex;
@@ -17,16 +16,16 @@ $text-color: mix(#000, $primary-color, 64%);
         /* Remove comment to use */ 
         /*
             &:focus-within {
-                    outline: .125em solid $primary-color;
+                    outline: .125em solid $cc7;
             }
         */
         input {
             position: absolute;
             left: -9999px;
             &:checked + span {
-                background-color: mix(#fff, $primary-color, 84%);
+                background-color: mix(#fff, $cc7, 84%);
                 &:before {
-                    box-shadow: inset 0 0 0 0.4375em $primary-color;
+                    box-shadow: inset 0 0 0 0.4375em $cc7;
                 }
             }
         }
@@ -37,7 +36,7 @@ $text-color: mix(#000, $primary-color, 64%);
             border-radius: 99em; // or something higher...
             transition: 0.25s ease;
             &:hover {
-                background-color: mix(#fff, $primary-color, 84%);
+                background-color: mix(#fff, $cc7, 84%);
             }
             &:before {
                 display: flex;
@@ -49,7 +48,7 @@ $text-color: mix(#000, $primary-color, 64%);
                 border-radius: 50%;
                 margin-right: 0.375em;
                 transition: 0.25s ease;
-                box-shadow: inset 0 0 0 0.125em $primary-color;
+                box-shadow: inset 0 0 0 0.125em $cc7;
             }
         }
     }

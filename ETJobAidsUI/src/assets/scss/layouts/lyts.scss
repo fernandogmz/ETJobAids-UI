@@ -2783,7 +2783,7 @@
             .grd_results {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                grid-template-rows: 1fr 4em;
+                grid-template-rows: 1fr auto;
                 gap: 0px 0px;
                 grid-template-areas:
                     "grd_left grd_right"
@@ -2802,8 +2802,14 @@
                 }
 
                 .grd_cta {
-                    background-color: chocolate;
+                    padding: 1vh calc(1vw + var(--paddingXxlH1));
                     grid-area: grd_cta;
+
+                    div {
+                        width: auto;
+                        max-width: calc(100% / 3);
+                        float: left;
+                    }
                 }
             }
         }
