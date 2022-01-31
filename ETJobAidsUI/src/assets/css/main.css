@@ -983,7 +983,6 @@ form label span:before {
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "grd_left_top grd_right_top";
-  background-color: #722022;
 }
 .lyts .grd_top_nav .grd_left_top {
   text-align: left;
