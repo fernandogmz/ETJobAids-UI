@@ -35,6 +35,12 @@ import Fp20 from "./pages/fp20"
 import Fp21 from "./pages/fp21"
 import Fp22 from "./pages/fp22"
 import Fp23 from "./pages/fp23"
+import Fp24 from "./pages/fp24"
+import Fp25 from "./pages/fp25"
+import Fp26 from "./pages/fp26"
+import Fp27 from "./pages/fp27"
+import Fp28 from "./pages/fp28"
+import Fp29 from "./pages/fp29"
 
 const App = () => {
 
@@ -76,6 +82,12 @@ const App = () => {
         <Route path="Fp21" element={<Fp21/>} />
         <Route path="Fp22" element={<Fp22/>} />
         <Route path="Fp23" element={<Fp23/>} />
+        <Route path="Fp24" element={<Fp24/>} />
+        <Route path="Fp25" element={<Fp25/>} />
+        <Route path="Fp26" element={<Fp26/>} />
+        <Route path="Fp27" element={<Fp27/>} />
+        <Route path="Fp28" element={<Fp28/>} />
+        <Route path="Fp29" element={<Fp29/>} />
       </Routes>
     </div>
   )

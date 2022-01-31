@@ -1,76 +1,56 @@
-// Variables
-$border-color: rgba(0, 0, 0 , .54);
-$accent-color: #3f51b5;
+$primary-color: #00005c; // Change color here. C'mon, try it! 
+$text-color: mix(#000, $primary-color, 64%);
 
-// Radio
-.radio {
-    display: inline-block;
-    position: relative;
-    margin: 0 0 10px;
-    font-size: 16px;
-    line-height: 24px;
-    
-    &__input {
-        position: absolute;
-        top: 4px;
-        left: 0;
-        width: 36px;
-        height: 20px;
-        opacity: 0;
-        z-index: 0;
-    }
-    
-    // Unchecked
-    &__label {
-        display: block;
-        padding: 0 0 0 24px;
+form {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+
+    label {
+        display: flex;
         cursor: pointer;
-        
-        &:before {
-            content: '';
+        font-weight: 500;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 0.375em;
+        /* Accessible outline */
+        /* Remove comment to use */ 
+        /*
+            &:focus-within {
+                    outline: .125em solid $primary-color;
+            }
+        */
+        input {
             position: absolute;
-            top: 4px;
-            left: 0;
-            width: 16px;
-            height: 16px;
-            background-color: transparent;
-            border: 2px solid $border-color;
-            border-radius: 14px;
-            z-index: 1;
-            transition: border-color 0.28s cubic-bezier(.4, 0, .2, 1);
+            left: -9999px;
+            &:checked + span {
+                background-color: mix(#fff, $primary-color, 84%);
+                &:before {
+                    box-shadow: inset 0 0 0 0.4375em $primary-color;
+                }
+            }
         }
-         
-        &:after {
-            content: '';
-            position: absolute;
-            top: 8px;
-            left: 4px;
-            width: 8px;
-            height: 8px;
-            background-color: $accent-color;
-            border-radius: 50%;
-            z-index: 2;
-            transform: scale(0, 0);
-            transition: transform 0.28s cubic-bezier(.4, 0, .2, 1);
+        span {
+            display: flex;
+            align-items: center;
+            padding: 0.375em 0.75em 0.375em 0.375em;
+            border-radius: 99em; // or something higher...
+            transition: 0.25s ease;
+            &:hover {
+                background-color: mix(#fff, $primary-color, 84%);
+            }
+            &:before {
+                display: flex;
+                flex-shrink: 0;
+                content: "";
+                background-color: #fff;
+                width: 1.5em;
+                height: 1.5em;
+                border-radius: 50%;
+                margin-right: 0.375em;
+                transition: 0.25s ease;
+                box-shadow: inset 0 0 0 0.125em $primary-color;
+            }
         }
     }
-    
-    // Checked
-    &__input:checked + &__label {
-        &:before {
-            border-color: $accent-color;
-        }
-        
-        &:after {
-            transform: scale(1, 1);
-        }
-    }
-    
-    // Focus
-    // Uncomment for accessible outline
-    // &__input:focus + &__label {
-    //     &:before {
-    //         outline: 1px dotted currentColor;
-    //     }
-    // }
 }

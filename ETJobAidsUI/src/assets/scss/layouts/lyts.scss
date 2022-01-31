@@ -2570,7 +2570,7 @@
                         width: 100%;
                         height: auto;
                         min-height: 48px;
-                        
+
                         &:nth-child(1n) {
                             //background-color: tomato;
                         }
@@ -2601,6 +2601,241 @@
         }
 
         //[END] LYT FP23
+
+        //LYT FP24
+        .fp24 {
+            div {
+                float: left;
+                width: 50%;
+                padding: 1vh calc(1vw + var(--paddingXxlH1));
+
+                div {
+                    float: left;
+                    width: 50%;
+                    padding: 0;
+
+                    &:nth-child(1n) {
+                        padding-right: 4px;
+                    }
+
+                    &:nth-child(2n) {
+                        padding-left: 4px;
+                    }
+
+                    div {
+                        width: 100%;
+
+                        &:nth-child(1n) {
+                            padding: 0;
+                            //background-color: tomato;
+                        }
+
+                        &:nth-child(2n) {
+                            padding: 0;
+                            //background-color: turquoise;
+                        }
+
+                        &:nth-child(3n) {
+                            padding: 0;
+                            //background-color: #93aa3f;
+                        }
+                    }
+                }
+            }
+        }
+
+        //[END] LYT FP24
+
+        //LYT FP25
+        .fp25 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto 1fr;
+            grid-auto-columns: 1fr;
+            grid-auto-rows: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            justify-content: stretch;
+            align-content: center;
+            justify-items: stretch;
+            align-items: center;
+            grid-template-areas:
+                "grd_title grd_title"
+                "grd_dd_left grd_dd_right";
+
+            .grd_title {
+                grid-area: grd_title;
+
+                h2 {
+                    text-align: center;
+                }
+            }
+
+            .grd_dd_left {
+                grid-area: grd_dd_left;
+            }
+
+            .grd_dd_right {
+                grid-area: grd_dd_right;
+            }
+        }
+
+        //[END] LYT FP25
+
+        //LYT FP26
+        .fp26 {
+            div {
+                float: left;
+                width: 50%;
+                padding: 1vh calc(1vw + var(--paddingXxlH1));
+
+                div {
+                    float: left;
+                    width: 50%;
+                    padding: 0;
+
+                    &:nth-child(1n) {
+                        padding-right: 4px;
+                    }
+
+                    &:nth-child(2n) {
+                        padding-left: 4px;
+                    }
+
+                    div {
+                        width: 100%;
+
+                        &:nth-child(1n) {
+                            padding: 0;
+                            //background-color: tomato;
+                        }
+
+                        &:nth-child(2n) {
+                            padding: 0;
+                            //background-color: turquoise;
+                        }
+
+                        &:nth-child(3n) {
+                            padding: 0;
+                            //background-color: #93aa3f;
+                        }
+                    }
+                }
+            }
+        }
+
+        //[END] LYT FP26
+
+        //LYT FP27
+        .fp27 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto 1fr;
+            grid-auto-columns: 1fr;
+            grid-auto-rows: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            justify-content: stretch;
+            align-content: center;
+            justify-items: stretch;
+            align-items: center;
+            grid-template-areas:
+                "grd_title grd_title"
+                "grd_dd_left grd_dd_right";
+
+            .grd_title {
+                grid-area: grd_title;
+
+                h2 {
+                    text-align: center;
+                }
+
+                h3 {
+                    text-align: center;
+                }
+            }
+
+            .grd_dd_left {
+                grid-area: grd_dd_left;
+            }
+
+            .grd_dd_right {
+                grid-area: grd_dd_right;
+            }
+        }
+
+        //[END] LYT FP27
+
+        //LYT FP28
+        .fp28 {
+            div {
+                float: left;
+                width: 50%;
+                padding: 1vh calc(1vw + var(--paddingXxlH1));
+
+                div {
+                    width: 100%;
+                    height: 104px;
+                    padding: 0;
+                }
+            }
+        }
+
+        //[END] LYT FP28
+
+        //LYT FP29
+        .fp29 {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr;
+            gap: 0px 0px;
+            grid-template-areas:
+                "grd_title"
+                "grd_results";
+            height: 100%;
+
+            .grd_title {
+                padding: 1vh calc(1vw + var(--paddingXxlH1));
+                grid-area: grd_title;
+
+                H2 {
+                    text-align: center;
+                }
+
+                H4 {
+                    text-align: center;
+                }
+            }
+
+            .grd_results {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 4em;
+                gap: 0px 0px;
+                grid-template-areas:
+                    "grd_left grd_right"
+                    "grd_cta grd_cta";
+                grid-area: grd_results;
+                height: 100%;
+
+                .grd_left {
+                    background-color: aqua;
+                    grid-area: grd_left;
+                }
+
+                .grd_right {
+                    background-color: cadetblue;
+                    grid-area: grd_right;
+                }
+
+                .grd_cta {
+                    background-color: chocolate;
+                    grid-area: grd_cta;
+                }
+            }
+        }
+
+        //[END] LYT FP29
     }
 
     .grd_bottom_nav {
