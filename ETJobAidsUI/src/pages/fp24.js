@@ -39,10 +39,10 @@ const Fp24 = () => {
                             <RadioButtons name={Rbttns.name} lbl={Rbttns.lbls[0]} />
                         </div>
                         <div className="r_bttons">
-                            <RadioButtons name={Rbttns.name} lbl={Rbttns.lbls[1]} />
+                            <RadioButtons name={Rbttns.name} lbl={Rbttns.lbls[3]} />
                         </div>
                         <div className="r_bttons">
-                            <RadioButtons name={Rbttns.name} lbl={Rbttns.lbls[2]} />
+                            <RadioButtons name={Rbttns.name} lbl={Rbttns.lbls[5]} />
                         </div>
                     </div>
                 </div>
