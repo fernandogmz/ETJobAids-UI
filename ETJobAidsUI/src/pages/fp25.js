@@ -25,10 +25,10 @@ const Fp25 = () => {
                 <div className="grd_right_top"></div>
             </div>
             <div className="grd_cont">
-                <div class="fp25">
-                <div class="grd_title"><h2>{Str.title}</h2></div>
-                    <div class="grd_dd_left">Left</div>
-                    <div class="grd_dd_right">Right</div>
+                <div className="fp25">
+                <div className="grd_title"><h2>{Str.title}</h2></div>
+                    <div className="grd_dd_left">Left</div>
+                    <div className="grd_dd_right">Right</div>
                 </div>
             </div>
             <div className="grd_bottom_nav">

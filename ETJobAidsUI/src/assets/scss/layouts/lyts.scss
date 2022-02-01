@@ -51,7 +51,7 @@
         .int1 {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 200px 1fr;
+            grid-template-rows: auto 1fr;
             grid-auto-columns: 1fr;
             grid-auto-rows: 1fr;
             gap: 0px 0px;
@@ -82,17 +82,6 @@
                     position: relative;
                     padding-top: 25px;
                     height: 100%;
-
-                    iframe {
-                        position: absolute;
-                        top: 0;
-                        left: calc(100% / 4);
-                        width: calc(100% / 2);
-                        height: 80%;
-                        border-radius: 10px;
-                        box-shadow: 0.2rem 0.8rem 1.6rem var(--colorTrans2);
-                        border: 4px solid #722022;
-                    }
                 }
             }
         }
@@ -103,7 +92,7 @@
         .int2 {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 200px auto;
+            grid-template-rows: auto auto;
             grid-auto-columns: 1fr;
             grid-auto-rows: 1fr;
             gap: 0px 0px;
@@ -186,7 +175,7 @@
         .int3 {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 200px 1fr;
+            grid-template-rows: auto 1fr;
             grid-auto-columns: 1fr;
             grid-auto-rows: 1fr;
             gap: 0px 0px;
@@ -268,7 +257,7 @@
         .ss1 {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 200px auto 1fr auto;
+            grid-template-rows: auto auto 1fr auto;
             grid-auto-columns: 1fr;
             grid-auto-rows: 1fr;
             gap: 0px 0px;
@@ -441,7 +430,7 @@
         .ss1_2 {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 200px auto 1fr;
+            grid-template-rows: auto auto 1fr;
             grid-auto-columns: 1fr;
             grid-auto-rows: 1fr;
             gap: 0px 0px;
@@ -587,7 +576,7 @@
         .ss1_4 {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 200px auto 1fr;
+            grid-template-rows: auto auto 1fr;
             grid-auto-columns: 1fr;
             grid-auto-rows: 1fr;
             gap: 0px 0px;
@@ -667,7 +656,7 @@
         .ss1_5 {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 150px auto 50px 1fr;
+            grid-template-rows: auto auto 50px 1fr;
             grid-auto-columns: 1fr;
             grid-auto-rows: 1fr;
             gap: 0px 0px;
@@ -3102,6 +3091,149 @@
         }
 
         //[END] LYT FP36
+
+        //LYT FP37
+        .fp37 {
+            div {
+                float: left;
+                width: 50%;
+                padding: 18vh calc(1vw + var(--paddingXxlH1));
+
+                div {
+                    width: auto;
+                    height: auto;
+                    padding: 0;
+                    float: left;
+                    margin: 0 8px 0
+                }
+            }
+        }
+
+        //[END] LYT FP37
+
+        //LYT FP38
+        .fp38 {
+            div {
+                float: left;
+                width: 50%;
+                padding: 18vh calc(1vw + var(--paddingXxlH1));
+
+                div {
+                    width: auto;
+                    height: auto;
+                    padding: 0;
+                    float: left;
+                    margin: 0 8px 0
+                }
+            }
+        }
+
+        //[END] LYT FP38
+
+        //LYT FP39
+        .fp39 {
+            div {
+                float: left;
+                width: 50%;
+                padding: 10vh calc(1vw + var(--paddingXxlH1));
+
+                div {
+                    width: 100%;
+                    height: auto;
+                    padding: 0;
+                    margin: 0 8px 0
+                }
+            }
+        }
+
+        //[END] LYT FP39
+
+        //LYT FP40
+        .fp40 {
+            div {
+                float: left;
+                width: 50%;
+                padding: 18vh calc(1vw + var(--paddingXxlH1));
+
+                div {
+                    width: auto;
+                    height: auto;
+                    padding: 0;
+                    float: left;
+                    margin: 0 8px 0
+                }
+            }
+        }
+
+        //[END] LYT FP40
+
+        //LYT FP43
+        .fp43 {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr;
+            gap: 0px 0px;
+            grid-template-areas:
+                "grd_title"
+                "grd_results";
+            height: 100%;
+
+            .grd_title {
+                padding: 1vh calc(1vw + var(--paddingXxlH1));
+                grid-area: grd_title;
+
+                H2 {
+                    text-align: center;
+                }
+
+                H4 {
+                    text-align: center;
+                }
+            }
+
+            .grd_results {
+                display: flex;
+                justify-self: center;
+                align-items: center;
+                grid-area: grd_results;
+
+                .rsrcs {
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    grid-template-rows: auto auto;
+                    gap: 16px 16px;
+                    grid-template-areas:
+                        "grd_v1 grd_v2"
+                        "grd_t1 grd_t2";
+
+                    .grd_v1 {
+                        grid-area: grd_v1;
+
+                        div {
+                            float: right;
+                        }
+                    }
+
+                    .grd_t1 {
+                        grid-area: grd_t1;
+                    }
+
+                    .grd_v2 {
+                        grid-area: grd_v2;
+
+                        div {
+                            float: left;
+                        }
+                    }
+
+                    .grd_t2 {
+                        grid-area: grd_t2;
+                    }
+                }
+            }
+        }
+
+        //[END] LYT FP43
     }
 
     .grd_bottom_nav {

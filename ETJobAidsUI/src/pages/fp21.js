@@ -2,6 +2,7 @@ import React from "react"
 import LogOut from '../components/btns/logOut'
 import BtnNavBack from '../components/btns/btnNavBack'
 import BtnNavNext from '../components/btns/btnNavNext'
+import ReactPlayer from 'react-player'
 import { Link } from "react-router-dom"
 
 
@@ -31,9 +32,14 @@ const Fp21 = () => {
                     </div>
                     <div className="grd_line2">
                         <div className="content_video slide_in_blurred_bottom">
-                            <iframe id="c_video"
-                                src="https://www.youtube.com/embed/tgbNymZ7vqY?wmode=transparent&amp;autoplay=0&amp;autohide=0"
-                                frameborder="0"></iframe>
+                        <ReactPlayer
+                                    url={require('../assets/mp4/example_video.mp4')}
+                                    width='auto'
+                                    height='45vh'
+                                    controls
+                                    playing
+                                    volume='0.85'
+                                    />
                         </div>
                     </div>
                 </div>

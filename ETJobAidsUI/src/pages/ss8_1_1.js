@@ -34,7 +34,7 @@ const Ss8_1_1 = () => {
                         <h1>{Str.title}</h1>
                     </div>
                     <div className="grd_line2">
-                        <div class="grd_top">
+                        <div className="grd_top">
                             <div className="slide_in_blurred_left">
                                 <Link to={"/Ss8_1_2"}>
                                     <Method_5 />
@@ -51,7 +51,7 @@ const Ss8_1_1 = () => {
                                 </Link>
                             </div>
                         </div>
-                        <div class="grd_bttm">
+                        <div className="grd_bttm">
                             <div className="slide_in_blurred_left">
                                 <Link to={"/Ss8_1_2"}>
                                     <Method_6 />

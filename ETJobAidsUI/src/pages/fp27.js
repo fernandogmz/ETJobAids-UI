@@ -25,13 +25,13 @@ const Fp27 = () => {
                 <div className="grd_right_top"></div>
             </div>
             <div className="grd_cont">
-                <div class="fp27">
-                <div class="grd_title">
+                <div className="fp27">
+                <div className="grd_title">
                     <h2>{Str.title}</h2>
                     <h3>{Str.sbttl}</h3>
                 </div>
-                    <div class="grd_dd_left">Left</div>
-                    <div class="grd_dd_right">Right</div>
+                    <div className="grd_dd_left">Left</div>
+                    <div className="grd_dd_right">Right</div>
                 </div>
             </div>
             <div className="grd_bottom_nav">

@@ -2,7 +2,7 @@ import React from "react"
 import SelectOp from '../components/selectOp'
 import LogOut from '../components/btns/logOut'
 import Btn from '../components/btns/btn'
-import { ReactComponent as Mp3 } from '../assets/images/mp3.svg'
+import ReactPlayer from 'react-player'
 import { Link } from "react-router-dom"
 
 const Ss8_2_3 = () => {
@@ -49,9 +49,14 @@ const Ss8_2_3 = () => {
                     </div>
                     <div className="grd_line3">
                         <div className="content_video slide_in_blurred_bottom">
-                            <iframe id="c_video"
-                                src="https://www.youtube.com/embed/tgbNymZ7vqY?wmode=transparent&amp;autoplay=0&amp;autohide=0"
-                                frameborder="0"></iframe>
+                        <ReactPlayer
+                                    url={require('../assets/mp4/example_video.mp4')}
+                                    width='auto'
+                                    height='30vh'
+                                    controls
+                                    playing
+                                    volume='0.85'
+                                    />
                         </div>
                     </div>
                 </div>
@@ -61,9 +66,7 @@ const Ss8_2_3 = () => {
                     <div className="grd_btm_left">
 
                     </div>
-                    <div className="grd_btm_center">
-                        <Mp3/>
-                    </div>
+                    <div className="grd_btm_center"></div>
                     <div className="grd_btm_right">
                         <Link to={"/"}>
                             <Btn text_btn={btns.lbl} />

@@ -46,22 +46,22 @@ const Fp33 = () => {
                         <h2 className="slide_in_blurred_top">{Str.sbttle}</h2>
                     </div>
                     <div className="grd_line2">
-                        <div class="mssg">
-                            <div class="grd_img"><Method_6 /></div>
-                            <div class="grd_cont">
-                                <div class="grd_tile"><h2>{Descriptions.lbls[3]}</h2></div>
-                                <div class="grd_c10">
+                        <div className="mssg">
+                            <div className="grd_img"><Method_6 /></div>
+                            <div className="grd_cont">
+                                <div className="grd_tile"><h2>{Descriptions.lbls[3]}</h2></div>
+                                <div className="grd_c10">
                                     <Icon1 />
                                 </div>
-                                <div class="grd_c11">{Descriptions.desc[0]}</div>
-                                <div class="grd_c20">
+                                <div className="grd_c11">{Descriptions.desc[0]}</div>
+                                <div className="grd_c20">
                                     <Icon2 />
                                 </div>
-                                <div class="grd_c21">{Descriptions.desc[1]}</div>
-                                <div class="grd_c30">
+                                <div className="grd_c21">{Descriptions.desc[1]}</div>
+                                <div className="grd_c30">
                                     <Icon3 />
                                 </div>
-                                <div class="grd_c31">{Descriptions.desc[2]}</div>
+                                <div className="grd_c31">{Descriptions.desc[2]}</div>
                             </div>
                         </div>
                     </div>

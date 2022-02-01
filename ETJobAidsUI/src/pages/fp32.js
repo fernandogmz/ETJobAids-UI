@@ -43,9 +43,9 @@ const Fp32 = () => {
                     </div>
                     <div className="grd_line2">
                         <div>
-                            <div class="opts_img">
-                                <div class="grd_img"><Method_4 /></div>
-                                <div class="grd_cta ">
+                            <div className="opts_img">
+                                <div className="grd_img"><Method_4 /></div>
+                                <div className="grd_cta ">
                                     <div className="r_bttons tracking_in_expand">
                                         <RadioButtons name={Rbttns.name} lbl={Rbttns.lbls[4]} />
                                     </div>
@@ -53,9 +53,9 @@ const Fp32 = () => {
                             </div>
                         </div>
                         <div>
-                        <div class="opts_img">
-                                <div class="grd_img"><Method_6 /></div>
-                                <div class="grd_cta ">
+                        <div className="opts_img">
+                                <div className="grd_img"><Method_6 /></div>
+                                <div className="grd_cta ">
                                     <div className="r_bttons tracking_in_expand">
                                         <RadioButtons name={Rbttns.name} lbl={Rbttns.lbls[3]} />
                                     </div>

@@ -3,6 +3,7 @@ import LogOut from '../components/btns/logOut'
 import BtnNavBack from '../components/btns/btnNavBack'
 import BtnNavNext from '../components/btns/btnNavNext'
 import RadioButtons from '../components/btns/radioButton'
+import ReactPlayer from 'react-player'
 import { Link } from "react-router-dom"
 
 const Fp29 = () => {
@@ -30,27 +31,37 @@ const Fp29 = () => {
                 <div className="grd_right_top"></div>
             </div>
             <div className="grd_cont">
-                <div class="fp29">
-                    <div class="grd_title">
+                <div className="fp29">
+                    <div className="grd_title">
                         <h2>{Str.title}</h2>
                         <h4>{Str.sbttl}</h4>
                     </div>
-                    <div class="grd_results">
-                        <div class="grd_left">
+                    <div className="grd_results">
+                        <div className="grd_left">
                             <div className="slide_in_blurred_left">
-                                <iframe id="c_video"
-                                    src="https://www.youtube.com/embed/tgbNymZ7vqY?wmode=transparent&amp;autoplay=0&amp;autohide=0"
-                                    frameborder="0"></iframe>
+                            <ReactPlayer
+                                    url={require('../assets/mp4/example_video.mp4')}
+                                    width='auto'
+                                    height='30vh'
+                                    controls
+                                    playing
+                                    volume='0.85'
+                                    />
                             </div>
                         </div>
-                        <div class="grd_right">
+                        <div className="grd_right">
                             <div className="slide_in_blurred_right">
-                                <iframe id="c_video"
-                                    src="https://www.youtube.com/embed/tgbNymZ7vqY?wmode=transparent&amp;autoplay=0&amp;autohide=0"
-                                    frameborder="0"></iframe>
+                            <ReactPlayer
+                                    url={require('../assets/mp4/example_video.mp4')}
+                                    width='auto'
+                                    height='30vh'
+                                    controls
+                                    playing
+                                    volume='0.85'
+                                    />
                             </div>
                         </div>
-                        <div class="grd_mthds">
+                        <div className="grd_mthds">
                             <div>
                                 <ul>
                                     <li>Characteristics 1</li>
@@ -59,7 +70,7 @@ const Fp29 = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div class="grd_cta r_bttons">
+                        <div className="grd_cta r_bttons">
                             <div>
                                 <div>
                                     <RadioButtons name={Rbttns.name} lbl={Rbttns.lbls[0]} />

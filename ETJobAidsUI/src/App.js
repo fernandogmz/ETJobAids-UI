@@ -1,8 +1,9 @@
 import React from 'react'
-import { useNavigate, Routes, Route } from "react-router-dom"
+import { Routes, Route } from "react-router-dom"
 import Init_1 from "./pages/init1"
 import Init_2 from "./pages/init2"
 import Init_3 from "./pages/init3"
+
 import Ss1 from "./pages/ss1"
 import Ss1_1 from "./pages/ss1_1"
 import Ss1_2 from "./pages/ss1_2"
@@ -10,12 +11,14 @@ import Ss1_3 from "./pages/ss1_3"
 import Ss1_4 from "./pages/ss1_4"
 import Ss1_5 from "./pages/ss1_5"
 import Ss1_6 from "./pages/ss1_6"
+
 import Ss2 from "./pages/ss2"
 import Ss3 from "./pages/ss3"
 import Ss4 from "./pages/ss4"
 import Ss5 from "./pages/ss5"
 import Ss6 from "./pages/ss6"
 import Ss7 from "./pages/ss7"
+
 import Ss8 from "./pages/ss8"
 import Ss8_1 from "./pages/ss8_1"
 import Ss8_1_1 from "./pages/ss8_1_1"
@@ -27,10 +30,13 @@ import Ss8_2 from "./pages/ss8_2"
 import Ss8_2_1 from "./pages/ss8_2_1"
 import Ss8_2_2 from "./pages/ss8_2_2"
 import Ss8_2_3 from "./pages/ss8_2_3"
+
 import Fp1 from "./pages/fp1"
 import Fp2 from "./pages/fp2"
 import Fp3 from "./pages/fp3"
+
 import Fp11_1 from "./pages/fp11_1"
+
 import Fp20 from "./pages/fp20"
 import Fp21 from "./pages/fp21"
 import Fp22 from "./pages/fp22"
@@ -41,11 +47,18 @@ import Fp26 from "./pages/fp26"
 import Fp27 from "./pages/fp27"
 import Fp28 from "./pages/fp28"
 import Fp29 from "./pages/fp29"
+
 import Fp32 from "./pages/fp32"
 import Fp33 from "./pages/fp33"
 import Fp34 from "./pages/fp34"
-import Fp35 from "./pages/fp36"
-import Fp36 from "./pages/fp35"
+import Fp35 from "./pages/fp35"
+import Fp36 from "./pages/fp36"
+import Fp37 from "./pages/fp37"
+import Fp38 from "./pages/fp38"
+import Fp39 from "./pages/fp39"
+import Fp40 from "./pages/fp40"
+
+import Fp43 from "./pages/fp43"
 
 const App = () => {
 
@@ -98,6 +111,11 @@ const App = () => {
         <Route path="Fp34" element={<Fp34/>} />
         <Route path="Fp35" element={<Fp35/>} />
         <Route path="Fp36" element={<Fp36/>} />
+        <Route path="Fp37" element={<Fp37/>} />
+        <Route path="Fp38" element={<Fp38/>} />
+        <Route path="Fp39" element={<Fp39/>} />
+        <Route path="Fp40" element={<Fp40/>} />
+        <Route path="Fp43" element={<Fp43/>} />
       </Routes>
     </div>
   )

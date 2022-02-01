@@ -31,13 +31,13 @@ const Ss1_1 = () => {
                 <div className="grd_right_top"></div>
             </div>
             <div className="grd_cont">
-                <div class="ss1_1">
-                    <div class="grd_left">
+                <div className="ss1_1">
+                    <div className="grd_left">
                         <div className="slide_in_blurred_left">
                             <Lady01 />
                         </div>
                     </div>
-                    <div class="grd_right">
+                    <div className="grd_right">
                         <div className="cont">
                             <h1 className="slide_in_blurred_top">{Str.title}</h1>
                             <div className="flds slide_in_blurred_right">
