@@ -1,6 +1,7 @@
 import React from "react"
 import LogOut from '../components/btns/logOut'
 import BtnNavBack from '../components/btns/btnNavBack'
+import BtnNavNext from '../components/btns/btnNavNext'
 import RadioButtons from '../components/btns/radioButton'
 import { Link } from "react-router-dom"
 
@@ -61,7 +62,11 @@ const Fp29 = () => {
                         </Link>
                     </div>
                     <div className="grd_btm_center"></div>
-                    <div className="grd_btm_right"></div>
+                    <div className="grd_btm_right">
+                        <Link to={"/FP??"}>
+                            <BtnNavNext text_btn={btns.lbl[1]} />
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>
