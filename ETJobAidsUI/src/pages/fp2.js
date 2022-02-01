@@ -12,7 +12,7 @@ import { Link } from "react-router-dom"
 const Fp1 = () => {
 
     let Str = {
-        title: "True or False: It can take some extra months for your periods and fertility to return after stopping the injectable.",
+        title: "It can take some extra months for your periods and fertility to return after stopping the injectable.",
         sbttl: ""
     }
 

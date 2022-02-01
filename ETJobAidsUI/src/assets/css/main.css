@@ -2793,7 +2793,7 @@
 .lyts .grd_cont .fp2 div {
   float: left;
   width: 50%;
-  padding: calc(1vw + var(--paddingXxlH1));
+  padding: 18vh calc(1vw + var(--paddingXxlH1));
 }
 .lyts .grd_cont .fp2 div div {
   width: auto;
