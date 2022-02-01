@@ -2532,17 +2532,20 @@
             div {
                 float: left;
                 width: 50%;
-                padding: 1vh calc(1vw + var(--paddingXxlH1));
+                padding: 15vh calc(1vw + var(--paddingXxlH1)) 0;
 
                 div {
                     width: 100%;
-                    height: 104px;
+                    height: auto;
                     padding: 0;
+                    
+                    h4 {
+                        margin: 21px 0 0;
+                    }
 
                     div {
                         width: 100%;
                         height: auto;
-                        min-height: 48px;
 
                         div {
                             width: 100%;
@@ -2563,11 +2566,11 @@
             div {
                 float: left;
                 width: 50%;
-                padding: 1vh calc(1vw + var(--paddingXxlH1));
+                padding: 15vh calc(1vw + var(--paddingXxlH1)) 0;
 
                 div {
                     width: 100%;
-                    height: 104px;
+                    height: auto;
                     padding: 0;
                 }
             }

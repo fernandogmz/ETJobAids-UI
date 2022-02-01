@@ -2,6 +2,7 @@ import React from "react"
 import LogOut from '../components/btns/logOut'
 import BtnNavBack from '../components/btns/btnNavBack'
 import BtnNavNext from '../components/btns/btnNavNext'
+import RadioButtons from '../components/btns/radioButton'
 import { Link } from "react-router-dom"
 
 
@@ -13,6 +14,11 @@ const Fp23 = () => {
 
     let btns = {
         lbl: ['back', 'next']
+    }
+
+    let Rbttns = {
+        name: "radio1",
+        lbls: ["More Effective", "Discreet/Private", "Few Sides effects", "Easy to stop"]
     }
 
     return (
@@ -28,17 +34,14 @@ const Fp23 = () => {
                     <div>Image</div>
                     <div>
                         <h2 className="tracking_in_expand">{Str.title}</h2>
-                        <div>
-                            <h4>More Effective</h4>
+                        <div className="r_bttons">
+                            <RadioButtons name={Rbttns.name} lbl={Rbttns.lbls[0]} />
                         </div>
-                        <div>
-                            <h4>Discreet/Private</h4>
+                        <div className="r_bttons">
+                            <RadioButtons name={Rbttns.name} lbl={Rbttns.lbls[1]} />
                         </div>
-                        <div>
-                            <h4>Few Sides effects</h4>
-                        </div>
-                        <div>
-                            <h4>Easy to stop</h4>
+                        <div className="r_bttons">
+                            <RadioButtons name={Rbttns.name} lbl={Rbttns.lbls[2]} />
                         </div>
                     </div>
                 </div>
