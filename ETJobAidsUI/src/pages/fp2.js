@@ -5,6 +5,7 @@ import BtnNavNext from '../components/btns/btnNavNext'
 import { ReactComponent as Mp3 } from '../assets/images/mp3.svg'
 import { ReactComponent as True_i } from '../assets/images/true.svg'
 import { ReactComponent as False_i } from '../assets/images/false.svg'
+import RadioButtons from '../components/btns/radioButton'
 import { Link } from "react-router-dom"
 
 
@@ -17,6 +18,11 @@ const Fp1 = () => {
 
     let btns = {
         lbl: ['back', 'next']
+    }
+
+    let Rbttns = {
+        name: "radio1",
+        lbls: ["True", "False"]
     }
 
     return (
@@ -32,11 +38,11 @@ const Fp1 = () => {
                     <div>Image</div>
                     <div>
                         <h2 className="tracking_in_expand">{Str.title}</h2>
-                        <div>
-                            <True_i/>
+                        <div className="r_bttons">
+                            <RadioButtons name={Rbttns.name} lbl={Rbttns.lbls[0]} />
                         </div>
-                        <div>
-                            <False_i/>
+                        <div className="r_bttons">
+                            <RadioButtons name={Rbttns.name} lbl={Rbttns.lbls[1]} />
                         </div>
                     </div>
                 </div>

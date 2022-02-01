@@ -2796,10 +2796,11 @@
   padding: calc(1vw + var(--paddingXxlH1));
 }
 .lyts .grd_cont .fp2 div div {
-  width: 50%;
+  width: auto;
   height: auto;
   padding: 0;
   float: left;
+  margin: 0 8px 0;
 }
 .lyts .grd_cont .fp3 div {
   float: left;

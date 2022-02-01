@@ -2352,14 +2352,11 @@
                 padding: calc(1vw + var(--paddingXxlH1));
 
                 div {
-                    width: 50%;
+                    width: auto;
                     height: auto;
                     padding: 0;
                     float: left;
-
-                    &:nth-child(1n) {}
-
-                    &:nth-child(2n) {}
+                    margin: 0 8px 0
                 }
             }
         }
