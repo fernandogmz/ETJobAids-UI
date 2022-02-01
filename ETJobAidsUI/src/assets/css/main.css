@@ -2955,29 +2955,11 @@
 .lyts .grd_cont .fp24 div {
   float: left;
   width: 50%;
-  padding: 1vh calc(1vw + var(--paddingXxlH1));
+  padding: 15vh calc(1vw + var(--paddingXxlH1)) 0;
 }
 .lyts .grd_cont .fp24 div div {
-  float: left;
-  width: 50%;
-  padding: 0;
-}
-.lyts .grd_cont .fp24 div div:nth-child(1n) {
-  padding-right: 4px;
-}
-.lyts .grd_cont .fp24 div div:nth-child(2n) {
-  padding-left: 4px;
-}
-.lyts .grd_cont .fp24 div div div {
   width: 100%;
-}
-.lyts .grd_cont .fp24 div div div:nth-child(1n) {
-  padding: 0;
-}
-.lyts .grd_cont .fp24 div div div:nth-child(2n) {
-  padding: 0;
-}
-.lyts .grd_cont .fp24 div div div:nth-child(3n) {
+  height: auto;
   padding: 0;
 }
 .lyts .grd_cont .fp25 {
