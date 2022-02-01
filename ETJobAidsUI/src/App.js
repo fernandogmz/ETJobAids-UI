@@ -44,6 +44,8 @@ import Fp29 from "./pages/fp29"
 import Fp32 from "./pages/fp32"
 import Fp33 from "./pages/fp33"
 import Fp34 from "./pages/fp34"
+import Fp35 from "./pages/fp36"
+import Fp36 from "./pages/fp35"
 
 const App = () => {
 
@@ -94,6 +96,8 @@ const App = () => {
         <Route path="Fp32" element={<Fp32/>} />
         <Route path="Fp33" element={<Fp33/>} />
         <Route path="Fp34" element={<Fp34/>} />
+        <Route path="Fp35" element={<Fp35/>} />
+        <Route path="Fp36" element={<Fp36/>} />
       </Routes>
     </div>
   )

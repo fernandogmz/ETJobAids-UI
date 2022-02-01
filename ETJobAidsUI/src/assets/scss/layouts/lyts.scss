@@ -3064,6 +3064,44 @@
         }
 
         //[END] LYT FP34
+
+        //LYT FP35
+        .fp35 {
+            div {
+                float: left;
+                width: 50%;
+                padding: 18vh calc(1vw + var(--paddingXxlH1));
+
+                div {
+                    width: auto;
+                    height: auto;
+                    padding: 0;
+                    float: left;
+                    margin: 0 8px 0
+                }
+            }
+        }
+
+        //[END] LYT FP35
+
+        //LYT FP36
+        .fp36 {
+            div {
+                float: left;
+                width: 50%;
+                padding: 18vh calc(1vw + var(--paddingXxlH1));
+
+                div {
+                    width: auto;
+                    height: auto;
+                    padding: 0;
+                    float: left;
+                    margin: 0 8px 0
+                }
+            }
+        }
+
+        //[END] LYT FP36
     }
 
     .grd_bottom_nav {

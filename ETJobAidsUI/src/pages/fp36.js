@@ -2,15 +2,16 @@ import React from "react"
 import LogOut from '../components/btns/logOut'
 import BtnNavBack from '../components/btns/btnNavBack'
 import BtnNavNext from '../components/btns/btnNavNext'
+import { ReactComponent as Mp3 } from '../assets/images/mp3.svg'
 import RadioButtons from '../components/btns/radioButton'
 import { Link } from "react-router-dom"
 
 
-const Fp35 = () => {
+const Fp36 = () => {
 
     let Str = {
-        title: "I'll ask these questions a few more times to really understand what you want.",
-        sbttl: "Which of these things is the most important to you?"
+        title: "The correct answer is FALSE",
+        sbttl: "You can come back to the health post or center have your IUD removed at any time for any reason, and you can get pregnant immediately after it is removed."
     }
 
     let btns = {
@@ -19,7 +20,7 @@ const Fp35 = () => {
 
     let Rbttns = {
         name: "radio1",
-        lbls: ["Easy to stop using", "Get it and I forget it!", "More effective", "Discreet/Private", "Few Side effects", "Self-administered"]
+        lbls: ["True", "False"]
     }
 
     return (
@@ -31,32 +32,28 @@ const Fp35 = () => {
                 <div className="grd_right_top"></div>
             </div>
             <div className="grd_cont">
-                <div className="fp24">
+                <div className="fp36">
                     <div>Image</div>
                     <div>
                         <h2 className="tracking_in_expand">{Str.title}</h2>
-                        <div className="r_bttons">
-                            <RadioButtons name={Rbttns.name} lbl={Rbttns.lbls[0]} />
-                        </div>
-                        <div className="r_bttons">
-                            <RadioButtons name={Rbttns.name} lbl={Rbttns.lbls[3]} />
-                        </div>
-                        <div className="r_bttons">
-                            <RadioButtons name={Rbttns.name} lbl={Rbttns.lbls[5]} />
-                        </div>
+                        <h3 className="tracking_in_expand">{Str.sbttl}</h3>
                     </div>
                 </div>
             </div>
             <div className="grd_bottom_nav">
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
-                        <Link to={"/Fp23"}>
+                        <Link to={"/Fp34"}>
                             <BtnNavBack text_btn={btns.lbl[0]} />
                         </Link>
                     </div>
-                    <div className="grd_btm_center"></div>
+                    <div className="grd_btm_center">
+                        <div id="audio" className="audioplayer">
+                            <Mp3/>
+                        </div>
+                    </div>
                     <div className="grd_btm_right">
-                        <Link to={"/Fp25"}>
+                        <Link to={"/Fp36"}>
                             <BtnNavNext text_btn={btns.lbl[1]} />
                         </Link>
                     </div>
@@ -65,4 +62,4 @@ const Fp35 = () => {
         </div>
     )
 }
-export default Fp35;
+export default Fp36;

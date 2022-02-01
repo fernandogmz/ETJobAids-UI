@@ -3,13 +3,11 @@ import LogOut from '../components/btns/logOut'
 import BtnNavBack from '../components/btns/btnNavBack'
 import BtnNavNext from '../components/btns/btnNavNext'
 import { ReactComponent as Mp3 } from '../assets/images/mp3.svg'
-import { ReactComponent as True_i } from '../assets/images/true.svg'
-import { ReactComponent as False_i } from '../assets/images/false.svg'
 import RadioButtons from '../components/btns/radioButton'
 import { Link } from "react-router-dom"
 
 
-const Fp1 = () => {
+const Fp2 = () => {
 
     let Str = {
         title: "It can take some extra months for your periods and fertility to return after stopping the injectable.",
@@ -69,4 +67,4 @@ const Fp1 = () => {
         </div>
     )
 }
-export default Fp1;
+export default Fp2;
