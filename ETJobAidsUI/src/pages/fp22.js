@@ -2,6 +2,7 @@ import React from "react"
 import LogOut from '../components/btns/logOut'
 import BtnNavBack from '../components/btns/btnNavBack'
 import BtnNavNext from '../components/btns/btnNavNext'
+import RadioButtons from '../components/btns/radioButton'
 import { Link } from "react-router-dom"
 
 
@@ -13,6 +14,11 @@ const Fp22 = () => {
 
     let btns = {
         lbl: ['back', 'next']
+    }
+
+    let Rbttns = {
+        name: ["radio1", "radio2", "radio3"],
+        lbls: ["Yes", "No"]
     }
 
     return (
@@ -32,25 +38,40 @@ const Fp22 = () => {
                             <div>
                                 <h4>Are you pregnant?</h4>
                             </div>
-                            <div>Yes - No</div>
+                            <div>
+                                <div className="r_bttons">
+                                    <RadioButtons name={Rbttns.name[0]} lbl={Rbttns.lbls[0]} />
+                                </div>
+                                <div className="r_bttons">
+                                    <RadioButtons name={Rbttns.name[0]} lbl={Rbttns.lbls[1]} />
+                                </div>
+                            </div>
                         </div>
                         <div>
                             <div>
                                 <h4>Do you want to be pregnant in the future?</h4>
                             </div>
-                            <div>Yes - No</div>
+                            <div>
+                            <div className="r_bttons">
+                                    <RadioButtons name={Rbttns.name[1]} lbl={Rbttns.lbls[0]} />
+                                </div>
+                                <div className="r_bttons">
+                                    <RadioButtons name={Rbttns.name[1]} lbl={Rbttns.lbls[1]} />
+                                </div>
+                            </div>
                         </div>
                         <div>
                             <div>
                                 <h4>Are you breastfeeding a baby less than 6 month?</h4>
                             </div>
-                            <div>Yes - No</div>
-                        </div>
-                        <div>
                             <div>
-                                <h4>Did you use EC or condoms at last sex?</h4>
+                            <div className="r_bttons">
+                                    <RadioButtons name={Rbttns.name[2]} lbl={Rbttns.lbls[0]} />
+                                </div>
+                                <div className="r_bttons">
+                                    <RadioButtons name={Rbttns.name[2]} lbl={Rbttns.lbls[1]} />
+                                </div>
                             </div>
-                            <div>Yes - No</div>
                         </div>
                     </div>
                 </div>

@@ -2544,12 +2544,12 @@
                         height: auto;
                         min-height: 48px;
 
-                        &:nth-child(1n) {
-                            //background-color: tomato;
-                        }
-
-                        &:nth-child(2n) {
-                            //background-color: turquoise;
+                        div {
+                            width: 100%;
+                            margin: 0 auto;
+                            padding: 8px;
+                            width: auto;
+                            float: left;
                         }
                     }
                 }
@@ -2782,35 +2782,74 @@
 
             .grd_results {
                 display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: 1fr auto;
+                grid-template-columns: 1fr 1fr auto;
+                grid-template-rows: auto auto;
                 gap: 0px 0px;
                 grid-template-areas:
                     "grd_left grd_right"
+                    "grd_mthds grd_mthds"
                     "grd_cta grd_cta";
                 grid-area: grd_results;
                 height: 100%;
 
                 .grd_left {
-                    background-color: aqua;
+                    padding: 16px;
                     grid-area: grd_left;
+
+                    div {
+                        float: right;
+
+                        iframe {
+                            height: 100%;
+                            border-radius: $radius;
+                        }
+                    }
                 }
 
                 .grd_right {
-                    background-color: cadetblue;
+                    padding: 16px;
                     grid-area: grd_right;
-                }
-
-                .grd_cta {
-                    grid-area: grd_cta;
 
                     div {
-                        width: 100%;
-                        margin: 0 auto;
-                        padding: 16px;
-                        width: auto;
                         float: left;
+
+                        iframe {
+                            height: 100%;                        border-radius: $radius;
+                        }
                     }
+                }
+
+                .grd_mthds {
+                    display: flex;
+                    justify-self: center;
+                    align-items: center;
+                    grid-area: grd_mthds;
+
+                    div {
+                        padding: 16px;
+                        margin: 0 16px;
+                        width: auto;
+                        background-color: #FFF;
+                        border: 2px solid $cc7;
+                        border-radius: $radius;
+
+                        ul {
+                            margin-left: 16px;
+                            color: $cc7;
+                        }
+                    }
+                }
+            }
+
+            .grd_cta {
+                grid-area: grd_cta;
+
+                div {
+                    width: 100%;
+                    margin: 0 auto;
+                    padding: 8px;
+                    width: auto;
+                    float: left;
                 }
             }
         }

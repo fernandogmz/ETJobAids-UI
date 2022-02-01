@@ -18,7 +18,7 @@ const Fp29 = () => {
     }
 
     let btns = {
-        lbl: ['back', 'next']
+        lbl: ['back', 'next#1']
     }
 
     return (
@@ -36,8 +36,29 @@ const Fp29 = () => {
                         <h4>{Str.sbttl}</h4>
                     </div>
                     <div class="grd_results">
-                        <div class="grd_left">Left</div>
-                        <div class="grd_right">Right</div>
+                        <div class="grd_left">
+                            <div className="slide_in_blurred_left">
+                                <iframe id="c_video"
+                                    src="https://www.youtube.com/embed/tgbNymZ7vqY?wmode=transparent&amp;autoplay=0&amp;autohide=0"
+                                    frameborder="0"></iframe>
+                            </div>
+                        </div>
+                        <div class="grd_right">
+                            <div className="slide_in_blurred_right">
+                                <iframe id="c_video"
+                                    src="https://www.youtube.com/embed/tgbNymZ7vqY?wmode=transparent&amp;autoplay=0&amp;autohide=0"
+                                    frameborder="0"></iframe>
+                            </div>
+                        </div>
+                        <div class="grd_mthds">
+                            <div>
+                                <ul>
+                                    <li>Characteristics 1</li>
+                                    <li>Characteristics 2</li>
+                                    <li>Characteristics 3</li>
+                                </ul>
+                            </div>
+                        </div>
                         <div class="grd_cta r_bttons">
                             <div>
                                 <div>
@@ -63,7 +84,7 @@ const Fp29 = () => {
                     </div>
                     <div className="grd_btm_center"></div>
                     <div className="grd_btm_right">
-                        <Link to={"/FP??"}>
+                        <Link to={"/FP32"}>
                             <BtnNavNext text_btn={btns.lbl[1]} />
                         </Link>
                     </div>
