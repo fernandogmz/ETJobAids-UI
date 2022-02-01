@@ -10,7 +10,7 @@
         left: -10px;
         width: 1px;
         height: calc(#{$elem-height} + 10px);
-        background-color: $cc9;
+        background-color: $cc09;
     }
 
     &:last-child::after {
@@ -24,7 +24,7 @@
         left: -10px;
         width: 8px;
         height: 1px;
-        background-color: $cc9;
+        background-color: $cc09;
     }
 
     &[open]:not(:last-child)::after {
@@ -33,10 +33,10 @@
 }
 
 @mixin cont_qs1 {
-    color: $cc9;
+    color: $cc09;
     padding: 8px;
-    background-color: $cc0;
-    color: $cc9;
+    background-color: $cc00;
+    color: $cc09;
     text-transform: uppercase;
 
     &::-webkit-details-marker {
@@ -45,10 +45,10 @@
 }
 
 @mixin cont_qs2 {
-    color: $cc9;
+    color: $cc09;
     padding: 8px;
-    background-color: $cc3;
-    color: $cc9;
+    background-color: $cc03;
+    color: $cc09;
     text-transform: uppercase;
 
     &::-webkit-details-marker {
@@ -57,10 +57,10 @@
 }
 
 @mixin cont_qs3 {
-    color: $cc9;
+    color: $cc09;
     padding: 8px;
-    background-color: $cc2;
-    color: $cc9;
+    background-color: $cc02;
+    color: $cc09;
     text-transform: uppercase;
 
     &::-webkit-details-marker {
@@ -69,10 +69,10 @@
 }
 
 @mixin cont_qs4 {
-    color: $cc9!important;
+    color: $cc09!important;
     padding: 8px;
-    background-color: $cc6;
-    color: $cc0;
+    background-color: $cc06;
+    color: $cc00;
     text-transform: uppercase;
 
     &::-webkit-details-marker {
@@ -81,11 +81,11 @@
 }
 
 @mixin cont_qs5 {
-    color: $cc0;
+    color: $cc00;
     padding: 8px;
-    background-color: $cc9;
-    color: $cc0;
-    border: 1px solid $cc6;
+    background-color: $cc09;
+    color: $cc00;
+    border: 1px solid $cc06;
     
 
     &::-webkit-details-marker {
@@ -94,10 +94,10 @@
 }
 
 @mixin answers {
-    color: $cc9;
+    color: $cc09;
     padding: 8px;
-    background-color: $cc0;
-    color: $cc9;
+    background-color: $cc00;
+    color: $cc09;
     text-transform: uppercase;
 
     &::-webkit-details-marker {
@@ -108,8 +108,8 @@
 @mixin cont_details {
     margin: 5px 0;
     padding: 5px 10px;
-    background-color: $cc9;
-    color: $cc0;
+    background-color: $cc09;
+    color: $cc00;
     position: relative;
 
     span {

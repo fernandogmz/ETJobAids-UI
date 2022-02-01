@@ -16,6 +16,7 @@
     font-size: inherit;
     font-family: inherit;
     margin-right: 12px;
+    box-shadow: 0.2rem 0.8rem 1.6rem var(--colorTrans2);
 
     &.btn_go {
         width: 12rem;
@@ -28,7 +29,7 @@
             margin: 0;
             width: 3rem;
             height: 3rem;
-            background: $cc7;
+            background: $cc07;
             border-radius: 1.625rem;
 
             .icon {
@@ -70,7 +71,7 @@
             bottom: 0;
             padding: 0.75rem 0;
             margin: 0 0 0 1.85rem;
-            color: $cc7;
+            color: $cc07;
             font-weight: 700;
             line-height: 1.6;
             text-align: center;
@@ -104,11 +105,11 @@
     cursor: pointer;
     display: inline-block;
     white-space: nowrap;
-    background: $cc7;
+    background: $cc07;
     border-radius: 500px;
     border-width: 0px 0px 0px 0px;
     padding: 8px 20px;
-    color: $cc1;
+    color: $cc01;
     font-size: 18px;
     font-weight: 400;
     margin: 0 8px;
@@ -116,10 +117,11 @@
     min-width: 150px;
     text-align: center;
     transition: letter-spacing 0.6s;
+    box-shadow: 0.2rem 0.8rem 1.6rem var(--colorTrans2);
 
     &:hover {
-        color: $cc0;
-        background: $cc5;
+        color: $cc00;
+        background: $cc05;
         font-weight: 800;
         letter-spacing: 2px;
     }
@@ -141,22 +143,23 @@
     cursor: pointer;
     display: inline-block;
     white-space: nowrap;
-    background: $cc7;
+    background: $cc07;
     border-radius: 500px;
     border-width: 0px 0px 0px 0px;
     padding: 8px 20px 8px 50px;
-    color: $cc1;
+    color: $cc01;
     font-size: 18px;
     font-weight: 400;
     font-style: normal;
     transition: letter-spacing 0.6s;
+    box-shadow: 0.2rem 0.8rem 1.6rem var(--colorTrans2);
 
     i {
-        color: $cc7;
+        color: $cc07;
         font-size: 1em;
-        background: $cc1;
+        background: $cc01;
         border-radius: 100px;
-        border: 4px solid $cc7;
+        border: 4px solid $cc07;
         border-width: 4px 4px 4px 4px;
         padding: 11px 12px 11px 12px;
         margin: 6px 6px 6px 6px;
@@ -167,15 +170,15 @@
     }
 
     &:hover {
-        color: $cc0;
-        background: $cc5;
+        color: $cc00;
+        background: $cc05;
         font-weight: 800;
         letter-spacing: 2px;
 
         i {
-            color: $cc0;
-            background: $cc5;
-            border: 4px solid $cc5;
+            color: $cc00;
+            background: $cc05;
+            border: 4px solid $cc05;
         }
     }
 
@@ -187,22 +190,23 @@
     cursor: pointer;
     display: inline-block;
     white-space: nowrap;
-    background: $cc7;
+    background: $cc07;
     border-radius: 500px;
     border-width: 0px 0px 0px 0px;
     padding: 8px 50px 8px 20px;
-    color: $cc1;
+    color: $cc01;
     font-size: 18px;
     font-weight: 400;
     font-style: normal;
     transition: letter-spacing 0.6s;
+    box-shadow: 0.2rem 0.8rem 1.6rem var(--colorTrans2);
 
     i {
-        color: $cc7;
+        color: $cc07;
         font-size: 1em;
-        background: $cc1;
+        background: $cc01;
         border-radius: 100px;
-        border: 4px solid $cc7;
+        border: 4px solid $cc07;
         border-width: 4px 4px 4px 4px;
         padding: 11px 12px 11px 12px;
         margin: 6px 6px 6px 6px;
@@ -213,15 +217,15 @@
     }
 
     &:hover {
-        color: $cc0;
-        background: $cc5;
+        color: $cc00;
+        background: $cc05;
         font-weight: 800;
         letter-spacing: 2px;
 
         i {
-            color: $cc0;
-            background: $cc5;
-            border: 4px solid $cc5;
+            color: $cc00;
+            background: $cc05;
+            border: 4px solid $cc05;
         }
     }
 }

@@ -10,7 +10,7 @@
         "grd_top_nav"
         "grd_cont"
         "grd_bottom_nav";
-    background-color: $cc1;
+    background-color: $cc01;
     width: 100%;
     height: 100vh;
 
@@ -25,7 +25,7 @@
         grid-auto-flow: row;
         grid-template-areas:
             "grd_left_top grd_right_top";
-        //background-color: $cc7;
+        //background-color: $cc07;
 
         .grd_left_top {
             text-align: left;
@@ -369,7 +369,7 @@
                 grid-area: grd_left;
 
                 div {
-                    background-color: $cc1;
+                    background-color: $cc01;
                     height: 30vw !important;
                     width: 30vw !important;
                     max-width: 500px;
@@ -528,7 +528,7 @@
                 grid-area: grd_left;
 
                 div {
-                    background-color: $cc1;
+                    background-color: $cc01;
                     height: 30vw !important;
                     width: 30vw !important;
                     max-width: 500px;
@@ -827,7 +827,7 @@
                             &:nth-child(1n) {
                                 //husband
                                 height: auto;
-                                color: $cc1;
+                                color: $cc01;
                                 margin-top: 0%;
                                 margin-left: -40px;
                                 //background-color: rgba(107, 128, 199, 0.555);
@@ -836,7 +836,7 @@
                             &:nth-child(2n) {
                                 //wife
                                 height: auto;
-                                color: $cc1;
+                                color: $cc01;
                                 margin-top: 5%;
                                 margin-left: -5%;
                                 //background-color: rgba(199, 107, 194, 0.555);
@@ -859,7 +859,7 @@
                                 &:nth-child(1n) {
                                     height: auto;
                                     float: left;
-                                    color: $cc1;
+                                    color: $cc01;
                                     margin-top: -1%;
                                     margin-left: -1%;
                                     //background-color: rgb(0, 110, 161);
@@ -872,7 +872,7 @@
 
                                 &:nth-child(2n) {
                                     height: auto;
-                                    color: $cc1;
+                                    color: $cc01;
                                     margin-top: -3%;
                                     margin-left: -5%;
                                     //background-color: rgb(0, 112, 9);
@@ -884,7 +884,7 @@
 
                                 &:nth-child(3n) {
                                     height: auto;
-                                    color: $cc1;
+                                    color: $cc01;
                                     margin-top: 3%;
                                     margin-left: -5%;
                                     //background-color: rgb(0, 108, 112);
@@ -896,7 +896,7 @@
 
                                 &:nth-child(4n) {
                                     height: auto;
-                                    color: $cc1;
+                                    color: $cc01;
                                     margin-top: -1%;
                                     margin-left: -5%;
                                     //background-color: rgb(0, 112, 9);
@@ -908,7 +908,7 @@
 
                                 &:nth-child(5n) {
                                     height: auto;
-                                    color: $cc1;
+                                    color: $cc01;
                                     margin-left: -5%;
                                     //background-color: rgb(0, 255, 34);
 
@@ -919,7 +919,7 @@
 
                                 &:nth-child(6n) {
                                     height: auto;
-                                    color: $cc1;
+                                    color: $cc01;
                                     margin-left: -5%;
                                     //background-color: rgb(121, 0, 81);
 
@@ -964,7 +964,7 @@
                 grid-area: grd_left;
 
                 div {
-                    background-color: $cc1;
+                    background-color: $cc01;
                     height: 30vw !important;
                     width: 30vw !important;
                     max-width: 500px;
@@ -1203,7 +1203,7 @@
                     }
 
                     .circle {
-                        background-color: $cc1;
+                        background-color: $cc01;
                         height: 5vw !important;
                         width: 5vw !important;
                         max-width: 72px;
@@ -1256,7 +1256,7 @@
                             &:nth-child(1n) {
                                 //husband
                                 height: auto;
-                                color: $cc1;
+                                color: $cc01;
                                 margin-top: 0%;
                                 margin-left: -40px;
                                 //background-color: rgba(107, 128, 199, 0.555);
@@ -1265,7 +1265,7 @@
                             &:nth-child(2n) {
                                 //wife
                                 height: auto;
-                                color: $cc1;
+                                color: $cc01;
                                 margin-top: 5%;
                                 margin-left: -5%;
                                 //background-color: rgba(199, 107, 194, 0.555);
@@ -1288,7 +1288,7 @@
                                 &:nth-child(1n) {
                                     height: auto;
                                     float: left;
-                                    color: $cc1;
+                                    color: $cc01;
                                     margin-top: -1%;
                                     margin-left: -1%;
                                     //background-color: rgb(0, 110, 161);
@@ -1301,7 +1301,7 @@
 
                                 &:nth-child(2n) {
                                     height: auto;
-                                    color: $cc1;
+                                    color: $cc01;
                                     margin-top: -3%;
                                     margin-left: -5%;
                                     //background-color: rgb(0, 112, 9);
@@ -1313,7 +1313,7 @@
 
                                 &:nth-child(3n) {
                                     height: auto;
-                                    color: $cc1;
+                                    color: $cc01;
                                     margin-top: 3%;
                                     margin-left: -5%;
                                     //background-color: rgb(0, 108, 112);
@@ -1325,7 +1325,7 @@
 
                                 &:nth-child(4n) {
                                     height: auto;
-                                    color: $cc1;
+                                    color: $cc01;
                                     margin-top: -1%;
                                     margin-left: -5%;
                                     //background-color: rgb(0, 112, 9);
@@ -1337,7 +1337,7 @@
 
                                 &:nth-child(5n) {
                                     height: auto;
-                                    color: $cc1;
+                                    color: $cc01;
                                     margin-left: -5%;
                                     //background-color: rgb(0, 255, 34);
 
@@ -1348,7 +1348,7 @@
 
                                 &:nth-child(6n) {
                                     height: auto;
-                                    color: $cc1;
+                                    color: $cc01;
                                     margin-left: -5%;
                                     //background-color: rgb(121, 0, 81);
 
@@ -1401,7 +1401,7 @@
                     }
 
                     .circle {
-                        background-color: $cc1;
+                        background-color: $cc01;
                         height: 5vw !important;
                         width: 5vw !important;
                         max-width: 72px;
@@ -1454,7 +1454,7 @@
                             &:nth-child(1n) {
                                 //husband
                                 height: auto;
-                                color: $cc1;
+                                color: $cc01;
                                 margin-top: 0%;
                                 margin-left: -40px;
                                 //background-color: rgba(107, 128, 199, 0.555);
@@ -1463,7 +1463,7 @@
                             &:nth-child(2n) {
                                 //wife
                                 height: auto;
-                                color: $cc1;
+                                color: $cc01;
                                 margin-top: 5%;
                                 margin-left: -5%;
                                 //background-color: rgba(199, 107, 194, 0.555);
@@ -1486,7 +1486,7 @@
                                 &:nth-child(1n) {
                                     height: auto;
                                     float: left;
-                                    color: $cc1;
+                                    color: $cc01;
                                     margin-top: -1%;
                                     margin-left: -1%;
                                     //background-color: rgb(0, 110, 161);
@@ -1499,7 +1499,7 @@
 
                                 &:nth-child(2n) {
                                     height: auto;
-                                    color: $cc1;
+                                    color: $cc01;
                                     margin-top: -3%;
                                     margin-left: -5%;
                                     //background-color: rgb(0, 112, 9);
@@ -1511,7 +1511,7 @@
 
                                 &:nth-child(3n) {
                                     height: auto;
-                                    color: $cc1;
+                                    color: $cc01;
                                     margin-top: 3%;
                                     margin-left: -5%;
                                     //background-color: rgb(0, 108, 112);
@@ -1523,7 +1523,7 @@
 
                                 &:nth-child(4n) {
                                     height: auto;
-                                    color: $cc1;
+                                    color: $cc01;
                                     margin-top: -1%;
                                     margin-left: -5%;
                                     //background-color: rgb(0, 112, 9);
@@ -1535,7 +1535,7 @@
 
                                 &:nth-child(5n) {
                                     height: auto;
-                                    color: $cc1;
+                                    color: $cc01;
                                     margin-left: -5%;
                                     //background-color: rgb(0, 255, 34);
 
@@ -1546,7 +1546,7 @@
 
                                 &:nth-child(6n) {
                                     height: auto;
-                                    color: $cc1;
+                                    color: $cc01;
                                     margin-left: -5%;
                                     //background-color: rgb(121, 0, 81);
 
@@ -1687,7 +1687,7 @@
                     }
 
                     .circle {
-                        background-color: $cc1;
+                        background-color: $cc01;
                         height: 5vw !important;
                         width: 5vw !important;
                         max-width: 72px;
@@ -1740,7 +1740,7 @@
                             &:nth-child(1n) {
                                 //husband
                                 height: auto;
-                                color: $cc1;
+                                color: $cc01;
                                 margin-top: 0%;
                                 margin-left: -40px;
                                 //background-color: rgba(107, 128, 199, 0.555);
@@ -1749,7 +1749,7 @@
                             &:nth-child(2n) {
                                 //wife
                                 height: auto;
-                                color: $cc1;
+                                color: $cc01;
                                 margin-top: 5%;
                                 margin-left: -5%;
                                 //background-color: rgba(199, 107, 194, 0.555);
@@ -1772,7 +1772,7 @@
                                 &:nth-child(1n) {
                                     height: auto;
                                     float: left;
-                                    color: $cc1;
+                                    color: $cc01;
                                     margin-top: -1%;
                                     margin-left: -1%;
                                     //background-color: rgb(0, 110, 161);
@@ -1785,7 +1785,7 @@
 
                                 &:nth-child(2n) {
                                     height: auto;
-                                    color: $cc1;
+                                    color: $cc01;
                                     margin-top: -3%;
                                     margin-left: -5%;
                                     //background-color: rgb(0, 112, 9);
@@ -1797,7 +1797,7 @@
 
                                 &:nth-child(3n) {
                                     height: auto;
-                                    color: $cc1;
+                                    color: $cc01;
                                     margin-top: 3%;
                                     margin-left: -5%;
                                     //background-color: rgb(0, 108, 112);
@@ -1809,7 +1809,7 @@
 
                                 &:nth-child(4n) {
                                     height: auto;
-                                    color: $cc1;
+                                    color: $cc01;
                                     margin-top: -1%;
                                     margin-left: -5%;
                                     //background-color: rgb(0, 112, 9);
@@ -1821,7 +1821,7 @@
 
                                 &:nth-child(5n) {
                                     height: auto;
-                                    color: $cc1;
+                                    color: $cc01;
                                     margin-left: -5%;
                                     //background-color: rgb(0, 255, 34);
 
@@ -1832,7 +1832,7 @@
 
                                 &:nth-child(6n) {
                                     height: auto;
-                                    color: $cc1;
+                                    color: $cc01;
                                     margin-left: -5%;
                                     //background-color: rgb(121, 0, 81);
 
@@ -1913,7 +1913,7 @@
                     }
 
                     .circle {
-                        background-color: $cc1;
+                        background-color: $cc01;
                         height: 5vw !important;
                         width: 5vw !important;
                         max-width: 72px;
@@ -1966,7 +1966,7 @@
                             &:nth-child(1n) {
                                 //husband
                                 height: auto;
-                                color: $cc1;
+                                color: $cc01;
                                 margin-top: 0%;
                                 margin-left: -40px;
                                 //background-color: rgba(107, 128, 199, 0.555);
@@ -1975,7 +1975,7 @@
                             &:nth-child(2n) {
                                 //wife
                                 height: auto;
-                                color: $cc1;
+                                color: $cc01;
                                 margin-top: 5%;
                                 margin-left: -5%;
                                 //background-color: rgba(199, 107, 194, 0.555);
@@ -1998,7 +1998,7 @@
                                 &:nth-child(1n) {
                                     height: auto;
                                     float: left;
-                                    color: $cc1;
+                                    color: $cc01;
                                     margin-top: -1%;
                                     margin-left: -1%;
                                     //background-color: rgb(0, 110, 161);
@@ -2011,7 +2011,7 @@
 
                                 &:nth-child(2n) {
                                     height: auto;
-                                    color: $cc1;
+                                    color: $cc01;
                                     margin-top: -3%;
                                     margin-left: -5%;
                                     //background-color: rgb(0, 112, 9);
@@ -2023,7 +2023,7 @@
 
                                 &:nth-child(3n) {
                                     height: auto;
-                                    color: $cc1;
+                                    color: $cc01;
                                     margin-top: 3%;
                                     margin-left: -5%;
                                     //background-color: rgb(0, 108, 112);
@@ -2035,7 +2035,7 @@
 
                                 &:nth-child(4n) {
                                     height: auto;
-                                    color: $cc1;
+                                    color: $cc01;
                                     margin-top: -1%;
                                     margin-left: -5%;
                                     //background-color: rgb(0, 112, 9);
@@ -2047,7 +2047,7 @@
 
                                 &:nth-child(5n) {
                                     height: auto;
-                                    color: $cc1;
+                                    color: $cc01;
                                     margin-left: -5%;
                                     //background-color: rgb(0, 255, 34);
 
@@ -2058,7 +2058,7 @@
 
                                 &:nth-child(6n) {
                                     height: auto;
-                                    color: $cc1;
+                                    color: $cc01;
                                     margin-left: -5%;
                                     //background-color: rgb(121, 0, 81);
 
@@ -2538,7 +2538,7 @@
                     width: 100%;
                     height: auto;
                     padding: 0;
-                    
+
                     h4 {
                         margin: 21px 0 0;
                     }
@@ -2817,7 +2817,8 @@
                         float: left;
 
                         iframe {
-                            height: 100%;                        border-radius: $radius;
+                            height: 100%;
+                            border-radius: $radius;
                         }
                     }
                 }
@@ -2833,12 +2834,12 @@
                         margin: 0 16px;
                         width: auto;
                         background-color: #FFF;
-                        border: 2px solid $cc7;
+                        border: 2px solid $cc07;
                         border-radius: $radius;
 
                         ul {
                             margin-left: 16px;
-                            color: $cc7;
+                            color: $cc07;
                         }
                     }
                 }
@@ -2858,6 +2859,268 @@
         }
 
         //[END] LYT FP29
+
+        //LYT FP32
+        .fp32 {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 200px auto;
+            grid-auto-columns: 1fr;
+            grid-auto-rows: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "grd_line1"
+                "grd_line2"
+                "grd_line3";
+            height: 100%;
+
+            .grd_line1 {
+                display: flex;
+                justify-self: center;
+                align-items: center;
+                grid-area: grd_line1;
+
+                h1 {
+                    padding: 0 1em;
+                    text-align: center;
+                }
+            }
+
+            .grd_line2 {
+                display: flex;
+                justify-content: center;
+                grid-area: grd_line2;
+
+                div {
+                    display: flex;
+                    justify-content: center;
+
+                    .opts_img {
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        grid-template-rows: 1fr auto;
+                        gap: 0px 0px;
+                        grid-template-areas:
+                            "grd_img"
+                            "grd_cta";
+
+                        .grd_img {
+                            grid-area: grd_img;
+
+                            svg {
+                                margin: 50px 32px 0;
+                                cursor: pointer;
+                                box-shadow: 0.2rem 0.8rem 1.6rem var(--colorTrans2);
+                                height: 23vw !important;
+                                width: 23vw !important;
+                                border-radius: 50%;
+                                -moz-border-radius: 50%;
+                                -webkit-border-radius: 50%;
+
+                                @media screen and (min-width: $xlarge) {
+                                    height: 30vw !important;
+                                    width: 30vw !important;
+                                }
+
+                                @media screen and (min-width: $xxlarge) {
+                                    height: 15vw !important;
+                                    width: 15vw !important;
+                                }
+
+                            }
+                        }
+
+                        .grd_cta {
+                            padding: 16px 0;
+                            grid-area: grd_cta;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        //[END] LYT FP32
+
+        //LYT FP33
+        .fp33 {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto;
+            grid-auto-columns: 1fr;
+            grid-auto-rows: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "grd_line1"
+                "grd_line2";
+            height: 100%;
+
+            .grd_line1 {
+                grid-area: grd_line1;
+
+                h1 {
+                    padding: 0 1em;
+
+                    text-align: center;
+                }
+
+                h2 {
+                    padding: 0 1em;
+                    text-align: center;
+                }
+            }
+
+            .grd_line2 {
+                padding: 0 calc(.5rem + 15vw);
+                grid-area: grd_line2;
+
+                .mssg {
+                    display: grid;
+                    grid-template-columns: auto 1fr;
+                    grid-template-rows: auto;
+                    gap: 0px 0px;
+                    grid-template-areas:
+                        "grd_img grd_cont";
+
+                    background-color: #fff;
+                    margin: 0 32px;
+                    padding: 16px;
+                    border-radius: 20px;
+                    box-shadow: 0.2rem 0.8rem 1.6rem var(--colorTrans2);
+
+                    .grd_img {
+                        grid-area: grd_img;
+
+                        svg {
+                            margin: 32px;
+                            background-color: $cc02;
+                            height: 16vw !important;
+                            width: 16vw !important;
+                            border-radius: 50%;
+                            -moz-border-radius: 50%;
+                            -webkit-border-radius: 50%;
+                        }
+                    }
+
+                    .grd_cont {
+                        display: grid;
+                        grid-template-columns: auto auto auto;
+                        grid-template-rows: 48px auto auto;
+                        gap: 0px 0px;
+                        grid-template-areas:
+                            "grd_tile grd_tile grd_tile"
+                            "grd_c10 grd_c20 grd_c30"
+                            "grd_c11 grd_c21 grd_c31";
+
+                        border-radius: 20px;
+                        grid-area: grd_cont;
+
+                        .grd_tile {
+                            grid-area: grd_tile;
+                        }
+
+                        .grd_c10 {
+                            display: flex;
+                            justify-self: left;
+                            align-items: center;
+                            grid-area: grd_c10;
+
+                            svg {
+                                //background-color: $cc02;
+                                height: 8vw !important;
+                                width: 8vw !important;
+                                border-radius: 50%;
+                                -moz-border-radius: 50%;
+                                -webkit-border-radius: 50%;
+
+                                .pathcc {
+                                    fill: $cc10;
+                                }
+                            }
+                        }
+
+                        .grd_c11 {
+                            display: flex;
+                            justify-self: left;
+                            align-items: Top;
+                            padding: 8px;
+                            grid-area: grd_c11;
+                        }
+
+                        .grd_c20 {
+                            display: flex;
+                            justify-self: left;
+                            align-items: center;
+                            grid-area: grd_c20;
+
+                            svg {
+                                //background-color: $cc02;
+                                height: 8vw !important;
+                                width: 8vw !important;
+                                border-radius: 50%;
+                                -moz-border-radius: 50%;
+                                -webkit-border-radius: 50%;
+
+                                .pathcc {
+                                    fill: $cc11;
+                                }
+                            }
+                        }
+
+                        .grd_c21 {
+                            display: flex;
+                            justify-self: left;
+                            align-items: Top;
+                            padding: 8px;
+                            grid-area: grd_c21;
+                        }
+
+                        .grd_c30 {
+                            display: flex;
+                            justify-self: left;
+                            align-items: center;
+                            grid-area: grd_c30;
+
+                            svg {
+                                //background-color: $cc02;
+                                height: 8vw !important;
+                                width: 8vw !important;
+                                border-radius: 50%;
+                                -moz-border-radius: 50%;
+                                -webkit-border-radius: 50%;
+
+                                .pathcc {
+                                    fill: $cc12;
+                                }
+                            }
+                        }
+
+                        .grd_c31 {
+                            display: flex;
+                            justify-self: left;
+                            align-items: Top;
+                            padding: 8px;
+                            grid-area: grd_c31;
+                        }
+                    }
+                }
+            }
+        }
+
+        //[END] LYT FP33
+
+        //LYT FP34
+        .fp34 {
+            div {
+                float: left;
+                width: 50%;
+                padding: 25vh calc(1vw + var(--paddingXxlH1));
+            }
+        }
+
+        //[END] LYT FP34
     }
 
     .grd_bottom_nav {

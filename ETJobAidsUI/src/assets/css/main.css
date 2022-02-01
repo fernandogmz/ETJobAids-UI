@@ -521,6 +521,7 @@
   font-size: inherit;
   font-family: inherit;
   margin-right: 12px;
+  box-shadow: 0.2rem 0.8rem 1.6rem var(--colorTrans2);
 }
 .btn_go.btn_go {
   width: 12rem;
@@ -606,6 +607,7 @@
   min-width: 150px;
   text-align: center;
   transition: letter-spacing 0.6s;
+  box-shadow: 0.2rem 0.8rem 1.6rem var(--colorTrans2);
 }
 .btn:hover {
   color: #383D47;
@@ -641,6 +643,7 @@
   font-weight: 400;
   font-style: normal;
   transition: letter-spacing 0.6s;
+  box-shadow: 0.2rem 0.8rem 1.6rem var(--colorTrans2);
 }
 .btn_back i {
   color: #722022;
@@ -683,6 +686,7 @@
   font-weight: 400;
   font-style: normal;
   transition: letter-spacing 0.6s;
+  box-shadow: 0.2rem 0.8rem 1.6rem var(--colorTrans2);
 }
 .btn_next i {
   color: #722022;
@@ -884,7 +888,7 @@
   /* Remove comment to use */
   /*
       &:focus-within {
-              outline: .125em solid $cc7;
+              outline: .125em solid $cc07;
       }
   */
 }
@@ -3145,6 +3149,208 @@
   padding: 8px;
   width: auto;
   float: left;
+}
+.lyts .grd_cont .fp32 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 200px auto;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "grd_line1" "grd_line2" "grd_line3";
+  height: 100%;
+}
+.lyts .grd_cont .fp32 .grd_line1 {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  grid-area: grd_line1;
+}
+.lyts .grd_cont .fp32 .grd_line1 h1 {
+  padding: 0 1em;
+  text-align: center;
+}
+.lyts .grd_cont .fp32 .grd_line2 {
+  display: flex;
+  justify-content: center;
+  grid-area: grd_line2;
+}
+.lyts .grd_cont .fp32 .grd_line2 div {
+  display: flex;
+  justify-content: center;
+}
+.lyts .grd_cont .fp32 .grd_line2 div .opts_img {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+  gap: 0px 0px;
+  grid-template-areas: "grd_img" "grd_cta";
+}
+.lyts .grd_cont .fp32 .grd_line2 div .opts_img .grd_img {
+  grid-area: grd_img;
+}
+.lyts .grd_cont .fp32 .grd_line2 div .opts_img .grd_img svg {
+  margin: 50px 32px 0;
+  cursor: pointer;
+  box-shadow: 0.2rem 0.8rem 1.6rem var(--colorTrans2);
+  height: 23vw !important;
+  width: 23vw !important;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+@media screen and (min-width: 697px) {
+  .lyts .grd_cont .fp32 .grd_line2 div .opts_img .grd_img svg {
+    height: 30vw !important;
+    width: 30vw !important;
+  }
+}
+@media screen and (min-width: 800px) {
+  .lyts .grd_cont .fp32 .grd_line2 div .opts_img .grd_img svg {
+    height: 15vw !important;
+    width: 15vw !important;
+  }
+}
+.lyts .grd_cont .fp32 .grd_line2 div .opts_img .grd_cta {
+  padding: 16px 0;
+  grid-area: grd_cta;
+}
+.lyts .grd_cont .fp33 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "grd_line1" "grd_line2";
+  height: 100%;
+}
+.lyts .grd_cont .fp33 .grd_line1 {
+  grid-area: grd_line1;
+}
+.lyts .grd_cont .fp33 .grd_line1 h1 {
+  padding: 0 1em;
+  text-align: center;
+}
+.lyts .grd_cont .fp33 .grd_line1 h2 {
+  padding: 0 1em;
+  text-align: center;
+}
+.lyts .grd_cont .fp33 .grd_line2 {
+  padding: 0 calc(0.5rem + 15vw);
+  grid-area: grd_line2;
+}
+.lyts .grd_cont .fp33 .grd_line2 .mssg {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto;
+  gap: 0px 0px;
+  grid-template-areas: "grd_img grd_cont";
+  background-color: #fff;
+  margin: 0 32px;
+  padding: 16px;
+  border-radius: 20px;
+  box-shadow: 0.2rem 0.8rem 1.6rem var(--colorTrans2);
+}
+.lyts .grd_cont .fp33 .grd_line2 .mssg .grd_img {
+  grid-area: grd_img;
+}
+.lyts .grd_cont .fp33 .grd_line2 .mssg .grd_img svg {
+  margin: 32px;
+  background-color: #F5CBA3;
+  height: 16vw !important;
+  width: 16vw !important;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+.lyts .grd_cont .fp33 .grd_line2 .mssg .grd_cont {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 48px auto auto;
+  gap: 0px 0px;
+  grid-template-areas: "grd_tile grd_tile grd_tile" "grd_c10 grd_c20 grd_c30" "grd_c11 grd_c21 grd_c31";
+  border-radius: 20px;
+  grid-area: grd_cont;
+}
+.lyts .grd_cont .fp33 .grd_line2 .mssg .grd_cont .grd_tile {
+  grid-area: grd_tile;
+}
+.lyts .grd_cont .fp33 .grd_line2 .mssg .grd_cont .grd_c10 {
+  display: flex;
+  justify-self: left;
+  align-items: center;
+  grid-area: grd_c10;
+}
+.lyts .grd_cont .fp33 .grd_line2 .mssg .grd_cont .grd_c10 svg {
+  height: 8vw !important;
+  width: 8vw !important;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+.lyts .grd_cont .fp33 .grd_line2 .mssg .grd_cont .grd_c10 svg .pathcc {
+  fill: #50776E;
+}
+.lyts .grd_cont .fp33 .grd_line2 .mssg .grd_cont .grd_c11 {
+  display: flex;
+  justify-self: left;
+  align-items: Top;
+  padding: 8px;
+  grid-area: grd_c11;
+}
+.lyts .grd_cont .fp33 .grd_line2 .mssg .grd_cont .grd_c20 {
+  display: flex;
+  justify-self: left;
+  align-items: center;
+  grid-area: grd_c20;
+}
+.lyts .grd_cont .fp33 .grd_line2 .mssg .grd_cont .grd_c20 svg {
+  height: 8vw !important;
+  width: 8vw !important;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+.lyts .grd_cont .fp33 .grd_line2 .mssg .grd_cont .grd_c20 svg .pathcc {
+  fill: #DD5E7F;
+}
+.lyts .grd_cont .fp33 .grd_line2 .mssg .grd_cont .grd_c21 {
+  display: flex;
+  justify-self: left;
+  align-items: Top;
+  padding: 8px;
+  grid-area: grd_c21;
+}
+.lyts .grd_cont .fp33 .grd_line2 .mssg .grd_cont .grd_c30 {
+  display: flex;
+  justify-self: left;
+  align-items: center;
+  grid-area: grd_c30;
+}
+.lyts .grd_cont .fp33 .grd_line2 .mssg .grd_cont .grd_c30 svg {
+  height: 8vw !important;
+  width: 8vw !important;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+.lyts .grd_cont .fp33 .grd_line2 .mssg .grd_cont .grd_c30 svg .pathcc {
+  fill: #DD8626;
+}
+.lyts .grd_cont .fp33 .grd_line2 .mssg .grd_cont .grd_c31 {
+  display: flex;
+  justify-self: left;
+  align-items: Top;
+  padding: 8px;
+  grid-area: grd_c31;
+}
+.lyts .grd_cont .fp34 div {
+  float: left;
+  width: 50%;
+  padding: 25vh calc(1vw + var(--paddingXxlH1));
 }
 .lyts .grd_bottom_nav {
   grid-area: grd_bottom_nav;

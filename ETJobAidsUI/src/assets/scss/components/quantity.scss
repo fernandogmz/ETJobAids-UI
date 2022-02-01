@@ -24,16 +24,16 @@ $border: 0 solid #dbdbdb;
   width: 3rem;
   font-size: 1rem;
   
-  background: $cc7;
-  color: $cc1;
+  background: $cc07;
+  color: $cc01;
   border: $border;
   text-align: center;
   
   cursor: pointer;
   
   &:hover {
-    background:$cc5;
-    color: $cc0
+    background:$cc05;
+    color: $cc00
   }
   
   &--left {

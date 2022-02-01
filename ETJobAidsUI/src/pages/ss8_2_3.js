@@ -16,7 +16,7 @@ const Ss8_2_3 = () => {
     let op_am = {
         name: 'amethod',
         clss: 'custom_select',
-        lngs: ['UID', 'Implant', 'Condoms', 'Injectable', 'pills', 'EC']
+        mthds: ['UID', 'Implant', 'Condoms', 'Injectable', 'pills', 'EC']
     }
 
     let btns = {
@@ -43,7 +43,7 @@ const Ss8_2_3 = () => {
                                 <p className="slide_in_blurred_left">{Str.sbttl2}</p>
                             </div>
                             <div className="slide_in_blurred_right">
-                                <SelectOp ops={op_am.lngs} name={op_am.name} clss={op_am.clss} />
+                                <SelectOp ops={op_am.mthds} name={op_am.name} clss={op_am.clss} />
                             </div>
                         </div>
                     </div>
