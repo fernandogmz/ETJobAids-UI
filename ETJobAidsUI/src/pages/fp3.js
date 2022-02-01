@@ -2,6 +2,7 @@ import React from "react"
 import LogOut from '../components/btns/logOut'
 import BtnNavBack from '../components/btns/btnNavBack'
 import BtnNavNext from '../components/btns/btnNavNext'
+import ReactPlayer from 'react-player'
 import { Link } from "react-router-dom"
 
 
@@ -26,7 +27,16 @@ const Fp3 = () => {
             </div>
             <div className="grd_cont">
                 <div className="fp3">
-                    <div>Video</div>
+                    <div>
+                        <ReactPlayer
+                            url={require('../assets/mp4/example_video.mp4')}
+                            width='auto'
+                            height='25vw'
+                            controls
+                            playing
+                            volume='0.85'
+                        />
+                    </div>
                     <div>
                         <h2 className="tracking_in_expand">{Str.title}</h2>
                         <h4 className="tracking_in_expand">{Str.sbttl}</h4>
