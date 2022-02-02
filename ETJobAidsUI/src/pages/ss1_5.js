@@ -2,11 +2,11 @@ import React from "react"
 import SelectOp from '../components/selectOp'
 import LogOut from '../components/btns/logOut'
 import Btn from '../components/btns/btn'
-import BtnNavBack from '../components/btns/btnNavBack'
-import BtnNavNext from '../components/btns/btnNavNext'
+import BtnNavBack from '../components/btns/BtnNavBack'
+import BtnNavNext from '../components/btns/BtnNavNext'
 import { Link } from "react-router-dom"
 
-const Ss1_5 = () => {
+const Ss1_5 = ({terms}) => {
 
     let op_rgns = {
         name: 'op_rgns',
@@ -30,18 +30,6 @@ const Ss1_5 = () => {
         kbl: ['kebele', 'kebele', 'kebele', 'kebele..', 'op_kbl']
     }
 
-    let Str = {
-        title: 'We would like to know your region'
-    }
-
-    let btns = {
-        lbl: ['back', 'next', 'Individual', 'Grop']
-    }
-
-    let radio_btn = {
-        name: ['Individual', 'Grop']
-    }
-
     return (
         <div className="lyts">
             <div className="grd_top_nav">
@@ -53,7 +41,7 @@ const Ss1_5 = () => {
             <div className="grd_cont">
                 <div className="ss1_5">
                     <div className="grd_line1">
-                        <h1 className="slide_in_blurred_top">{Str.title}</h1>
+                        <h1 className="slide_in_blurred_top">{terms['Client.ChooseRegion']}</h1>
                     </div>
                     <div className="grd_line2">
                         <div className="slide_in_blurred_left"><SelectOp ops={op_rgns.rgns} name={op_rgns.name} clss={op_rgns.clss} /></div>
@@ -62,14 +50,14 @@ const Ss1_5 = () => {
                         <div className="slide_in_blurred_right"><SelectOp ops={op_kbl.kbl} name={op_kbl.name} clss={op_kbl.clss} /></div>
                     </div>
                     <div className="grd_line3">
-                        <h2 className="tracking_in_expand">Select your session type</h2>
+                        <h2 className="tracking_in_expand">{terms['Client.SessionType']}</h2>
                     </div>
                     <div className="grd_line4">
                         <div className="slide_in_blurred_left">
-                            <Btn text_btn={btns.lbl[2]} />
+                            <Btn text_btn={terms['Client.IndividualSession']} />
                         </div>
                         <div className="slide_in_blurred_right">
-                            <Btn text_btn={btns.lbl[3]} />
+                            <Btn text_btn={terms['Client.GroupSession']} />
                         </div>
                     </div>
                 </div>
@@ -78,13 +66,13 @@ const Ss1_5 = () => {
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
                         <Link to={"/Ss1_4"}>
-                            <BtnNavBack text_btn={btns.lbl[0]} />
+                            <BtnNavBack text_btn={terms['core.Back']} />
                         </Link>
                     </div>
                     <div className="grd_btm_center"></div>
                     <div className="grd_btm_right">
                         <Link to={"/Ss1_6"}>
-                            <BtnNavNext text_btn={btns.lbl[1]} />
+                            <BtnNavNext text_btn={terms['core.Next']} />
                         </Link>
                     </div>
                 </div>

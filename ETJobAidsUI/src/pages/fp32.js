@@ -1,7 +1,7 @@
 import React from "react"
 import LogOut from '../components/btns/logOut'
-import BtnNavBack from '../components/btns/btnNavBack'
-import BtnNavNext from '../components/btns/btnNavNext'
+import BtnNavBack from '../components/btns/BtnNavBack'
+import BtnNavNext from '../components/btns/BtnNavNext'
 import { ReactComponent as Method_5 } from '../assets/images/family_planning_methods/method_05.svg'
 import { ReactComponent as Method_1 } from '../assets/images/family_planning_methods/method_01.svg'
 import { ReactComponent as Method_4 } from '../assets/images/family_planning_methods/method_04.svg'

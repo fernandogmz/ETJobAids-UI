@@ -1,7 +1,7 @@
 import React from "react"
 import LogOut from '../components/btns/logOut'
 import Btn from '../components/btns/btn'
-import BtnNavBack from '../components/btns/btnNavBack'
+import BtnNavBack from '../components/btns/BtnNavBack'
 import { Link } from "react-router-dom"
 
 const Fp11_1 = () => {

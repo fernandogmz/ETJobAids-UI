@@ -1,25 +1,12 @@
 import React from "react"
 import LogOut from '../components/btns/logOut'
-import BtnNavBack from '../components/btns/btnNavBack'
-import BtnNavNext from '../components/btns/btnNavNext'
+import BtnNavBack from '../components/btns/BtnNavBack'
+import BtnNavNext from '../components/btns/BtnNavNext'
 import TextField from '../components/textField'
 import { ReactComponent as Lady01 } from '../assets/images/hero/male/male_01.svg'
 import { Link } from "react-router-dom"
 
-const Ss1_3 = () => {
-
-    let Str = {
-        title: "Tell us a little bit more about your husband",
-        cta1: 'New user',
-        cta2: 'Returning user',
-        flds_lbls: ['First name', 'Last name'],
-        flds_holder: ['First name', 'Last name'],
-        q: "Who referred you?"
-    }
-
-    let btns = {
-        lbl: ['back', 'next']
-    }
+const Ss1_3 = ({terms}) => {
 
     return (
         <div className="lyts">
@@ -38,12 +25,15 @@ const Ss1_3 = () => {
                     </div>
                     <div className="grd_right">
                         <div className="cont">
-                            <h1 className="slide_in_blurred_top">{Str.title}</h1>
+                            <h1 className="slide_in_blurred_top">{terms['SS.HusbandInformation']}</h1>
                             <div className="flds slide_in_blurred_right">
-                                <TextField flds_lbls={Str.flds_lbls[0]} flds_holder={Str.flds_holder[0]} />
+                                <TextField flds_lbls={terms['core.FirstName']} flds_holder={terms['core.FirstName']} />
                             </div>
                             <div className="flds slide_in_blurred_right">
-                                <TextField flds_lbls={Str.flds_lbls[1]} flds_holder={Str.flds_holder[1]} />
+                                <TextField flds_lbls={terms['core.LastName']} flds_holder={terms['core.LastName']} />
+                            </div>
+                            <div className="flds slide_in_blurred_right">
+                                <TextField flds_lbls={terms['core.FatherName']} flds_holder={terms['core.FatherName']} />
                             </div>
                         </div>
 
@@ -54,7 +44,7 @@ const Ss1_3 = () => {
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
                         <Link to={"/Ss1_2"}>
-                            <BtnNavBack text_btn={btns.lbl[0]} />
+                            <BtnNavBack text_btn={terms['core.Back']} />
                         </Link>
                     </div>
                     <div className="grd_btm_center">
@@ -62,7 +52,7 @@ const Ss1_3 = () => {
                     </div>
                     <div className="grd_btm_right">
                         <Link to={"/Ss1_4"}>
-                            <BtnNavNext text_btn={btns.lbl[1]} />
+                            <BtnNavNext text_btn={terms['core.Next']} />
                         </Link>
                     </div>
                 </div>

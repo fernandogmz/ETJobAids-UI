@@ -1,7 +1,7 @@
 import React from "react"
 import LogOut from '../components/btns/logOut'
-import BtnNavBack from '../components/btns/btnNavBack'
-import BtnNavNext from '../components/btns/btnNavNext'
+import BtnNavBack from '../components/btns/BtnNavBack'
+import BtnNavNext from '../components/btns/BtnNavNext'
 import { ReactComponent as Done } from '../assets/images/icons/done.svg'
 import { ReactComponent as Clear } from '../assets/images/icons/clear.svg'
 import { ReactComponent as Lady_01 } from '../assets/images/hero/female/lady_01.svg'

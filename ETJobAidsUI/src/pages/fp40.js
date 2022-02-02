@@ -1,7 +1,7 @@
 import React from "react"
 import LogOut from '../components/btns/logOut'
-import BtnNavBack from '../components/btns/btnNavBack'
-import BtnNavNext from '../components/btns/btnNavNext'
+import BtnNavBack from '../components/btns/BtnNavBack'
+import BtnNavNext from '../components/btns/BtnNavNext'
 import ReactPlayer from 'react-player'
 import RadioButtons from '../components/btns/radioButton'
 import { Link } from "react-router-dom"

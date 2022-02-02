@@ -1,20 +1,16 @@
 import React from "react"
 import LogOut from '../components/btns/logOut'
-import BtnNavBack from '../components/btns/btnNavBack'
+import BtnNavBack from '../components/btns/BtnNavBack'
 import { ReactComponent as NewUser } from '../assets/images/new_user.svg'
 import { ReactComponent as ReturningUser } from '../assets/images/returning_user.svg'
 import { Link } from "react-router-dom"
 
-const Init3 = () => {
+const Init3 = ({terms}) => {
 
     let Str = {
         title: 'Kindly let us know if you are a new user or a returning user',
         cta1: 'New user',
         cta2: 'Returning user',
-    }
-
-    let btns = {
-        lbl: ['back', 'next']
     }
 
     return (
@@ -39,7 +35,7 @@ const Init3 = () => {
                                     </Link>
                                 </div>
                                 <div className="tracking_in_expand">
-                                    <h2>{Str.cta1}</h2>
+                                    <h2>{terms['INT.New']}</h2>
                                 </div>
                             </div>
                             <div>
@@ -49,7 +45,7 @@ const Init3 = () => {
                                     </Link>
                                 </div>
                                 <div className="tracking_in_expand">
-                                    <h2>{Str.cta2}</h2>
+                                    <h2>{terms['INT.Returning']}</h2>
                                 </div>
                             </div>
                         </div>
@@ -60,7 +56,7 @@ const Init3 = () => {
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
                         <Link to={"/Init_2"}>
-                            <BtnNavBack text_btn={btns.lbl[0]} />
+                            <BtnNavBack text_btn={terms['core.Back']} />
                         </Link>
                     </div>
                     <div className="grd_btm_center"></div>

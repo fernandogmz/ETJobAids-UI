@@ -1,7 +1,7 @@
 import React from "react"
 import LogOut from '../components/btns/logOut'
-import BtnNavBack from '../components/btns/btnNavBack'
-import BtnNavNext from '../components/btns/btnNavNext'
+import BtnNavBack from '../components/btns/BtnNavBack'
+import BtnNavNext from '../components/btns/BtnNavNext'
 import { ReactComponent as Mobile1 } from '../assets/images/icons/mobile1.svg'
 import { ReactComponent as Mobile2 } from '../assets/images/icons/mobile2.svg'
 import { ReactComponent as Mobile3 } from '../assets/images/icons/mobile3.svg'

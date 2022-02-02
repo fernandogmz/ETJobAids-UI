@@ -64,66 +64,71 @@ import Fp45 from "./pages/fp45"
 
 import Rss1 from "./pages/rss1"
 
+import strings from "./assets/translations/terms.json"
+
+let language = "en";
+const terms = strings.languages.find(lang => lang.code===language)?.terms;
+
 const App = () => {
 
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Init_1 />} />
-        <Route path="Init_2" element={<Init_2 />} />
-        <Route path="Init_3" element={<Init_3 />} />
-        <Route path="Ss1" element={<Ss1 />} />
-        <Route path="Ss1_1" element={<Ss1_1 />} />
-        <Route path="Ss1_2" element={<Ss1_2 />} />
-        <Route path="Ss1_3" element={<Ss1_3 />} />
-        <Route path="Ss1_4" element={<Ss1_4 />} />
-        <Route path="Ss1_5" element={<Ss1_5 />} />
-        <Route path="Ss1_6" element={<Ss1_6 />} />
-        <Route path="Ss2" element={<Ss2 />} />
-        <Route path="Ss3" element={<Ss3 />} />
-        <Route path="Ss4" element={<Ss4 />} />
-        <Route path="Ss5" element={<Ss5 />} />
-        <Route path="Ss6" element={<Ss6 />} />
-        <Route path="Ss7" element={<Ss7 />} />
-        <Route path="Ss8" element={<Ss8 />} />
-        <Route path="Ss8_1" element={<Ss8_1 />} />
-        <Route path="Ss8_1_1" element={<Ss8_1_1 />} />
-        <Route path="Ss8_1_2" element={<Ss8_1_2 />} />
-        <Route path="Ss8_1_3" element={<Ss8_1_3 />} />
-        <Route path="Ss8_1_4" element={<Ss8_1_4 />} />
-        <Route path="Ss8_1_5" element={<Ss8_1_5 />} />
-        <Route path="Ss8_2" element={<Ss8_2 />} />
-        <Route path="Ss8_2_1" element={<Ss8_2_1 />} />
-        <Route path="Ss8_2_2" element={<Ss8_2_2 />} />
-        <Route path="Ss8_2_3" element={<Ss8_2_3 />} />
-        <Route path="Fp1" element={<Fp1/>} />
-        <Route path="Fp2" element={<Fp2/>} />
-        <Route path="Fp3" element={<Fp3/>} />
-        <Route path="Fp11_1" element={<Fp11_1/>} />
-        <Route path="Fp19" element={<Fp19/>} />
-        <Route path="Fp20" element={<Fp20/>} />
-        <Route path="Fp21" element={<Fp21/>} />
-        <Route path="Fp22" element={<Fp22/>} />
-        <Route path="Fp23" element={<Fp23/>} />
-        <Route path="Fp24" element={<Fp24/>} />
-        <Route path="Fp25" element={<Fp25/>} />
-        <Route path="Fp26" element={<Fp26/>} />
-        <Route path="Fp27" element={<Fp27/>} />
-        <Route path="Fp28" element={<Fp28/>} />
-        <Route path="Fp29" element={<Fp29/>} />
-        <Route path="Fp32" element={<Fp32/>} />
-        <Route path="Fp33" element={<Fp33/>} />
-        <Route path="Fp34" element={<Fp34/>} />
-        <Route path="Fp35" element={<Fp35/>} />
-        <Route path="Fp36" element={<Fp36/>} />
-        <Route path="Fp37" element={<Fp37/>} />
-        <Route path="Fp38" element={<Fp38/>} />
-        <Route path="Fp39" element={<Fp39/>} />
-        <Route path="Fp40" element={<Fp40/>} />
-        <Route path="Fp43" element={<Fp43/>} />
-        <Route path="Fp44" element={<Fp44/>} />
-        <Route path="Fp45" element={<Fp45/>} />
-        <Route path="Rss1" element={<Rss1/>} />
+        <Route path="/" element={<Init_1 terms={terms} />} />
+        <Route path="Init_2" element={<Init_2 terms={terms} />} />
+        <Route path="Init_3" element={<Init_3 terms={terms} />} />
+        <Route path="Ss1" element={<Ss1 terms={terms} />} />
+        <Route path="Ss1_1" element={<Ss1_1 terms={terms} />} />
+        <Route path="Ss1_2" element={<Ss1_2 terms={terms} />} />
+        <Route path="Ss1_3" element={<Ss1_3 terms={terms} />} />
+        <Route path="Ss1_4" element={<Ss1_4 terms={terms} />} />
+        <Route path="Ss1_5" element={<Ss1_5 terms={terms} />} />
+        <Route path="Ss1_6" element={<Ss1_6 terms={terms} />} />
+        <Route path="Ss2" element={<Ss2 terms={terms} />} />
+        <Route path="Ss3" element={<Ss3 terms={terms} />} />
+        <Route path="Ss4" element={<Ss4 terms={terms} />} />
+        <Route path="Ss5" element={<Ss5 terms={terms} />} />
+        <Route path="Ss6" element={<Ss6 terms={terms} />} />
+        <Route path="Ss7" element={<Ss7 terms={terms} />} />
+        <Route path="Ss8" element={<Ss8 terms={terms} />} />
+        <Route path="Ss8_1" element={<Ss8_1 terms={terms} />} />
+        <Route path="Ss8_1_1" element={<Ss8_1_1 terms={terms} />} />
+        <Route path="Ss8_1_2" element={<Ss8_1_2 terms={terms} />} />
+        <Route path="Ss8_1_3" element={<Ss8_1_3 terms={terms} />} />
+        <Route path="Ss8_1_4" element={<Ss8_1_4 terms={terms} />} />
+        <Route path="Ss8_1_5" element={<Ss8_1_5 terms={terms} />} />
+        <Route path="Ss8_2" element={<Ss8_2 terms={terms} />} />
+        <Route path="Ss8_2_1" element={<Ss8_2_1 terms={terms} />} />
+        <Route path="Ss8_2_2" element={<Ss8_2_2 terms={terms} />} />
+        <Route path="Ss8_2_3" element={<Ss8_2_3 terms={terms} />} />
+        <Route path="Fp1" element={<Fp1 terms={terms} />} />
+        <Route path="Fp2" element={<Fp2 terms={terms} />} />
+        <Route path="Fp3" element={<Fp3 terms={terms} />} />
+        <Route path="Fp11_1" element={<Fp11_1 terms={terms} />} />
+        <Route path="Fp19" element={<Fp19 terms={terms} />} />
+        <Route path="Fp20" element={<Fp20 terms={terms} />} />
+        <Route path="Fp21" element={<Fp21 terms={terms} />} />
+        {/* <Route path="Fp22" element={<Fp22 terms={terms} />} />
+        <Route path="Fp23" element={<Fp23 terms={terms} />} />
+        <Route path="Fp24" element={<Fp24 terms={terms} />} />
+        <Route path="Fp25" element={<Fp25 terms={terms} />} />
+        <Route path="Fp26" element={<Fp26 terms={terms} />} />
+        <Route path="Fp27" element={<Fp27 terms={terms} />} />
+        <Route path="Fp28" element={<Fp28 terms={terms} />} /> */}
+        <Route path="Fp29" element={<Fp29 terms={terms} />} />
+        <Route path="Fp32" element={<Fp32 terms={terms} />} />
+        <Route path="Fp33" element={<Fp33 terms={terms} />} />
+        <Route path="Fp34" element={<Fp34 terms={terms} />} />
+        <Route path="Fp35" element={<Fp35 terms={terms} />} />
+        <Route path="Fp36" element={<Fp36 terms={terms} />} />
+        <Route path="Fp37" element={<Fp37 terms={terms} />} />
+        <Route path="Fp38" element={<Fp38 terms={terms} />} />
+        <Route path="Fp39" element={<Fp39 terms={terms} />} />
+        <Route path="Fp40" element={<Fp40 terms={terms} />} />
+        <Route path="Fp43" element={<Fp43 terms={terms} />} />
+        <Route path="Fp44" element={<Fp44 terms={terms} />} />
+        <Route path="Fp45" element={<Fp45 terms={terms} />} />
+        <Route path="Rss1" element={<Rss1 terms={terms} />} />
       </Routes>
     </div>
   )

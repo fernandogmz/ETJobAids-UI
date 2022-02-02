@@ -1,7 +1,7 @@
 import React from "react"
 import LogOut from '../components/btns/logOut'
-import BtnNavBack from '../components/btns/btnNavBack'
-import BtnNavNext from '../components/btns/btnNavNext'
+import BtnNavBack from '../components/btns/BtnNavBack'
+import BtnNavNext from '../components/btns/BtnNavNext'
 import Quantity from '../components/btns/quantity'
 import { ReactComponent as Kid01 } from '../assets/images/hero/kids/kid_01.svg'
 import { ReactComponent as Kid02 } from '../assets/images/hero/kids/kid_02.svg'
@@ -10,21 +10,7 @@ import { ReactComponent as Kid04 } from '../assets/images/hero/kids/kid_hide.svg
 import ReactPlayer from 'react-player'
 import { Link } from "react-router-dom"
 
-const Ss1_4 = () => {
-
-    let op_lngs = {
-        name: 'languages',
-        clss: 'custom_select',
-        lngs: ['English', 'Spanish', 'Portuguese', 'French']
-    }
-
-    let Str = {
-        title: "How many children do you have?"
-    }
-
-    let btns = {
-        lbl: ['back', 'next', 'Calculate']
-    }
+const Ss1_4 = ({terms}) => {
 
     return (
         <div className="lyts">
@@ -37,7 +23,7 @@ const Ss1_4 = () => {
             <div className="grd_cont">
                 <div className="ss1_4">
                     <div className="grd_line1 ">
-                        <h1 className="slide_in_blurred_top">{Str.title}</h1>
+                        <h1 className="slide_in_blurred_top">{terms['SS.Children']}</h1>
                     </div>
                     <div className="grd_line2">
                         <div>
@@ -67,7 +53,7 @@ const Ss1_4 = () => {
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
                         <Link to={"/Ss1_3"}>
-                            <BtnNavBack text_btn={btns.lbl[0]} />
+                            <BtnNavBack text_btn={terms['core.Back']} />
                         </Link>
                     </div>
                     <div className="grd_btm_center">
@@ -83,7 +69,7 @@ const Ss1_4 = () => {
                     </div>
                     <div className="grd_btm_right">
                         <Link to={"/Ss1_5"}>
-                            <BtnNavNext text_btn={btns.lbl[1]} />
+                            <BtnNavNext text_btn={terms['core.Next']} />
                         </Link>
                     </div>
                 </div>
