@@ -8,7 +8,6 @@ import { Link } from "react-router-dom"
 
 
 const Fp2 = () => {
-
     let Str = {
         title: "It can take some extra months for your periods and fertility to return after stopping the injectable.",
         sbttl: ""
