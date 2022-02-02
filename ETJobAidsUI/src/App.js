@@ -60,6 +60,7 @@ import Fp40 from "./pages/fp40"
 
 import Fp43 from "./pages/fp43"
 import Fp44 from "./pages/fp44"
+import Fp45 from "./pages/fp45"
 
 const App = () => {
 
@@ -118,6 +119,7 @@ const App = () => {
         <Route path="Fp40" element={<Fp40/>} />
         <Route path="Fp43" element={<Fp43/>} />
         <Route path="Fp44" element={<Fp44/>} />
+        <Route path="Fp45" element={<Fp45/>} />
       </Routes>
     </div>
   )

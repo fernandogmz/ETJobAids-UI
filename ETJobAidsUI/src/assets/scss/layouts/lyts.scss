@@ -3314,7 +3314,7 @@
                             margin-left: 8px;
 
                             .input_label {
-                                bottom: 60%;    
+                                bottom: 60%;
                                 color: $cc07;
                             }
 
@@ -3363,6 +3363,68 @@
         }
 
         //[END] LYT FP44
+
+        //LYT FP45
+        .fp45 {
+            display: flex;
+            justify-self: center;
+            align-items: center;
+            padding: 16vh calc(.5rem + 20vw);
+
+            .cont {
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-template-rows: auto auto;
+                gap: 0 0;
+                grid-template-areas:
+                    "grd_title1 grd_title2"
+                    "grd_r grd_date";
+                background-color: $ccw;
+                border-radius: 20px;
+                box-shadow: 0.2rem 0.8rem 1.6rem var(--colorTrans2);
+
+                .grd_title1 {
+                    padding: 16px 16px 0;
+                    border-radius: 20px 0 0;
+                    grid-area: grd_title1;
+
+                    h2 {
+                        margin-bottom: 0;
+                    }
+                }
+
+                .grd_title2 {
+                    padding: 16px 16px 0;
+                    border-radius: 0 20px 0 0;
+                    background-color: mix(#fff, $cc07, 84%);
+                    grid-area: grd_title2;
+
+                    h2 {
+                        margin-bottom: 0;
+                    }
+                }
+
+                .grd_r {
+
+                    display: flex;
+                    align-items: center;
+                    grid-area: grd_r;
+
+                    div {
+                        margin: 0 auto;
+                    }
+                }
+
+                .grd_date {
+                    padding: 16px;
+                    border-radius: 0  0 20px;
+                    background-color: mix(#fff, $cc07, 84%);
+                    grid-area: grd_date;
+                }
+            }
+        }
+
+        //[END] LYT FP45
     }
 
     .grd_bottom_nav {
