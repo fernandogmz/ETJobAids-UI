@@ -3369,7 +3369,6 @@
             display: flex;
             justify-self: center;
             align-items: center;
-            padding: 16vh calc(.5rem + 20vw);
 
             .cont {
                 display: grid;
@@ -3382,6 +3381,7 @@
                 background-color: $ccw;
                 border-radius: 20px;
                 box-shadow: 0.2rem 0.8rem 1.6rem var(--colorTrans2);
+                margin: 16vh auto;
 
                 .grd_title1 {
                     padding: 16px 16px 0;
@@ -3459,10 +3459,8 @@
                 align-items: center;
                 grid-area: grd_btm_center;
 
-                svg {
-                    margin-top: -12px;
-                    height: 25vw !important;
-                    width: 30vw !important;
+                .audioplayer {
+                    margin-top: -16px;
                 }
             }
 
@@ -3473,7 +3471,6 @@
                 padding: 0 30px 16px 0;
                 grid-area: grd_btm_right;
             }
-
         }
     }
 }

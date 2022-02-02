@@ -4,7 +4,7 @@ import BtnNavBack from '../components/btns/btnNavBack'
 import { ReactComponent as Lady01 } from '../assets/images/hero/female/lady_01.svg'
 import { ReactComponent as Lady02 } from '../assets/images/hero/female/lady_02.svg'
 import { ReactComponent as Lady03 } from '../assets/images/hero/female/lady_03.svg'
-import { ReactComponent as Mp3 } from '../assets/images/mp3.svg'
+import ReactPlayer from 'react-player'
 import { Link } from "react-router-dom"
 
 const Ss1 = () => {
@@ -50,8 +50,8 @@ const Ss1 = () => {
                             </div>
                             <div>
                                 <div className="slide_in_blurred_right">
-                                <Link to={"/Ss1_1"}>
-                                    <Lady03 />
+                                    <Link to={"/Ss1_1"}>
+                                        <Lady03 />
                                     </Link>
                                 </div>
                             </div>
@@ -67,8 +67,14 @@ const Ss1 = () => {
                         </Link>
                     </div>
                     <div className="grd_btm_center">
-                        <div id="audio" className="audioplayer">
-                        <Mp3/>
+                        <div className="audioplayer">
+                            <ReactPlayer
+                                url={require('../assets/mp3/hothothot.mp3')}
+                                width="400px"
+                                height="50px"
+                                playing={true}
+                                controls={true}
+                            />
                         </div>
                     </div>
                     <div className="grd_btm_right"></div>
