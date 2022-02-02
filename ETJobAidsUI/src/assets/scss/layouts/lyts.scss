@@ -3234,6 +3234,130 @@
         }
 
         //[END] LYT FP43
+
+        //LYT FP44
+        .fp44 {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr;
+            grid-auto-columns: 1fr;
+            grid-auto-rows: auto;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "grd_line1"
+                "grd_line2";
+            height: 100%;
+
+            .grd_line1 {
+                padding-bottom: 14vh;
+                grid-area: grd_line1;
+
+                h1 {
+                    padding: 0 1em;
+                    text-align: center;
+                }
+            }
+
+            .grd_line2 {
+                padding: 0 calc(.5rem + 23vw);
+                grid-area: grd_line2;
+
+                .mbl {
+                    display: grid;
+                    grid-template-columns: auto 1fr auto;
+                    grid-template-rows: 1fr;
+                    gap: 0px 0px;
+                    grid-template-areas:
+                        "grd_icon grd_desc grd_cta";
+
+                    background-color: #fff;
+                    margin: 0 32px 21px;
+                    padding: 16px;
+                    border-radius: 20px;
+                    box-shadow: 0.2rem 0.8rem 1.6rem var(--colorTrans2);
+
+                    .grd_icon {
+                        display: flex;
+                        align-items: center;
+                        grid-area: grd_icon;
+
+                        svg {
+                            height: 56px !important;
+                            width: 56px !important;
+                            border-radius: 50%;
+                            -moz-border-radius: 50%;
+                            -webkit-border-radius: 50%;
+
+                            .pathcc {
+                                fill: $cc07;
+                            }
+                        }
+                    }
+
+                    .grd_desc {
+                        display: flex;
+                        align-items: center;
+                        padding-left: 21px;
+                        grid-area: grd_desc;
+                    }
+
+                    .grd_cta {
+                        display: flex;
+                        align-items: center;
+                        padding-left: 21px;
+                        grid-area: grd_cta;
+
+                        .input {
+                            border: 2px solid #722022;
+                            border-radius: 3rem;
+                            margin-left: 8px;
+
+                            .input_num {
+                                display: block;
+                                margin: 0;
+                                padding: 7px;
+                                color: inherit;
+                                width: 100%;
+                                font-family: inherit;
+                                font-size: var(--inputFontSize);
+                                font-weight: inherit;
+                                line-height: var(--inputLineHeight);
+                                border: none;
+                                border-radius: 3rem;
+                                transition: box-shadow var(--transitionDuration);
+                                text-align: center;
+
+                                &::-webkit-outer-spin-button,
+                                &::-webkit-inner-spin-button {
+                                    -webkit-appearance: none;
+                                    margin: 0;
+                                }
+
+                                &[type=number] {
+                                    -moz-appearance: textfield;
+                                }
+
+                                &::placeholder {
+                                    color: #B0BEC5;
+                                }
+
+                                &:focus {
+                                    outline: none;
+                                    box-shadow: none;
+                                }
+                            }
+                        }
+
+                        .custom_select {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        //[END] LYT FP44
     }
 
     .grd_bottom_nav {

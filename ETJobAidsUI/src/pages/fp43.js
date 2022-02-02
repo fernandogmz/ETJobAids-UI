@@ -43,8 +43,8 @@ const Fp43 = () => {
                                 <div className="slide_in_blurred_left">
                                     <ReactPlayer
                                     url={require('../assets/mp4/example_video.mp4')}
-                                    width='100%'
-                                    height='100%'
+                                    width='auto'
+                                    height='30vh'
                                     controls
                                     playing
                                     volume='0.85'
@@ -58,8 +58,8 @@ const Fp43 = () => {
                                 <div className="slide_in_blurred_right">
                                 <ReactPlayer
                                     url={require('../assets/mp4/example_video.mp4')}
-                                    width='100%'
-                                    height='100%'
+                                    width='auto'
+                                    height='30vh'
                                     controls
                                     playing
                                     volume='0.85'

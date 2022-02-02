@@ -42,7 +42,7 @@ const Fp29 = () => {
                             <ReactPlayer
                                     url={require('../assets/mp4/example_video.mp4')}
                                     width='auto'
-                                    height='30vh'
+                                    height='25vh'
                                     controls
                                     playing
                                     volume='0.85'
@@ -54,7 +54,7 @@ const Fp29 = () => {
                             <ReactPlayer
                                     url={require('../assets/mp4/example_video.mp4')}
                                     width='auto'
-                                    height='30vh'
+                                    height='25vh'
                                     controls
                                     playing
                                     volume='0.85'
