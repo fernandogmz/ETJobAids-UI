@@ -44,7 +44,9 @@ const Init3 = () => {
                             </div>
                             <div>
                                 <div className="slide_in_blurred_right">
+                                <Link to={"/Rss1"}>
                                     <ReturningUser />
+                                    </Link>
                                 </div>
                                 <div className="tracking_in_expand">
                                     <h2>{Str.cta2}</h2>
