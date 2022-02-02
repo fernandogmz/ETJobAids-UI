@@ -20,7 +20,7 @@ const Fp43 = () => {
     }
 
     let btns = {
-        lbl: ['back', 'next#1']
+        lbl: ['back', 'next']
     }
 
     return (
