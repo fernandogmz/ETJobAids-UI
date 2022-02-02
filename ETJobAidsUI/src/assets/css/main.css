@@ -3439,7 +3439,7 @@
   height: 100%;
 }
 .lyts .grd_cont .fp44 .grd_line1 {
-  padding-bottom: 14vh;
+  padding-bottom: 12vh;
   grid-area: grd_line1;
 }
 .lyts .grd_cont .fp44 .grd_line1 h1 {
@@ -3493,6 +3493,10 @@
   border: 2px solid #722022;
   border-radius: 3rem;
   margin-left: 8px;
+}
+.lyts .grd_cont .fp44 .grd_line2 .mbl .grd_cta .input .input_label {
+  bottom: 60%;
+  color: #722022;
 }
 .lyts .grd_cont .fp44 .grd_line2 .mbl .grd_cta .input .input_num {
   display: block;
