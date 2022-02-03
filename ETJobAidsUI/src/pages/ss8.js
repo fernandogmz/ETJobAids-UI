@@ -17,16 +17,7 @@ import ReactPlayer from 'react-player'
 import { Link } from "react-router-dom"
 
 
-const Ss8 = () => {
-
-    let Str = {
-        title: "Are you interested in learning about family planning methods?"
-    }
-
-    let btns = {
-        lbl: ['back', 'next']
-    }
-
+const Ss8 = ({terms}) => {
     return (
         <div className="lyts">
             <div className="grd_top_nav">
@@ -39,7 +30,7 @@ const Ss8 = () => {
                 <div className="ss8">
                     <div className="grd_left">
                         <div className="cont">
-                            <h1 className="slide_in_blurred_left">{Str.title}</h1>
+                            <h1 className="slide_in_blurred_left">{terms['SS.FamilyPlanningInterest']}</h1>
                             <div className="circle">
                                 <Link to={"/Ss8_1"}>
                                     <Done />
@@ -76,7 +67,7 @@ const Ss8 = () => {
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
                         <Link to={"/Ss7"}>
-                            <BtnNavBack text_btn={btns.lbl[0]} />
+                            <BtnNavBack text_btn={terms['core.Back']} />
                         </Link>
                     </div>
                     <div className="grd_btm_center">

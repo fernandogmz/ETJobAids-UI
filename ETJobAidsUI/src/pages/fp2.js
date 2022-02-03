@@ -7,19 +7,11 @@ import RadioButtons from '../components/btns/radioButton'
 import { Link } from "react-router-dom"
 
 
-const Fp2 = () => {
-    let Str = {
-        title: "It can take some extra months for your periods and fertility to return after stopping the injectable.",
-        sbttl: ""
-    }
-
-    let btns = {
-        lbl: ['back', 'next']
-    }
+const Fp2 = ({terms}) => {
 
     let Rbttns = {
         name: "radio1",
-        lbls: ["True", "False"]
+        lbls: [terms['core.True'], terms['core.False']]
     }
 
     return (
@@ -34,7 +26,7 @@ const Fp2 = () => {
                 <div className="fp2">
                     <div>Image</div>
                     <div>
-                        <h2 className="tracking_in_expand">{Str.title}</h2>
+                        <h2 className="tracking_in_expand">{terms['MMBQ.Q1']}</h2>
                         <div className="r_bttons">
                             <RadioButtons name={Rbttns.name} lbl={Rbttns.lbls[0]} />
                         </div>
@@ -48,7 +40,7 @@ const Fp2 = () => {
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
                         <Link to={"/Fp1"}>
-                            <BtnNavBack text_btn={btns.lbl[0]} />
+                            <BtnNavBack text_btn={terms['core.Back']} />
                         </Link>
                     </div>
                     <div className="grd_btm_center">
@@ -64,7 +56,7 @@ const Fp2 = () => {
                     </div>
                     <div className="grd_btm_right">
                         <Link to={"/Fp3"}>
-                            <BtnNavNext text_btn={btns.lbl[1]} />
+                            <BtnNavNext text_btn={terms['core.Next']} />
                         </Link>
                     </div>
                 </div>

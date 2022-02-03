@@ -15,16 +15,7 @@ import { ReactComponent as Kid_04 } from '../assets/images/hero/kids/kid_04.svg'
 import { Link } from "react-router-dom"
 
 
-const Ss8_1_2 = () => {
-
-    let Str = {
-        title: "Are you satisfied with your method? ",
-        sbttl: ""
-    }
-
-    let btns = {
-        lbl: ['back', 'next']
-    }
+const Ss8_1_2 = ({terms}) => {
 
     return (
         <div className="lyts">
@@ -38,7 +29,7 @@ const Ss8_1_2 = () => {
                 <div className="ss8_1_2">
                     <div className="grd_left">
                         <div className="cont">
-                        <h1 className="slide_in_blurred_left">{Str.title}</h1>
+                        <h1 className="slide_in_blurred_left">{terms['core.MethodSatisfaction']}</h1>
                             <div className="circle">
                                 <Link to={"/Ss8_1_3"}>
                                     <Done />

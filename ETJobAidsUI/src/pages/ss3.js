@@ -8,7 +8,7 @@ import NumField from '../components/numField'
 import { ReactComponent as Tra } from '../assets/images/goals/tractor.svg'
 import { Link } from "react-router-dom"
 
-const Ss3 = () => {
+const Ss3 = ({terms}) => {
 
     let op_lngs = {
         name: 'languages',
@@ -19,7 +19,15 @@ const Ss3 = () => {
     let op_drtn = {
         name: 'languages',
         clss: 'custom_select1',
-        lngs: ['6 months', '1 Year', '2 Years', '3 Years', '4 Years', '5 Years']
+        lngs: [
+            terms['core.SixMonths'],
+            terms['core.FirstYear'],
+            terms['core.TwoYears'],
+            terms['core.ThreeYears'],
+            terms['core.FourYears'],
+            terms['core.FiveYears']
+        ]
+        //    '6 months', '1 Year', '2 Years', '3 Years', '4 Years', '5 Years']
     }
 
     let Str = {
@@ -53,13 +61,13 @@ const Ss3 = () => {
                         <div className="cont">
                             <h1 className="slide_in_blurred_top">{Str.title + Str.cost}</h1>
                             <div className="flds slide_in_blurred_right">
-                                <NumField flds_lbls={Str.flds_lbls[0]} flds_holder={Str.flds_holder[0]} />
+                                <NumField flds_lbls={Str.flds_lbls[0]} flds_holder={terms['SS.IncomeCalculator.Income']} />
                             </div>
                             <div className="flds slide_in_blurred_right">
-                                <NumField flds_lbls={Str.flds_lbls[1]} flds_holder={Str.flds_holder[1]} />
+                                <NumField flds_lbls={Str.flds_lbls[1]} flds_holder={terms['SS.IncomeCalculator.Expenses']} />
                             </div>
                             <div className="flds slide_in_blurred_right">
-                                <NumField flds_lbls={Str.flds_lbls[2]} flds_holder={Str.flds_holder[2]} />
+                                <NumField flds_lbls={Str.flds_lbls[2]} flds_holder={terms['SS.IncomeCalculator.Savings']} />
                             </div>
                             <div className="flds slide_in_blurred_right">
                                 <SelectOp ops={op_drtn.lngs} name={op_lngs.name} clss={op_drtn.clss} />
@@ -75,7 +83,7 @@ const Ss3 = () => {
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
                         <Link to={"/Ss2"}>
-                            <BtnNavBack text_btn={btns.lbl[0]} />
+                            <BtnNavBack text_btn={terms['core.Back']} />
                         </Link>
                     </div>
                     <div className="grd_btm_center">
@@ -83,7 +91,7 @@ const Ss3 = () => {
                     </div>
                     <div className="grd_btm_right">
                         <Link to={"/Ss4"}>
-                            <BtnNavNext text_btn={btns.lbl[1]} />
+                            <BtnNavNext text_btn={terms['core.Next']} />
                         </Link>
                     </div>
                 </div>

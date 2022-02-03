@@ -6,14 +6,10 @@ import ReactPlayer from 'react-player'
 import { Link } from "react-router-dom"
 
 
-const Ss2 = () => {
+const Ss2 = ({terms}) => {
 
     let Str = {
         title: "SS2 - Selectyour goals"
-    }
-
-    let btns = {
-        lbl: ['back', 'next']
     }
 
     return (
@@ -31,7 +27,7 @@ const Ss2 = () => {
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
                         <Link to={"/Ss1_6"}>
-                            <BtnNavBack text_btn={btns.lbl[0]} />
+                            <BtnNavBack text_btn={terms['core.Back']} />
                         </Link>
                     </div>
                     <div className="grd_btm_center">
@@ -47,7 +43,7 @@ const Ss2 = () => {
                     </div>
                     <div className="grd_btm_right">
                         <Link to={"/Ss3"}>
-                            <BtnNavNext text_btn={btns.lbl[1]} />
+                            <BtnNavNext text_btn={terms['core.Next']} />
                         </Link>
                     </div>
                 </div>

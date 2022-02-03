@@ -6,15 +6,7 @@ import ReactPlayer from 'react-player'
 import { Link } from "react-router-dom"
 
 
-const Fp19 = () => {
-
-    let Str = {
-        title: "Correct"
-    }
-
-    let btns = {
-        lbl: ['back', 'next']
-    }
+const Fp19 = ({terms}) => {
 
     return (
         <div className="lyts">
@@ -27,7 +19,7 @@ const Fp19 = () => {
             <div className="grd_cont">
             <div className="fp19">
                     <div className="grd_line1 ">
-                        <h1 className="slide_in_blurred_top">{Str.title}</h1>
+                        <h1 className="slide_in_blurred_top">{terms['core.Correct']}</h1>
                     </div>
                     <div className="grd_line2">
                         <div className="content_video slide_in_blurred_bottom">
@@ -47,13 +39,13 @@ const Fp19 = () => {
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
                         <Link to={"/Fp11_1"}>
-                            <BtnNavBack text_btn={btns.lbl[0]} />
+                            <BtnNavBack text_btn={terms['core.Back']} />
                         </Link>
                     </div>
                     <div className="grd_btm_center"></div>
                     <div className="grd_btm_right">
                         <Link to={"/Fp20"}>
-                            <BtnNavNext text_btn={btns.lbl[1]} />
+                            <BtnNavNext text_btn={terms['core.Next']} />
                         </Link>
                     </div>
                 </div>

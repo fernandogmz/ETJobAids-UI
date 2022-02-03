@@ -5,22 +5,12 @@ import Btn from '../components/btns/btn'
 import ReactPlayer from 'react-player'
 import { Link } from "react-router-dom"
 
-const Ss8_2_3 = () => {
-
-    let Str = {
-        title: "Thank you for learning about Smart Start! Remember you can always reach out to your provider if you have any questions in the future. Before you go, maybe you'd like to take a look at some of our resources:",
-        sbttl1: "Remember you can always reach out to your provider if you have any questions in the future. Before you go, please take a look at some of our resources",
-        sbttl2: "Your method summary"
-    }
+const Ss8_2_3 = ({terms}) => {
 
     let op_am = {
         name: 'amethod',
         clss: 'custom_select',
-        mthds: ['UID', 'Implant', 'Condoms', 'Injectable', 'pills', 'EC']
-    }
-
-    let btns = {
-        lbl: 'Done'
+        mthds: [terms['core.IUD'], terms['core.Implant'], terms['core.Condoms'], terms['core.Injectable'], terms['core.Pills'], terms['core.EC']]
     }
 
     return (
@@ -34,13 +24,13 @@ const Ss8_2_3 = () => {
             <div className="grd_cont">
                 <div className="ss8_2_3">
                     <div className="grd_line1 ">
-                        <h3 className="slide_in_blurred_top">{Str.title}</h3>
+                        <h3 className="slide_in_blurred_top">{terms['SS.MethodNoInterestThankYou.1']}</h3>
                     </div>
                     <div className="grd_line2">
-                        <p className="tracking_in_expand">{Str.sbttl1}</p>
+                        <p className="tracking_in_expand">{terms['SS.MethodNoInterest.ThankYou.2']}</p>
                         <div>
                             <div>
-                                <p className="slide_in_blurred_left">{Str.sbttl2}</p>
+                                <p className="slide_in_blurred_left">{terms['SS.MethodNoInterest.Summary']}</p>
                             </div>
                             <div className="slide_in_blurred_right">
                                 <SelectOp ops={op_am.mthds} name={op_am.name} clss={op_am.clss} />
@@ -69,7 +59,7 @@ const Ss8_2_3 = () => {
                     <div className="grd_btm_center"></div>
                     <div className="grd_btm_right">
                         <Link to={"/"}>
-                            <Btn text_btn={btns.lbl} />
+                            <Btn text_btn={terms['core.Done']} />
                         </Link>
                     </div>
                 </div>

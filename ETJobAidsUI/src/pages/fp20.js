@@ -6,7 +6,7 @@ import ReactPlayer from 'react-player'
 import { Link } from "react-router-dom"
 
 
-const Fp20 = () => {
+const Fp20 = ({terms}) => {
 
     let Str = {
         title: "Congratulation you got X out of X answers correct! ",
@@ -29,8 +29,9 @@ const Fp20 = () => {
                 <div className="fp20">
                     <div>Image</div>
                     <div>
-                        <h2 className="tracking_in_expand">{Str.title}</h2>
-                        <h4 className="tracking_in_expand">{Str.sbttl}</h4>
+                        <h2 className="tracking_in_expand">{terms['MMBQ.Score.Congratulations']}</h2>
+                        <h4 className="tracking_in_expand">{terms['MMBQ.Score.Summary']}</h4>
+                        <h4 className="tracking_in_expand">{terms['MMBQ.Score.Learn']}</h4>
                         <div></div>
                         <div></div>
                     </div>
@@ -40,7 +41,7 @@ const Fp20 = () => {
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
                         <Link to={"/Fp11_1"}>
-                            <BtnNavBack text_btn={btns.lbl[0]} />
+                            <BtnNavBack text_btn={terms['core.Back']} />
                         </Link>
                     </div>
                     <div className="grd_btm_center">
@@ -56,7 +57,7 @@ const Fp20 = () => {
                     </div>
                     <div className="grd_btm_right">
                         <Link to={"/Fp21"}>
-                            <BtnNavNext text_btn={btns.lbl[1]} />
+                            <BtnNavNext text_btn={terms['core.Next']} />
                         </Link>
                     </div>
                 </div>

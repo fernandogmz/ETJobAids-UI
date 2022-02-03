@@ -10,15 +10,7 @@ import { ReactComponent as Method_3 } from '../assets/images/family_planning_met
 import { Link } from "react-router-dom"
 
 
-const Ss8_2_1 = () => {
-
-    let Str = {
-        title: "Which method are you currently using?"
-    }
-
-    let btns = {
-        lbl: ['back', 'next']
-    }
+const Ss8_2_1 = ({terms}) => {
 
     return (
         <div className="lyts">
@@ -31,7 +23,7 @@ const Ss8_2_1 = () => {
             <div className="grd_cont">
                 <div className="ss8_2_1">
                     <div className="grd_line1">
-                        <h1>{Str.title}</h1>
+                        <h1>{terms['core.MethodUsed']}</h1>
                     </div>
                     <div className="grd_line2">
                         <div className="grd_top">
@@ -75,7 +67,7 @@ const Ss8_2_1 = () => {
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
                         <Link to={"/Ss8_2"}>
-                            <BtnNavBack text_btn={btns.lbl[0]} />
+                            <BtnNavBack text_btn={terms['core.Back']} />
                         </Link>
                     </div>
                     <div className="grd_btm_center">

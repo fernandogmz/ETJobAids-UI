@@ -5,11 +5,7 @@ import BtnNavNext from '../components/btns/BtnNavNext'
 import ReactPlayer from 'react-player'
 import { Link } from "react-router-dom"
 
-const Ss6 = () => {
-
-    let btns = {
-        lbl: ['back', 'next']
-    }
+const Ss6 = ({terms}) => {
 
     return (
         <div className="lyts">
@@ -39,13 +35,13 @@ const Ss6 = () => {
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
                         <Link to={"/Ss5"}>
-                            <BtnNavBack text_btn={btns.lbl[0]} />
+                            <BtnNavBack text_btn={terms['core.Back']} />
                         </Link>
                     </div>
                     <div className="grd_btm_center"></div>
                     <div className="grd_btm_right">
                         <Link to={"/Ss7"}>
-                            <BtnNavNext text_btn={btns.lbl[1]} />
+                            <BtnNavNext text_btn={terms['core.Next']} />
                         </Link>
                     </div>
                 </div>

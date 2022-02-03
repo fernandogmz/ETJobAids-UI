@@ -17,16 +17,7 @@ import { ReactComponent as Kid_04 } from '../assets/images/hero/kids/kid_04.svg'
 import { Link } from "react-router-dom"
 
 
-const Ss8_2_2 = () => {
-
-    let Str = {
-        title: "Are you satisfied with your method?",
-        sbttl: ""
-    }
-
-    let btns = {
-        lbl: ['back', 'next']
-    }
+const Ss8_2_2 = ({terms}) => {
 
     return (
         <div className="lyts">
@@ -40,7 +31,7 @@ const Ss8_2_2 = () => {
                 <div className="ss8_1_2">
                     <div className="grd_left">
                         <div className="cont">
-                        <h1 className="slide_in_blurred_left">{Str.title}</h1>
+                        <h1 className="slide_in_blurred_left">{terms['core.MethodSatisfaction']}</h1>
                             <div className="circle">
                                 <Link to={"/Ss8_1_3"}>
                                     <Done />
@@ -77,7 +68,7 @@ const Ss8_2_2 = () => {
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
                     <Link to={"/Ss8_2_1"}>
-                            <BtnNavBack text_btn={btns.lbl[0]} />
+                            <BtnNavBack text_btn={terms['core.Back']} />
                         </Link>
                     </div>
                     <div className="grd_btm_center">
@@ -85,7 +76,7 @@ const Ss8_2_2 = () => {
                     </div>
                     <div className="grd_btm_right">
                     <Link to={"/Ss8_2_3"}>
-                            <BtnNavNext text_btn={btns.lbl[1]} />
+                            <BtnNavNext text_btn={terms['core.Next']} />
                         </Link>
                     </div>
                 </div>

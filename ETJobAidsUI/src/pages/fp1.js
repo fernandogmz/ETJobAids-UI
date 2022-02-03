@@ -6,16 +6,7 @@ import ReactPlayer from 'react-player'
 import { Link } from "react-router-dom"
 
 
-const Fp1 = () => {
-
-    let Str = {
-        title: "We’re going to start off by playing a game to help us answer some of the most common questions we receive about contraceptive methods.",
-        sbttl: "We’re going to hear some statements, and I want you to tell me if you think it’s true or false. Don’t be shy! We’ll talk about the correct answers, too! Let’s get started! (text and audio)"
-    }
-
-    let btns = {
-        lbl: ['back', 'next']
-    }
+const Fp1 = ({terms}) => {
 
     return (
         <div className="lyts">
@@ -29,8 +20,8 @@ const Fp1 = () => {
                 <div className="fp1">
                     <div>Image</div>
                     <div>
-                        <h2 className="tracking_in_expand">{Str.title}</h2>
-                        <h4 className="tracking_in_expand">{Str.sbttl}</h4>
+                        <h2 className="tracking_in_expand">{terms['MMBQ.Intro.QuizIntro']}</h2>
+                        {/* <h4 className="tracking_in_expand">{Str.sbttl}</h4> */}
                     </div>
                 </div>
             </div>
@@ -38,7 +29,7 @@ const Fp1 = () => {
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
                         <Link to={"/Ss8_1_3"}>
-                            <BtnNavBack text_btn={btns.lbl[0]} />
+                            <BtnNavBack text_btn={terms['core.Back']} />
                         </Link>
                     </div>
                     <div className="grd_btm_center">
@@ -54,7 +45,7 @@ const Fp1 = () => {
                     </div>
                     <div className="grd_btm_right">
                         <Link to={"/Fp2"}>
-                            <BtnNavNext text_btn={btns.lbl[1]} />
+                            <BtnNavNext text_btn={terms['core.Next']} />
                         </Link>
                     </div>
                 </div>

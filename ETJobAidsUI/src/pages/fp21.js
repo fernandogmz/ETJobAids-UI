@@ -7,14 +7,10 @@ import { Link } from "react-router-dom"
 
 
 
-const Fp21 = () => {
+const Fp21 = ({terms}) => {
 
     let Str = {
         title: 'Refer to the contraception intro video content - TBD'
-    }
-
-    let btns = {
-        lbl: ['back', 'next']
     }
 
     return (
@@ -48,13 +44,13 @@ const Fp21 = () => {
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
                     <Link to={"/Fp20"}>
-                            <BtnNavBack text_btn={btns.lbl[0]} />
+                            <BtnNavBack text_btn={terms['core.Back']} />
                         </Link>
                     </div>
                     <div className="grd_btm_center"></div>
                     <div className="grd_btm_right">
                         <Link to={"/Fp22"}>
-                            <BtnNavNext text_btn={btns.lbl[1]} />
+                            <BtnNavNext text_btn={terms['core.Next']} />
                         </Link>
                     </div>
                 </div>

@@ -16,16 +16,7 @@ import ReactPlayer from 'react-player'
 import { Link } from "react-router-dom"
 
 
-const Ss8_1 = () => {
-
-    let Str = {
-        title: "Are you currently using a family planning method?",
-        sbttl: ""
-    }
-
-    let btns = {
-        lbl: ['back', 'next']
-    }
+const Ss8_1 = ({terms}) => {
 
     return (
         <div className="lyts">
@@ -39,7 +30,7 @@ const Ss8_1 = () => {
                 <div className="ss8_2">
                     <div className="grd_left">
                         <div className="cont">
-                            <h1 className="slide_in_blurred_left">{Str.title}</h1>
+                            <h1 className="slide_in_blurred_left">{terms['core.FPMethod']}</h1>
                             <div className="circle">
                                 <Link to={"/Ss8_2_1"}>
                                     <Done />

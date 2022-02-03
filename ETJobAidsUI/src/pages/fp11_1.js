@@ -4,15 +4,7 @@ import Btn from '../components/btns/btn'
 import BtnNavBack from '../components/btns/BtnNavBack'
 import { Link } from "react-router-dom"
 
-const Fp11_1 = () => {
-
-    let Str = {
-        title: 'Do you want to continue with more quiz questions?'
-    }
-
-    let btns = {
-        lbl: ['back', 'next', 'Yes', 'No']
-    }
+const Fp11_1 = ({terms}) => {
 
     return (
         <div className="lyts">
@@ -25,17 +17,17 @@ const Fp11_1 = () => {
             <div className="grd_cont">
                 <div className="fp11_1">
                     <div className="grd_line1">
-                        <h1 className="slide_in_blurred_top">{Str.title}</h1>
+                        <h1 className="slide_in_blurred_top">{terms['MMBQ.Continue']}</h1>
                     </div>
                     <div className="grd_line2">
                         <div className="slide_in_blurred_left">
                             <Link to={"/Fp19"}>
-                                <Btn text_btn={btns.lbl[2]} />
+                                <Btn text_btn={terms['core.Yes']} />
                             </Link>
                         </div>
                         <div className="slide_in_blurred_right">
                             <Link to={"/Fp20"}>
-                                <Btn text_btn={btns.lbl[3]} />
+                                <Btn text_btn={terms['core.No']} />
                             </Link>
                         </div>
                     </div>
@@ -45,7 +37,7 @@ const Fp11_1 = () => {
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
                         <Link to={"/Fp3"}>
-                            <BtnNavBack text_btn={btns.lbl[0]} />
+                            <BtnNavBack text_btn={terms['core.Back']} />
                         </Link>
                     </div>
                     <div className="grd_btm_center"></div>

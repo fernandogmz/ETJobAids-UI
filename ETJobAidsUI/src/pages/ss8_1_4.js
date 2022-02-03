@@ -6,16 +6,7 @@ import ReactPlayer from 'react-player'
 import { Link } from "react-router-dom"
 
 
-const Ss8_1_4 = () => {
-
-    let Str = {
-        title: "Sorry to hear you are unsatisfied",
-        sbttl: "The next session will show you more method options that can better fit your preferences. (Audio and Txt)"
-    }
-
-    let btns = {
-        lbl: ['back', 'next']
-    }
+const Ss8_1_4 = ({terms}) => {
 
     return (
         <div className="lyts">
@@ -29,8 +20,8 @@ const Ss8_1_4 = () => {
                 <div className="ss8_1_4">
                     <div>Image</div>
                     <div>
-                        <h1 className="tracking_in_expand">{Str.title}</h1>
-                        <h2 className="tracking_in_expand">{Str.sbttl}</h2>
+                        <h1 className="tracking_in_expand">{terms['SS.MethodNotSatisfied1']}</h1>
+                        <h2 className="tracking_in_expand">{terms['SS.MethodNotSatisfied2']}</h2>
                     </div>
                 </div>
             </div>
@@ -38,7 +29,7 @@ const Ss8_1_4 = () => {
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
                         <Link to={"/Ss8_1_2"}>
-                            <BtnNavBack text_btn={btns.lbl[0]} />
+                            <BtnNavBack text_btn={terms['core.Back']} />
                         </Link>
                     </div>
                     <div className="grd_btm_center">
@@ -54,7 +45,7 @@ const Ss8_1_4 = () => {
                     </div>
                     <div className="grd_btm_right">
                         <Link to={"/Fp1"}>
-                            <BtnNavNext text_btn={btns.lbl[1]} />
+                            <BtnNavNext text_btn={terms['core.Next']} />
                         </Link>
                     </div>
                 </div>
