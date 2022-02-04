@@ -7,20 +7,16 @@ import RadioButtons from '../components/btns/radioButton'
 import { Link } from "react-router-dom"
 
 
-const Fp35 = () => {
+const Fp35 = ({terms}) => {
 
     let Str = {
         title: "You must wait 12 years to get pregnant once we start using the IUD",
         sbttl: ""
     }
 
-    let btns = {
-        lbl: ['back', 'next']
-    }
-
     let Rbttns = {
         name: "radio1",
-        lbls: ["True", "False"]
+        lbls: [terms['core.True'], terms['core.False']]
     }
 
     return (
@@ -49,7 +45,7 @@ const Fp35 = () => {
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
                         <Link to={"/Fp34"}>
-                            <BtnNavBack text_btn={btns.lbl[0]} />
+                            <BtnNavBack text_btn={terms['core.Back']} />
                         </Link>
                     </div>
                     <div className="grd_btm_center">
@@ -65,7 +61,7 @@ const Fp35 = () => {
                     </div>
                     <div className="grd_btm_right">
                         <Link to={"/Fp36"}>
-                            <BtnNavNext text_btn={btns.lbl[1]} />
+                            <BtnNavNext text_btn={terms['core.Next']} />
                         </Link>
                     </div>
                 </div>

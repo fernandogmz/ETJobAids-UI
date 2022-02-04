@@ -13,15 +13,9 @@ import { Link } from "react-router-dom"
 
 const Fp32 = ({terms}) => {
 
-    let Str = {
-        title: 'Which method are you interested in?',
-        subtitle: '',
-        mthds: ['UID', 'Implant', 'Condoms', 'Injectable', 'Pills', 'EC']
-    }
-
     let Rbttns = {
         name: "radio",
-        lbls: ['UID', 'Implant', 'Condoms', 'Injectable', 'Pills', 'EC']
+        lbls: [terms['core.IUD'], terms['core.Implant'], terms['core.Condoms'], terms['core.Injectable'], terms['core.Pills'], terms['core.EC']]
     }
 
     return (
@@ -35,7 +29,7 @@ const Fp32 = ({terms}) => {
             <div className="grd_cont">
                 <div className="fp32">
                     <div className="grd_line1 ">
-                        <h1 className="slide_in_blurred_top">{Str.title}</h1>
+                        <h1 className="slide_in_blurred_top">{terms['core.MethodInterest']}</h1>
                     </div>
                     <div className="grd_line2">
                         <div>
@@ -43,7 +37,7 @@ const Fp32 = ({terms}) => {
                                 <div className="grd_img"><Method_4 /></div>
                                 <div className="grd_cta ">
                                     <div className="r_bttons tracking_in_expand">
-                                        <RadioButtons name={Rbttns.name} lbl={Rbttns.lbls[4]} />
+                                        <RadioButtons name={Rbttns.name} lbl={terms['core.Pills']} />
                                     </div>
                                 </div>
                             </div>
@@ -53,7 +47,7 @@ const Fp32 = ({terms}) => {
                                 <div className="grd_img"><Method_6 /></div>
                                 <div className="grd_cta ">
                                     <div className="r_bttons tracking_in_expand">
-                                        <RadioButtons name={Rbttns.name} lbl={Rbttns.lbls[3]} />
+                                        <RadioButtons name={Rbttns.name} lbl={terms['core.Injectable']} />
                                     </div>
                                 </div>
                             </div>

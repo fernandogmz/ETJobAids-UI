@@ -14,20 +14,10 @@ import { ReactComponent as Icon3 } from '../assets/images/icons/error.svg'
 import RadioButtons from '../components/btns/radioButton'
 import { Link } from "react-router-dom"
 
-const Fp33 = () => {
-
-    let Str = {
-        title: 'Congratulations on selecting your method!',
-        sbttle: 'Here is some helpful information to remember about the method you selected.',
-        mthds: ['UID', 'Implant', 'Condoms', 'Injectable', 'Pills', 'EC']
-    }
-
-    let Btns = {
-        lbl: ['back', 'next']
-    }
+const Fp33 = ({terms}) => {
 
     let Descriptions = {
-        lbls: ['UID', 'Implant', 'Condoms', 'Injectable', 'Pills', 'EC'],
+        lbls: [terms['core.IUD'], terms['core.Implant'], terms['core.Condoms'], terms['core.Injectable'], terms['core.Pills'], terms['core.EC']],
         desc: ['Effective at preventing pregnancy Self-administration Privacy', 'Quick return to fertility Low frequency of use Easy to  stop use Lighter periods', 'Quick return to fertility Low frequency of use Easy to stop use Lighter periods']
     }
 
@@ -42,8 +32,8 @@ const Fp33 = () => {
             <div className="grd_cont">
                 <div className="fp33">
                     <div className="grd_line1 ">
-                        <h1 className="slide_in_blurred_top">{Str.title}</h1>
-                        <h2 className="slide_in_blurred_top">{Str.sbttle}</h2>
+                        <h1 className="slide_in_blurred_top">{terms['FP.MethodSelection.Congratulations1']}</h1>
+                        <h2 className="slide_in_blurred_top">{terms['FP.MethodSelection.Congratulations2']}</h2>
                     </div>
                     <div className="grd_line2">
                         <div className="mssg">
@@ -71,13 +61,13 @@ const Fp33 = () => {
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
                         <Link to={"/Fp32"}>
-                            <BtnNavBack text_btn={Btns.lbl[0]} />
+                            <BtnNavBack text_btn={terms['core.Back']} />
                         </Link>
                     </div>
                     <div className="grd_btm_center"></div>
                     <div className="grd_btm_right">
                         <Link to={"/Fp34"}>
-                            <BtnNavNext text_btn={Btns.lbl[1]} />
+                            <BtnNavNext text_btn={terms['core.Next']} />
                         </Link>
                     </div>
                 </div>

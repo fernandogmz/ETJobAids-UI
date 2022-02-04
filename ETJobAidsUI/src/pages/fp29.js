@@ -6,16 +6,11 @@ import RadioButtons from '../components/btns/radioButton'
 import ReactPlayer from 'react-player'
 import { Link } from "react-router-dom"
 
-const Fp29 = () => {
+const Fp29 = ({terms}) => {
 
     let Str = {
         title: 'Great, thanks for telling me more about you!',
         sbttl: "Now I'm ready to recommend some methods that might fit your needs. According to the preferences you have selected, we suggest these methods. You can click on them to learn more."
-    }
-
-    let Rbttns = {
-        name: 'radio',
-        lbls: ["I'm ready to Select a Method", "Not Ready to Select a Method Today", "I want to see more Methods to make my decision"]
     }
 
     let btns = {
@@ -73,13 +68,13 @@ const Fp29 = () => {
                         <div className="grd_cta r_bttons">
                             <div>
                                 <div>
-                                    <RadioButtons name={Rbttns.name} lbl={Rbttns.lbls[0]} />
+                                    <RadioButtons name={'radio'} lbl={terms['FP.ReadyToSelect']} />
                                 </div>
                                 <div>
-                                    <RadioButtons name={Rbttns.name} lbl={Rbttns.lbls[1]} />
+                                    <RadioButtons name={'radio'} lbl={terms['FP.NotReadyToSelect']} />
                                 </div>
                                 <div>
-                                    <RadioButtons name={Rbttns.name} lbl={Rbttns.lbls[2]} />
+                                    <RadioButtons name={'radio'} lbl={terms['FP.WantToSeeMore']} />
                                 </div>
                             </div>
                         </div>
@@ -90,13 +85,13 @@ const Fp29 = () => {
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
                         <Link to={"/Fp28"}>
-                            <BtnNavBack text_btn={btns.lbl[0]} />
+                            <BtnNavBack text_btn={terms['core.Back']} />
                         </Link>
                     </div>
                     <div className="grd_btm_center"></div>
                     <div className="grd_btm_right">
                         <Link to={"/FP32"}>
-                            <BtnNavNext text_btn={btns.lbl[1]} />
+                            <BtnNavNext text_btn={terms['core.Next']} />
                         </Link>
                     </div>
                 </div>

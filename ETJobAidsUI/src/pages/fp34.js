@@ -6,15 +6,11 @@ import ReactPlayer from 'react-player'
 import { Link } from "react-router-dom"
 
 
-const Fp34 = () => {
+const Fp34 = ({terms}) => {
 
     let Str = {
         title: "Congrats on your decision!",
         sbttle: "Let's review to make sure that you remember everything you need to know about your method.",
-    }
-
-    let btns = {
-        lbl: ['back', 'next']
     }
 
     return (
@@ -30,7 +26,7 @@ const Fp34 = () => {
                     <div>Image</div>
                     <div>
                         <h2 className="tracking_in_expand">{Str.title}</h2>
-                        <h3 className="tracking_in_expand">{Str.sbttle}</h3>
+                        <h3 className="tracking_in_expand">{terms['KQ.Intro']}</h3>
                     </div>
                 </div>
             </div>
@@ -38,7 +34,7 @@ const Fp34 = () => {
                 <div className="btm_nab_one">
                     <div className="grd_btm_left">
                         <Link to={"/Fp33"}>
-                            <BtnNavBack text_btn={btns.lbl[0]} />
+                            <BtnNavBack text_btn={terms['core.Back']} />
                         </Link>
                     </div>
                     <div className="grd_btm_center">
@@ -54,7 +50,7 @@ const Fp34 = () => {
                     </div>
                     <div className="grd_btm_right">
                         <Link to={"/Fp35"}>
-                            <BtnNavNext text_btn={btns.lbl[1]} />
+                            <BtnNavNext text_btn={terms['core.Next']} />
                         </Link>
                     </div>
                 </div>
